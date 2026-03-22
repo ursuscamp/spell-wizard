@@ -160,7 +160,8 @@ button {
 .profile-grid,
 .stats-grid,
 .history-grid,
-.session-grid {
+.session-grid,
+.session-flow {
   display: grid;
   gap: 1rem;
 }
@@ -180,6 +181,11 @@ button {
 .session-grid {
   grid-template-columns: 1.35fr 0.8fr;
   align-items: start;
+}
+
+.session-flow {
+  width: min(760px, 100%);
+  justify-self: center;
 }
 
 .profile-card {
@@ -363,6 +369,12 @@ button {
   color: #1f5f8b;
 }
 
+.session-rewards {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(33, 64, 88, 0.1);
+}
+
 .list {
   display: grid;
   gap: 0.8rem;
@@ -388,8 +400,13 @@ button {
   .hero-layout,
   .header-layout,
   .history-grid,
-  .session-grid {
+  .session-grid,
+  .session-flow {
     grid-template-columns: 1fr;
+  }
+
+  .session-flow {
+    width: 100%;
   }
 
   .page-shell {

@@ -140,7 +140,7 @@ await startSession()
       <NuxtLink class="button-secondary" :to="`/profile/${profileId}`">Return to dashboard</NuxtLink>
     </div>
 
-    <section v-else-if="session" class="session-grid">
+    <section v-else-if="session" class="session-flow">
       <article class="session-card">
         <div class="badge">{{ session.currentPrompt.hint }}</div>
         <h2 class="prompt-word" style="margin-top: 1rem;">
@@ -176,24 +176,11 @@ await startSession()
         </form>
 
         <div :class="['feedback', feedbackTone]" style="margin-top: 1rem;">{{ feedback }}</div>
+        <section v-if="rewards.length" class="session-rewards">
+          <h3 style="margin-bottom: 0.75rem;">Rewards earned this turn</h3>
+          <RewardList :rewards="rewards" />
+        </section>
       </article>
-
-      <aside class="panel">
-        <h2 style="margin-top: 0;">Session sparkle log</h2>
-        <div class="list">
-          <div class="list-item">
-            <strong>Adaptive practice</strong>
-            <p class="tiny muted" style="margin: 0.35rem 0 0;">Tough words come back sooner. Easy words drift farther away.</p>
-          </div>
-          <div class="list-item">
-            <strong>Scoring</strong>
-            <p class="tiny muted" style="margin: 0.35rem 0 0;">1st try = 3 points, 2nd try = 2, 3rd try = 1, fix-up after misses = 0.</p>
-          </div>
-        </div>
-
-        <h3>Rewards earned this turn</h3>
-        <RewardList :rewards="rewards" />
-      </aside>
     </section>
 
     <section v-else class="panel">
