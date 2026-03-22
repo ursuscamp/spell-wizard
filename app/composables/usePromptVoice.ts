@@ -1,13 +1,23 @@
 type SpeakWordOptions = {
   interrupt?: boolean
+  mode?: 'standard' | 'enunciate'
+  fallbackWord?: string
 }
 
 const VOICE_LOAD_TIMEOUT_MS = 1500
 
 export function usePromptVoice() {
+  const appConfig = useAppConfig()
   const voiceEnabled = useState('voice-enabled', () => true)
   const speechSupported = useState('speech-supported', () => true)
   const speechReady = useState('speech-ready', () => false)
+
+  function buildVoiceConfig(mode: 'standard' | 'enunciate' = 'standard') {
+    const speechConfig = appConfig.spellingWizard.speech
+    return mode === 'enunciate'
+      ? speechConfig.enunciate
+      : speechConfig.standard
+  }
 
   if (import.meta.client) {
     speechSupported.value = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window
@@ -51,13 +61,19 @@ export function usePromptVoice() {
   }
 
   async function speakWord(word?: string, options: SpeakWordOptions = {}) {
-    if (!import.meta.client || !voiceEnabled.value || !word || !speechSupported.value) {
+    if (!import.meta.client || !voiceEnabled.value || !speechSupported.value) {
       return false
     }
 
     const speech = window.speechSynthesis
-    const { interrupt = false } = options
+    const { interrupt = false, mode = 'standard', fallbackWord } = options
     const voices = await waitForVoices()
+    const config = buildVoiceConfig(mode)
+    const textToSpeak = word?.trim() || fallbackWord?.trim()
+
+    if (!textToSpeak) {
+      return false
+    }
 
     if (interrupt && (speech.speaking || speech.pending)) {
       speech.cancel()
@@ -65,10 +81,10 @@ export function usePromptVoice() {
 
     speech.resume()
 
-    const utterance = new SpeechSynthesisUtterance(word)
-    utterance.rate = 0.82
-    utterance.pitch = 1.15
-    utterance.volume = 1
+    const utterance = new SpeechSynthesisUtterance(textToSpeak)
+    utterance.rate = config.rate
+    utterance.pitch = config.pitch
+    utterance.volume = config.volume
     const voice = voices.find(item => item.lang.startsWith('en'))
       ?? voices.find(item => item.default)
       ?? voices[0]
@@ -81,6 +97,7 @@ export function usePromptVoice() {
   }
 
   return {
+    buildVoiceConfig,
     voiceEnabled,
     speechReady,
     speechSupported,

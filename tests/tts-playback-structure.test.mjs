@@ -17,8 +17,9 @@ test('prompt voice composable only cancels speech for explicit replays', async (
   const source = await readFile(join(root, 'app/composables/usePromptVoice.ts'), 'utf8')
 
   assert.match(source, /function speakWord\(word\?: string, options: SpeakWordOptions = \{\}\)/)
-  assert.match(source, /const \{ interrupt = false \} = options/)
+  assert.match(source, /const \{ interrupt = false, mode = 'standard', fallbackWord \} = options/)
   assert.match(source, /const voices = await waitForVoices\(\)/)
+  assert.match(source, /const config = buildVoiceConfig\(mode\)/)
   assert.match(source, /speech\.resume\(\)/)
   assert.match(source, /if \(interrupt && \(speech\.speaking \|\| speech\.pending\)\) \{\s+speech\.cancel\(\)/)
 })
@@ -29,4 +30,23 @@ test('prompt voice composable waits for async voice loading before selecting a v
   assert.match(source, /async function waitForVoices\(\)/)
   assert.match(source, /speech\.addEventListener\('voiceschanged', handleVoicesChanged, \{ once: true \}\)/)
   assert.match(source, /const voice = voices\.find\(item => item\.lang\.startsWith\('en'\)\)\s+\?\? voices\.find\(item => item\.default\)\s+\?\? voices\[0\]/)
+})
+
+test('prompt voice composable exposes separate standard and enunciate voice settings', async () => {
+  const source = await readFile(join(root, 'app/composables/usePromptVoice.ts'), 'utf8')
+
+  assert.match(source, /function buildVoiceConfig\(mode: 'standard' \| 'enunciate' = 'standard'\)/)
+  assert.match(source, /return mode === 'enunciate'\s+\? speechConfig\.enunciate\s+: speechConfig\.standard/)
+  assert.match(source, /utterance\.rate = config\.rate/)
+  assert.match(source, /utterance\.pitch = config\.pitch/)
+})
+
+test('session page offers a separate enunciate action', async () => {
+  const source = await readFile(join(root, 'app/pages/profile/[id]/session.vue'), 'utf8')
+
+  assert.match(source, /const canEnunciate = computed\(\(\) => Boolean\(currentEntry\.value && hasValidEnunciation\(currentEntry\.value\)\)\)/)
+  assert.match(source, /async function enunciateWord\(\)/)
+  assert.match(source, /mode: 'enunciate'/)
+  assert.match(source, /@click="enunciateWord"/)
+  assert.match(source, />Enunciate</)
 })

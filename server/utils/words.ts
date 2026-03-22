@@ -1,4 +1,4 @@
-import { WORD_CATALOG } from '../../shared/word-catalog'
+import { hasValidEnunciation, WORD_CATALOG } from '../../shared/word-catalog'
 import type { WordCatalogEntry, WordProgress } from '../../shared/spelling'
 
 export function getAgeFromBirthdate(birthdate: string) {
@@ -25,6 +25,10 @@ export function normalizeWord(value: string) {
 
 export function buildPromptHint(entry: WordCatalogEntry) {
   return `${entry.tags[0] ?? 'word'} word • difficulty ${entry.difficulty}`
+}
+
+export function canEnunciateWord(entry?: WordCatalogEntry | null) {
+  return Boolean(entry && entry.enunciationText && hasValidEnunciation(entry))
 }
 
 export function calculateAdaptiveWeight(entry: WordCatalogEntry, age: number, progress?: WordProgress, recentlyUsedIds: string[] = []) {

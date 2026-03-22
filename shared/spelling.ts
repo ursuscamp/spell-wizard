@@ -4,6 +4,7 @@ export interface WordCatalogEntry {
   id: string
   word: string
   normalizedWord: string
+  enunciationText: string
   ageBandMin: number
   ageBandMax: number
   difficulty: number

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { AttemptResponse, Profile, SessionView } from '~~/shared/spelling'
-import { WORD_CATALOG } from '~~/shared/word-catalog'
+import { hasValidEnunciation, WORD_CATALOG } from '~~/shared/word-catalog'
 
 const route = useRoute()
 const router = useRouter()
@@ -18,8 +18,12 @@ const sessionEnded = ref(false)
 
 const { celebrate } = useFunEffects()
 const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
+const appConfig = useAppConfig()
 
-const currentWord = computed(() => WORD_CATALOG.find(word => word.id === session.value?.currentPrompt.wordId)?.word)
+const currentEntry = computed(() => WORD_CATALOG.find(word => word.id === session.value?.currentPrompt.wordId))
+const currentWord = computed(() => currentEntry.value?.word)
+const currentEnunciation = computed(() => currentEntry.value?.enunciationText)
+const canEnunciate = computed(() => Boolean(currentEntry.value && hasValidEnunciation(currentEntry.value)))
 const visiblePrompt = computed(() => {
   if (session.value?.correctionRequired) {
     return session.value.currentPrompt.visibleWord
@@ -51,7 +55,29 @@ async function replayWord(options: { interrupt?: boolean } = {}) {
     return
   }
 
-  speakWord(currentWord.value, options)
+  await speakWord(currentWord.value, {
+    ...options,
+    mode: 'standard'
+  })
+}
+
+async function enunciateWord() {
+  if (!voiceEnabled.value || !currentWord.value) {
+    return
+  }
+
+  const canFallbackToStandard = appConfig.spellingWizard.speech.enunciate.fallbackToStandard
+  const wordToSpeak = canEnunciate.value
+    ? currentEnunciation.value
+    : canFallbackToStandard
+      ? currentWord.value
+      : undefined
+
+  await speakWord(wordToSpeak, {
+    interrupt: true,
+    mode: 'enunciate',
+    fallbackWord: canFallbackToStandard ? currentWord.value : undefined
+  })
 }
 
 function handleRewards(emittedRewards: AttemptResponse['rewards']) {
@@ -131,6 +157,7 @@ await startSession()
       </div>
       <div class="button-row">
         <button class="button-secondary" type="button" @click="replayWord({ interrupt: true })">Read word aloud</button>
+        <button class="button-secondary" type="button" :disabled="loading || !voiceEnabled || !speechSupported" @click="enunciateWord">Enunciate word</button>
         <button class="button-ghost" type="button" @click="endCurrentSession">Finish session</button>
       </div>
     </section>
@@ -146,7 +173,7 @@ await startSession()
         <h2 class="prompt-word" style="margin-top: 1rem;">
           {{ visiblePrompt || 'Listen and spell' }}
         </h2>
-        <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : (!voiceEnabled || !speechSupported) ? 'Voice playback is off, so the word is shown on screen.' : 'Use the keyboard to spell the word you hear.' }}</p>
+        <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : (!voiceEnabled || !speechSupported) ? 'Voice playback is off, so the word is shown on screen.' : canEnunciate ? 'Use the keyboard to spell the word you hear, or tap enunciate for extra-clear speech.' : 'Use the keyboard to spell the word you hear.' }}</p>
 
         <div class="stats-grid" style="margin: 1rem 0;">
           <div class="stat-card">
@@ -172,6 +199,7 @@ await startSession()
           <div class="button-row">
             <button class="button-secondary" :disabled="loading" type="submit">{{ session.correctionRequired ? 'Lock in correction' : 'Submit spelling' }}</button>
             <button class="button-ghost" :disabled="loading" type="button" @click="replayWord({ interrupt: true })">Hear it again</button>
+            <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported" type="button" @click="enunciateWord">Enunciate</button>
           </div>
         </form>
 
