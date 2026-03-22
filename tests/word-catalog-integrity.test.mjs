@@ -39,10 +39,10 @@ test('word catalog keeps unique ids and expected band counts', async () => {
     return counts
   }, new Map())
 
-  assert.equal(entries.length, 394)
+  assert.equal(entries.length, 537)
   assert.equal(uniqueWords.size, entries.length)
-  assert.equal(bandCounts.get('5-7-1'), 164)
-  assert.equal(bandCounts.get('7-9-2'), 161)
+  assert.equal(bandCounts.get('5-7-1'), 255)
+  assert.equal(bandCounts.get('7-9-2'), 213)
   assert.equal(bandCounts.get('9-12-3'), 69)
 })
 
@@ -129,4 +129,32 @@ test('latest batch adds 100 unique words with only 10 in the upper band', async 
   }
 
   assert.equal(upperBandCount, 10)
+})
+
+test('everyday sentence-building words are present in the catalog', async () => {
+  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const entries = parseEntries(source)
+  const addedWords = [
+    'a', 'all', 'am', 'an', 'and', 'are', 'as', 'at', 'be', 'been', 'but', 'by',
+    'can', 'come', 'could', 'did', 'do', 'does', 'get', 'go', 'had', 'has', 'have', 'is',
+    'make', 'said', 'say', 'see', 'use', 'was', 'were', 'will', 'would',
+    'he', 'her', 'here', 'him', 'his', 'i', 'it', 'its', 'me', 'my', 'she', 'they', 'them', 'we', 'who', 'you', 'your',
+    'people', 'children', 'boy', 'man', 'mother',
+    'after', 'again', 'around', 'away', 'before', 'down', 'for', 'from', 'if', 'in', 'into', 'of', 'on', 'or', 'out', 'over',
+    'than', 'then', 'there', 'through', 'to', 'under', 'up', 'when', 'where',
+    'big', 'both', 'first', 'good', 'great', 'little', 'long', 'many', 'more', 'much', 'old', 'only', 'other', 'right', 'same', 'small', 'three', 'two', 'very',
+    'ask', 'call', 'eat', 'find', 'found', 'give', 'help', 'home', 'just', 'know', 'look', 'made', 'must', 'name', 'need', 'put', 'read', 'take', 'tell', 'think', 'want', 'well', 'went', 'why', 'work', 'write', 'world',
+    'any', 'like', 'no', 'not', 'now', 'one', 'our', 'some', 'that', 'the', 'their', 'these', 'this', 'those', 'what', 'which'
+  ]
+
+  assert.equal(new Set(addedWords).size, 142)
+
+  for (const word of addedWords) {
+    const entry = entries.find(candidate => candidate.word === word)
+
+    assert.ok(entry, `expected catalog entry for ${word}`)
+    assert.equal(normalizeLetters(entry.enunciationText), word)
+    assert.ok(entry.ageBandMax <= 9, `${word} should stay in the lower two bands`)
+    assert.ok(entry.tags.length > 0, `${word} should include at least one tag`)
+  }
 })
