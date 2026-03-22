@@ -5,9 +5,11 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "db:reset:test-data": "node scripts/reset-and-seed-local-db.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "seed:rank-edge-profiles": "node scripts/seed-rank-edge-profiles.mjs",
     "test": "npm run build && node --test tests/**/*.test.mjs"
   },
   "dependencies": {

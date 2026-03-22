@@ -56,7 +56,7 @@ watch(profileId, () => refresh())
         <div class="header-layout" style="margin-bottom: 1rem;">
           <div>
             <h2 style="margin: 0;">Recent rewards</h2>
-            <p class="helper-text" style="margin: 0.35rem 0 0;">Every 100 points earns 100 Robux. Every third level glows brighter with 300 Robux.</p>
+            <p class="helper-text" style="margin: 0.35rem 0 0;">Every 100 points earns 100 Robux. Every third level is a rank up worth 300 Robux.</p>
           </div>
         </div>
 

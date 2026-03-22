@@ -1,0 +1,1 @@
+- when modifying shema, evaluate if any seed data needs to be added or modified
