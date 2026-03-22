@@ -44,15 +44,14 @@ async function startSession() {
   rewards.value = []
   answer.value = ''
   loading.value = false
-  nextTick(() => replayWord())
 }
 
-async function replayWord() {
+async function replayWord(options: { interrupt?: boolean } = {}) {
   if (!voiceEnabled.value || !currentWord.value) {
     return
   }
 
-  speakWord(currentWord.value)
+  speakWord(currentWord.value, options)
 }
 
 function handleRewards(emittedRewards: AttemptResponse['rewards']) {
@@ -89,7 +88,6 @@ async function submitAnswer() {
     celebrate('correct')
     answer.value = ''
     handleRewards(response.rewards)
-    nextTick(() => replayWord())
   }
   else if (response.status === 'incorrect') {
     celebrate('retry')
@@ -116,7 +114,7 @@ async function endCurrentSession() {
 watch(() => session.value?.currentPrompt.wordId, async (wordId) => {
   if (wordId) {
     await nextTick()
-    replayWord()
+    replayWord({ interrupt: false })
   }
 })
 
@@ -132,7 +130,7 @@ await startSession()
         <p class="hero-subtitle">Hear the word, type your answer, and keep going for as many words as you want.</p>
       </div>
       <div class="button-row">
-        <button class="button-secondary" type="button" @click="replayWord">Read word aloud</button>
+        <button class="button-secondary" type="button" @click="replayWord({ interrupt: true })">Read word aloud</button>
         <button class="button-ghost" type="button" @click="endCurrentSession">Finish session</button>
       </div>
     </section>
@@ -173,7 +171,7 @@ await startSession()
 
           <div class="button-row">
             <button class="button-secondary" :disabled="loading" type="submit">{{ session.correctionRequired ? 'Lock in correction' : 'Submit spelling' }}</button>
-            <button class="button-ghost" :disabled="loading" type="button" @click="replayWord">Hear it again</button>
+            <button class="button-ghost" :disabled="loading" type="button" @click="replayWord({ interrupt: true })">Hear it again</button>
           </div>
         </form>
 
