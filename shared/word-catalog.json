@@ -1,0 +1,5372 @@
+[
+  {
+    "word": "a",
+    "enunciationText": "a",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "acorn",
+    "enunciationText": "a...corn",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "all",
+    "enunciationText": "all",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "am",
+    "enunciationText": "am",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "an",
+    "enunciationText": "an",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "and",
+    "enunciationText": "and",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "ankle",
+    "enunciationText": "an...kle",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "ant",
+    "enunciationText": "ant",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "apple",
+    "enunciationText": "ap...ple",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "apron",
+    "enunciationText": "a...pron",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "are",
+    "enunciationText": "are",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "as",
+    "enunciationText": "as",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "at",
+    "enunciationText": "at",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "back",
+    "enunciationText": "back",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "badge",
+    "enunciationText": "badge",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "ball",
+    "enunciationText": "ball",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "barn",
+    "enunciationText": "barn",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "be",
+    "enunciationText": "be",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "bear",
+    "enunciationText": "bear",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "bed",
+    "enunciationText": "bed",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "bee",
+    "enunciationText": "bee",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "been",
+    "enunciationText": "been",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "bell",
+    "enunciationText": "bell",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "sound"
+    ]
+  },
+  {
+    "word": "berry",
+    "enunciationText": "ber...ry",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "big",
+    "enunciationText": "big",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "bird",
+    "enunciationText": "bird",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "block",
+    "enunciationText": "block",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "blue",
+    "enunciationText": "blue",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "boat",
+    "enunciationText": "boat",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "book",
+    "enunciationText": "book",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "boots",
+    "enunciationText": "boots",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "both",
+    "enunciationText": "both",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "bottle",
+    "enunciationText": "bot...tle",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "boy",
+    "enunciationText": "boy",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "bread",
+    "enunciationText": "bread",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "broom",
+    "enunciationText": "broom",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "brush",
+    "enunciationText": "brush",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "bug",
+    "enunciationText": "bug",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "bunny",
+    "enunciationText": "bun...ny",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "bus",
+    "enunciationText": "bus",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "but",
+    "enunciationText": "but",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "by",
+    "enunciationText": "by",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "cabin",
+    "enunciationText": "cab...in",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "cactus",
+    "enunciationText": "cac...tus",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "cake",
+    "enunciationText": "cake",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "call",
+    "enunciationText": "call",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "can",
+    "enunciationText": "can",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "candy",
+    "enunciationText": "can...dy",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "cat",
+    "enunciationText": "cat",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "chair",
+    "enunciationText": "chair",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "cheese",
+    "enunciationText": "cheese",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "chick",
+    "enunciationText": "chick",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "chimney",
+    "enunciationText": "chim...ney",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "clock",
+    "enunciationText": "clock",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "cloud",
+    "enunciationText": "cloud",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "clown",
+    "enunciationText": "clown",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "coat",
+    "enunciationText": "coat",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "come",
+    "enunciationText": "come",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "cookie",
+    "enunciationText": "cook...ie",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "corn",
+    "enunciationText": "corn",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "cottage",
+    "enunciationText": "cot...tage",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "cow",
+    "enunciationText": "cow",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "crab",
+    "enunciationText": "crab",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "crayon",
+    "enunciationText": "cray...on",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "art"
+    ]
+  },
+  {
+    "word": "crow",
+    "enunciationText": "crow",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "crown",
+    "enunciationText": "crown",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "cup",
+    "enunciationText": "cup",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "dance",
+    "enunciationText": "dance",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "day",
+    "enunciationText": "day",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "deer",
+    "enunciationText": "deer",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "desk",
+    "enunciationText": "desk",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "did",
+    "enunciationText": "did",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "dish",
+    "enunciationText": "dish",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "do",
+    "enunciationText": "do",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "does",
+    "enunciationText": "does",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "dog",
+    "enunciationText": "dog",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "doll",
+    "enunciationText": "doll",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "donkey",
+    "enunciationText": "don...key",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "door",
+    "enunciationText": "door",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "down",
+    "enunciationText": "down",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "drum",
+    "enunciationText": "drum",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "word": "duck",
+    "enunciationText": "duck",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "eagle",
+    "enunciationText": "ea...gle",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "earth",
+    "enunciationText": "earth",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "eat",
+    "enunciationText": "eat",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "egg",
+    "enunciationText": "egg",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "elbow",
+    "enunciationText": "el...bow",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "engine",
+    "enunciationText": "en...gine",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "farm",
+    "enunciationText": "farm",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "fence",
+    "enunciationText": "fence",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "field",
+    "enunciationText": "field",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "find",
+    "enunciationText": "find",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "fire",
+    "enunciationText": "fire",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "first",
+    "enunciationText": "first",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "fish",
+    "enunciationText": "fish",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "flag",
+    "enunciationText": "flag",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "flashlight",
+    "enunciationText": "flash...light",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "for",
+    "enunciationText": "for",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "fox",
+    "enunciationText": "fox",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "frog",
+    "enunciationText": "frog",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "game",
+    "enunciationText": "game",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "gate",
+    "enunciationText": "gate",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "get",
+    "enunciationText": "get",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "ghost",
+    "enunciationText": "ghost",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "gift",
+    "enunciationText": "gift",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "glad",
+    "enunciationText": "glad",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "glove",
+    "enunciationText": "glove",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "go",
+    "enunciationText": "go",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "goat",
+    "enunciationText": "goat",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "good",
+    "enunciationText": "good",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "grape",
+    "enunciationText": "gra...pe",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "grass",
+    "enunciationText": "grass",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "green",
+    "enunciationText": "green",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "had",
+    "enunciationText": "had",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "hand",
+    "enunciationText": "hand",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "has",
+    "enunciationText": "has",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "hat",
+    "enunciationText": "hat",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "have",
+    "enunciationText": "have",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "he",
+    "enunciationText": "he",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "help",
+    "enunciationText": "help",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "her",
+    "enunciationText": "her",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "here",
+    "enunciationText": "here",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "hill",
+    "enunciationText": "hill",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "him",
+    "enunciationText": "him",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "his",
+    "enunciationText": "his",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "home",
+    "enunciationText": "home",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "honey",
+    "enunciationText": "hon...ey",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "horse",
+    "enunciationText": "horse",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "house",
+    "enunciationText": "house",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "i",
+    "enunciationText": "i",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "if",
+    "enunciationText": "if",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "igloo",
+    "enunciationText": "ig...loo",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "in",
+    "enunciationText": "in",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "insect",
+    "enunciationText": "in...sect",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "into",
+    "enunciationText": "into",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "is",
+    "enunciationText": "is",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "it",
+    "enunciationText": "it",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "its",
+    "enunciationText": "its",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "jam",
+    "enunciationText": "jam",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "jelly",
+    "enunciationText": "jel...ly",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "juice",
+    "enunciationText": "juice",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "jump",
+    "enunciationText": "jump",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "key",
+    "enunciationText": "key",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "kite",
+    "enunciationText": "kite",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "koala",
+    "enunciationText": "ko...a...la",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "lamp",
+    "enunciationText": "lamp",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "leaf",
+    "enunciationText": "leaf",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "light",
+    "enunciationText": "light",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "like",
+    "enunciationText": "like",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "lion",
+    "enunciationText": "li...on",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "lizard",
+    "enunciationText": "liz...ard",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "log",
+    "enunciationText": "log",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "look",
+    "enunciationText": "look",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "lunch",
+    "enunciationText": "lunch",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "make",
+    "enunciationText": "make",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "map",
+    "enunciationText": "map",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "me",
+    "enunciationText": "me",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "milk",
+    "enunciationText": "milk",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "mirror",
+    "enunciationText": "mir...ror",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "moon",
+    "enunciationText": "moon",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "mouse",
+    "enunciationText": "mouse",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "my",
+    "enunciationText": "my",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "nail",
+    "enunciationText": "nail",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "name",
+    "enunciationText": "name",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "nest",
+    "enunciationText": "nest",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "no",
+    "enunciationText": "no",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "not",
+    "enunciationText": "not",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "notebook",
+    "enunciationText": "note...book",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "now",
+    "enunciationText": "now",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "of",
+    "enunciationText": "of",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "on",
+    "enunciationText": "on",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "one",
+    "enunciationText": "one",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "or",
+    "enunciationText": "or",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "our",
+    "enunciationText": "our",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "out",
+    "enunciationText": "out",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "owl",
+    "enunciationText": "owl",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "pancake",
+    "enunciationText": "pan...cake",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "park",
+    "enunciationText": "park",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "parrot",
+    "enunciationText": "par...rot",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "peach",
+    "enunciationText": "peach",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "pear",
+    "enunciationText": "pear",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "pen",
+    "enunciationText": "pen",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "pink",
+    "enunciationText": "pink",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "plane",
+    "enunciationText": "pla...ne",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "plant",
+    "enunciationText": "plant",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "put",
+    "enunciationText": "put",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "rain",
+    "enunciationText": "rain",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "ring",
+    "enunciationText": "ring",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "road",
+    "enunciationText": "road",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "robot",
+    "enunciationText": "ro...bot",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "rope",
+    "enunciationText": "rope",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "said",
+    "enunciationText": "said",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "same",
+    "enunciationText": "same",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "sand",
+    "enunciationText": "sand",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "say",
+    "enunciationText": "say",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "scarf",
+    "enunciationText": "scarf",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "school",
+    "enunciationText": "school",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "see",
+    "enunciationText": "see",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "seed",
+    "enunciationText": "seed",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "shark",
+    "enunciationText": "shark",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "she",
+    "enunciationText": "she",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "shell",
+    "enunciationText": "shell",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "ship",
+    "enunciationText": "ship",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "shoe",
+    "enunciationText": "shoe",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "shop",
+    "enunciationText": "shop",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "sing",
+    "enunciationText": "sing",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "word": "small",
+    "enunciationText": "small",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "smile",
+    "enunciationText": "smile",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "snack",
+    "enunciationText": "snack",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "snow",
+    "enunciationText": "snow",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "sock",
+    "enunciationText": "sock",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "some",
+    "enunciationText": "some",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "spoon",
+    "enunciationText": "spoon",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "stamp",
+    "enunciationText": "stamp",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "star",
+    "enunciationText": "star",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "stick",
+    "enunciationText": "stick",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "stone",
+    "enunciationText": "sto...ne",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "storm",
+    "enunciationText": "storm",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "sun",
+    "enunciationText": "sun",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "swing",
+    "enunciationText": "swing",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "table",
+    "enunciationText": "tab...le",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "tent",
+    "enunciationText": "tent",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "that",
+    "enunciationText": "that",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "the",
+    "enunciationText": "the",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "them",
+    "enunciationText": "them",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "there",
+    "enunciationText": "the...re",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "this",
+    "enunciationText": "this",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "tiger",
+    "enunciationText": "ti...ger",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "to",
+    "enunciationText": "to",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "toast",
+    "enunciationText": "toast",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "train",
+    "enunciationText": "train",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "tree",
+    "enunciationText": "tree",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "truck",
+    "enunciationText": "truck",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "two",
+    "enunciationText": "two",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "up",
+    "enunciationText": "up",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "use",
+    "enunciationText": "use",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "want",
+    "enunciationText": "want",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "was",
+    "enunciationText": "was",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "water",
+    "enunciationText": "wa...ter",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "we",
+    "enunciationText": "we",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "well",
+    "enunciationText": "well",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "went",
+    "enunciationText": "went",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "whale",
+    "enunciationText": "whale",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "what",
+    "enunciationText": "what",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "when",
+    "enunciationText": "when",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "where",
+    "enunciationText": "whe...re",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "who",
+    "enunciationText": "who",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "will",
+    "enunciationText": "will",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "window",
+    "enunciationText": "win...dow",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "worm",
+    "enunciationText": "worm",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "write",
+    "enunciationText": "wri...te",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "yellow",
+    "enunciationText": "yel...low",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "you",
+    "enunciationText": "you",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "your",
+    "enunciationText": "your",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "zebra",
+    "enunciationText": "zeb...ra",
+    "ageBandMin": 5,
+    "ageBandMax": 7,
+    "difficulty": 1,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "above",
+    "enunciationText": "ab...o...ve",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "across",
+    "enunciationText": "a...cross",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "afraid",
+    "enunciationText": "a...fraid",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "after",
+    "enunciationText": "af...ter",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "again",
+    "enunciationText": "a...gain",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "airplane",
+    "enunciationText": "air...plane",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "airport",
+    "enunciationText": "air...port",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "almost",
+    "enunciationText": "al...most",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "animal",
+    "enunciationText": "an...i...mal",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "any",
+    "enunciationText": "any",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "around",
+    "enunciationText": "a...round",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "artist",
+    "enunciationText": "ar...tist",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "art"
+    ]
+  },
+  {
+    "word": "ask",
+    "enunciationText": "ask",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "away",
+    "enunciationText": "away",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "baboon",
+    "enunciationText": "ba...boon",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "backpack",
+    "enunciationText": "back...pack",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "balance",
+    "enunciationText": "bal...ance",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "banana",
+    "enunciationText": "ba...na...na",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "basket",
+    "enunciationText": "bas...ket",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "beach",
+    "enunciationText": "beach",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "bedroom",
+    "enunciationText": "bed...room",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "beetle",
+    "enunciationText": "bee...tle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "before",
+    "enunciationText": "bef...o...re",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "begin",
+    "enunciationText": "be...gin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "between",
+    "enunciationText": "be...tween",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "bicycle",
+    "enunciationText": "bi...cy...cle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "birthday",
+    "enunciationText": "birth...day",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "blanket",
+    "enunciationText": "blan...ket",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "blossom",
+    "enunciationText": "blos...som",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "branch",
+    "enunciationText": "branch",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "bright",
+    "enunciationText": "bright",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "bubble",
+    "enunciationText": "bub...ble",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "button",
+    "enunciationText": "but...ton",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "candle",
+    "enunciationText": "can...dle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "captain",
+    "enunciationText": "cap...tain",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "carrot",
+    "enunciationText": "car...rot",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "cartoon",
+    "enunciationText": "car...toon",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "castle",
+    "enunciationText": "cas...tle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "cereal",
+    "enunciationText": "ce...real",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "cheetah",
+    "enunciationText": "chee...tah",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "chicken",
+    "enunciationText": "chick...en",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "children",
+    "enunciationText": "chil...dren",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "circle",
+    "enunciationText": "cir...cle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "climber",
+    "enunciationText": "clim...ber",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "closet",
+    "enunciationText": "clo...set",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "cobweb",
+    "enunciationText": "cob...web",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "corner",
+    "enunciationText": "cor...ner",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "could",
+    "enunciationText": "could",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "cousin",
+    "enunciationText": "cou...sin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "cupcake",
+    "enunciationText": "cup...cake",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "curtain",
+    "enunciationText": "cur...tain",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "daisy",
+    "enunciationText": "dai...sy",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "dentist",
+    "enunciationText": "den...tist",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "desert",
+    "enunciationText": "des...ert",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "dinner",
+    "enunciationText": "din...ner",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "doctor",
+    "enunciationText": "doc...tor",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "dolphin",
+    "enunciationText": "dol...phin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "dragon",
+    "enunciationText": "dra...gon",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "magic"
+    ]
+  },
+  {
+    "word": "drawer",
+    "enunciationText": "draw...er",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "dream",
+    "enunciationText": "dream",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "drizzle",
+    "enunciationText": "driz...zle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "every",
+    "enunciationText": "ev...e...ry",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "fairy",
+    "enunciationText": "fair...y",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "magic"
+    ]
+  },
+  {
+    "word": "family",
+    "enunciationText": "fam...i...ly",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "farmer",
+    "enunciationText": "farm...er",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "feather",
+    "enunciationText": "feat...her",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "fever",
+    "enunciationText": "fe...ver",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "flamingo",
+    "enunciationText": "fla...min...go",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "flower",
+    "enunciationText": "flo...wer",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "forest",
+    "enunciationText": "for...est",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "found",
+    "enunciationText": "found",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "friend",
+    "enunciationText": "friend",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "from",
+    "enunciationText": "from",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "garden",
+    "enunciationText": "gar...den",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "giant",
+    "enunciationText": "giant",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "ginger",
+    "enunciationText": "gin...ger",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "giraffe",
+    "enunciationText": "gi...raffe",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "give",
+    "enunciationText": "give",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "glitter",
+    "enunciationText": "glit...ter",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "magic"
+    ]
+  },
+  {
+    "word": "goblin",
+    "enunciationText": "gob...lin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "great",
+    "enunciationText": "great",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "guitar",
+    "enunciationText": "gui...tar",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "word": "hammer",
+    "enunciationText": "ham...mer",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "happen",
+    "enunciationText": "hap...pen",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "happy",
+    "enunciationText": "hap...py",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "harbor",
+    "enunciationText": "har...bor",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "helmet",
+    "enunciationText": "hel...met",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "hidden",
+    "enunciationText": "hid...den",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "holiday",
+    "enunciationText": "hol...i...day",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "island",
+    "enunciationText": "is...land",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "jacket",
+    "enunciationText": "jac...ket",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "jigsaw",
+    "enunciationText": "jig...saw",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "jumper",
+    "enunciationText": "jump...er",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "jungle",
+    "enunciationText": "jun...gle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "just",
+    "enunciationText": "just",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "kangaroo",
+    "enunciationText": "kan...ga...roo",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "ketchup",
+    "enunciationText": "ketch...up",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "kitten",
+    "enunciationText": "kit...ten",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "know",
+    "enunciationText": "know",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "ladder",
+    "enunciationText": "lad...der",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "ladybug",
+    "enunciationText": "la...dy...bug",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "lantern",
+    "enunciationText": "lan...tern",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "laundry",
+    "enunciationText": "laun...dry",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "lemon",
+    "enunciationText": "lem...on",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "letter",
+    "enunciationText": "let...ter",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "little",
+    "enunciationText": "lit...tle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "long",
+    "enunciationText": "long",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "made",
+    "enunciationText": "made",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "magic",
+    "enunciationText": "ma...gic",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "magic"
+    ]
+  },
+  {
+    "word": "mailbox",
+    "enunciationText": "mail...box",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "man",
+    "enunciationText": "man",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "many",
+    "enunciationText": "many",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "marble",
+    "enunciationText": "mar...ble",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "market",
+    "enunciationText": "mar...ket",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "mascot",
+    "enunciationText": "mas...cot",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "meadow",
+    "enunciationText": "mead...ow",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "middle",
+    "enunciationText": "mid...dle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "minute",
+    "enunciationText": "min...u...te",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "misty",
+    "enunciationText": "mis...ty",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "monkey",
+    "enunciationText": "mon...key",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "more",
+    "enunciationText": "more",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "morning",
+    "enunciationText": "morn...ing",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "mother",
+    "enunciationText": "mot...her",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "much",
+    "enunciationText": "much",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "muffin",
+    "enunciationText": "muf...fin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "music",
+    "enunciationText": "mu...sic",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "word": "must",
+    "enunciationText": "must",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "napkin",
+    "enunciationText": "nap...kin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "need",
+    "enunciationText": "need",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "ocean",
+    "enunciationText": "o...cean",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "old",
+    "enunciationText": "old",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "only",
+    "enunciationText": "only",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "orange",
+    "enunciationText": "or...an...ge",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "other",
+    "enunciationText": "ot...her",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "otter",
+    "enunciationText": "ot...ter",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "outside",
+    "enunciationText": "out...side",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "over",
+    "enunciationText": "over",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "paint",
+    "enunciationText": "paint",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "art"
+    ]
+  },
+  {
+    "word": "panda",
+    "enunciationText": "pan...da",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "people",
+    "enunciationText": "peop...le",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "pepper",
+    "enunciationText": "pep...per",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "picnic",
+    "enunciationText": "pic...nic",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "pillow",
+    "enunciationText": "pil...low",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "pirate",
+    "enunciationText": "pi...rate",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "planet",
+    "enunciationText": "pla...net",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "pocket",
+    "enunciationText": "poc...ket",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "polar",
+    "enunciationText": "po...lar",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "pretty",
+    "enunciationText": "pret...ty",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "pumpkin",
+    "enunciationText": "pump...kin",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "puppy",
+    "enunciationText": "pup...py",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "purple",
+    "enunciationText": "pur...ple",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "rabbit",
+    "enunciationText": "rab...bit",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "rainbow",
+    "enunciationText": "rain...bow",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "raincoat",
+    "enunciationText": "rain...coat",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "read",
+    "enunciationText": "read",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "right",
+    "enunciationText": "right",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "river",
+    "enunciationText": "riv...er",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "rocket",
+    "enunciationText": "roc...ket",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "rowboat",
+    "enunciationText": "row...boat",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "saddle",
+    "enunciationText": "sad...dle",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "sailor",
+    "enunciationText": "sai...lor",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "salad",
+    "enunciationText": "sal...ad",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "sandbox",
+    "enunciationText": "sand...box",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "seesaw",
+    "enunciationText": "see...saw",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "play"
+    ]
+  },
+  {
+    "word": "shiny",
+    "enunciationText": "shi...ny",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "silver",
+    "enunciationText": "sil...ver",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "colors"
+    ]
+  },
+  {
+    "word": "snowman",
+    "enunciationText": "snow...man",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "spring",
+    "enunciationText": "spring",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "story",
+    "enunciationText": "sto...ry",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "street",
+    "enunciationText": "street",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "summer",
+    "enunciationText": "sum...mer",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "sunlight",
+    "enunciationText": "sun...light",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "tadpole",
+    "enunciationText": "tad...pole",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "take",
+    "enunciationText": "take",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "teacher",
+    "enunciationText": "teac...her",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "teapot",
+    "enunciationText": "tea...pot",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "teaspoon",
+    "enunciationText": "tea...spoon",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "word": "tell",
+    "enunciationText": "tell",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "than",
+    "enunciationText": "than",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "their",
+    "enunciationText": "their",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "then",
+    "enunciationText": "then",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "these",
+    "enunciationText": "the...se",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "they",
+    "enunciationText": "they",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "think",
+    "enunciationText": "think",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "those",
+    "enunciationText": "tho...se",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "three",
+    "enunciationText": "three",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "through",
+    "enunciationText": "through",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "thunder",
+    "enunciationText": "thun...der",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "ticket",
+    "enunciationText": "tick...et",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "tomato",
+    "enunciationText": "to...ma...to",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "tractor",
+    "enunciationText": "trac...tor",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "traffic",
+    "enunciationText": "traf...fic",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "trombone",
+    "enunciationText": "trom...bone",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "music"
+    ]
+  },
+  {
+    "word": "tunnel",
+    "enunciationText": "tun...nel",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "turkey",
+    "enunciationText": "tur...key",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "under",
+    "enunciationText": "un...der",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "position"
+    ]
+  },
+  {
+    "word": "very",
+    "enunciationText": "very",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "volcano",
+    "enunciationText": "vol...ca...no",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "wallet",
+    "enunciationText": "wal...let",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "walrus",
+    "enunciationText": "wal...rus",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "were",
+    "enunciationText": "were",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "which",
+    "enunciationText": "which",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "why",
+    "enunciationText": "why",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "willow",
+    "enunciationText": "wil...low",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "winter",
+    "enunciationText": "win...ter",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "with",
+    "enunciationText": "with",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "wonder",
+    "enunciationText": "won...der",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "work",
+    "enunciationText": "work",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "world",
+    "enunciationText": "world",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "would",
+    "enunciationText": "would",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "yogurt",
+    "enunciationText": "yo...gurt",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "zipper",
+    "enunciationText": "zip...per",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "clothes"
+    ]
+  },
+  {
+    "word": "zookeeper",
+    "enunciationText": "zoo...keep...er",
+    "ageBandMin": 7,
+    "ageBandMax": 9,
+    "difficulty": 2,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "adventure",
+    "enunciationText": "ad...ven...tu...re",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "answer",
+    "enunciationText": "an...swer",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "astronaut",
+    "enunciationText": "as...tro...naut",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "avalanche",
+    "enunciationText": "av...a...lanche",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "beautiful",
+    "enunciationText": "beaut...i...ful",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "because",
+    "enunciationText": "bec...au...se",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "binoculars",
+    "enunciationText": "bi...noc...u...lars",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "calendar",
+    "enunciationText": "cal...en...dar",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "careful",
+    "enunciationText": "care...ful",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "celebrate",
+    "enunciationText": "cel...eb...ra...te",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "century",
+    "enunciationText": "cen...tu...ry",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "chocolate",
+    "enunciationText": "choc...o...la...te",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "food"
+    ]
+  },
+  {
+    "word": "collect",
+    "enunciationText": "col...lect",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "compass",
+    "enunciationText": "com...pass",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "objects"
+    ]
+  },
+  {
+    "word": "crystal",
+    "enunciationText": "crys...tal",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "magic"
+    ]
+  },
+  {
+    "word": "curious",
+    "enunciationText": "cu...rious",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "daughter",
+    "enunciationText": "daug...hter",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "dinosaur",
+    "enunciationText": "di...no...saur",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "discover",
+    "enunciationText": "dis...co...ver",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "distant",
+    "enunciationText": "dis...tant",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "dragonfly",
+    "enunciationText": "drag...on...fly",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "electric",
+    "enunciationText": "el...ec...tric",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "science"
+    ]
+  },
+  {
+    "word": "enough",
+    "enunciationText": "e...nough",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "equation",
+    "enunciationText": "e...qua...tion",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "feast",
+    "enunciationText": "feast",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "festival",
+    "enunciationText": "fes...ti...val",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "celebration"
+    ]
+  },
+  {
+    "word": "fraction",
+    "enunciationText": "frac...tion",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "galaxy",
+    "enunciationText": "gal...a...xy",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "space"
+    ]
+  },
+  {
+    "word": "geography",
+    "enunciationText": "ge...og...ra...phy",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "giggle",
+    "enunciationText": "gig...gle",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "guardian",
+    "enunciationText": "guar...dian",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "history",
+    "enunciationText": "his...to...ry",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "horizon",
+    "enunciationText": "ho...ri...zon",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "imagine",
+    "enunciationText": "im...a...gi...ne",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "journey",
+    "enunciationText": "jour...ney",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "word": "library",
+    "enunciationText": "lib...ra...ry",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "places"
+    ]
+  },
+  {
+    "word": "measure",
+    "enunciationText": "meas...u...re",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "message",
+    "enunciationText": "mes...sa...ge",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "microscope",
+    "enunciationText": "mi...cro...scope",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "science"
+    ]
+  },
+  {
+    "word": "mountain",
+    "enunciationText": "moun...tain",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "musician",
+    "enunciationText": "mus...i...cian",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "mystery",
+    "enunciationText": "mys...te...ry",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "neighbor",
+    "enunciationText": "neig...hbor",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "orchard",
+    "enunciationText": "or...chard",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "outline",
+    "enunciationText": "out...line",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "pattern",
+    "enunciationText": "pat...tern",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "penguin",
+    "enunciationText": "pen...guin",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "picture",
+    "enunciationText": "pic...tu...re",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "art"
+    ]
+  },
+  {
+    "word": "pioneer",
+    "enunciationText": "pio...neer",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "word": "practice",
+    "enunciationText": "prac...ti...ce",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "president",
+    "enunciationText": "pres...i...dent",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "protect",
+    "enunciationText": "pro...tect",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "recess",
+    "enunciationText": "re...cess",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "remember",
+    "enunciationText": "rem...em...ber",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "core"
+    ]
+  },
+  {
+    "word": "science",
+    "enunciationText": "scien...ce",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "school"
+    ]
+  },
+  {
+    "word": "shadow",
+    "enunciationText": "sha...dow",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "nature"
+    ]
+  },
+  {
+    "word": "special",
+    "enunciationText": "spe...cial",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "describing"
+    ]
+  },
+  {
+    "word": "squirrel",
+    "enunciationText": "squir...rel",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "animals"
+    ]
+  },
+  {
+    "word": "stretch",
+    "enunciationText": "stretch",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "body"
+    ]
+  },
+  {
+    "word": "student",
+    "enunciationText": "stu...dent",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "surprise",
+    "enunciationText": "sur...pri...se",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "feelings"
+    ]
+  },
+  {
+    "word": "treasure",
+    "enunciationText": "treas...u...re",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "stories"
+    ]
+  },
+  {
+    "word": "triangle",
+    "enunciationText": "trian...gle",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "word": "umbrella",
+    "enunciationText": "um...brel...la",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "weather"
+    ]
+  },
+  {
+    "word": "unicorn",
+    "enunciationText": "un...i...corn",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "magic"
+    ]
+  },
+  {
+    "word": "vacation",
+    "enunciationText": "vac...a...tion",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "time"
+    ]
+  },
+  {
+    "word": "volunteer",
+    "enunciationText": "vol...un...teer",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "people"
+    ]
+  },
+  {
+    "word": "whisper",
+    "enunciationText": "whis...per",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "communication"
+    ]
+  },
+  {
+    "word": "wizard",
+    "enunciationText": "wi...zard",
+    "ageBandMin": 9,
+    "ageBandMax": 12,
+    "difficulty": 3,
+    "tags": [
+      "magic"
+    ]
+  }
+]

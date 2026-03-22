@@ -6,22 +6,7 @@ import test from 'node:test'
 const root = process.cwd()
 
 function parseEntries(source) {
-  const entries = []
-  const pattern = /\['([^']+)', '([^']+)', (\d+), (\d+), (\d+), \[([^\]]*)\]\]/g
-
-  for (const match of source.matchAll(pattern)) {
-    const [, word, enunciationText, ageBandMin, ageBandMax, difficulty, rawTags] = match
-    entries.push({
-      word,
-      enunciationText,
-      ageBandMin: Number(ageBandMin),
-      ageBandMax: Number(ageBandMax),
-      difficulty: Number(difficulty),
-      tags: [...rawTags.matchAll(/'([^']+)'/g)].map(tagMatch => tagMatch[1])
-    })
-  }
-
-  return entries
+  return JSON.parse(source)
 }
 
 function normalizeLetters(value) {
@@ -29,7 +14,7 @@ function normalizeLetters(value) {
 }
 
 test('word catalog keeps unique ids and expected band counts', async () => {
-  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const words = entries.map(entry => entry.word)
   const uniqueWords = new Set(words)
@@ -47,7 +32,7 @@ test('word catalog keeps unique ids and expected band counts', async () => {
 })
 
 test('word catalog stays alphabetized within each age band and uses valid enunciation text', async () => {
-  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const groups = new Map()
 
@@ -66,7 +51,7 @@ test('word catalog stays alphabetized within each age band and uses valid enunci
 })
 
 test('new lower-band words use unique entries with valid normalized enunciation text', async () => {
-  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const addedWords = [
     'acorn', 'bear', 'bee', 'block', 'bread', 'broom', 'brush', 'bug', 'bus', 'clock',
@@ -94,7 +79,7 @@ test('new lower-band words use unique entries with valid normalized enunciation 
 })
 
 test('latest batch adds 100 unique words with only 10 in the upper band', async () => {
-  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const addedWords = [
     'ankle', 'apron', 'badge', 'barn', 'berry', 'boots', 'bottle', 'bunny', 'cabin', 'cactus',
@@ -132,7 +117,7 @@ test('latest batch adds 100 unique words with only 10 in the upper band', async 
 })
 
 test('everyday sentence-building words are present in the catalog', async () => {
-  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const addedWords = [
     'a', 'all', 'am', 'an', 'and', 'are', 'as', 'at', 'be', 'been', 'but', 'by',
