@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "npm run build && node --test tests/**/*.test.mjs"
   },
   "dependencies": {
     "nuxt": "^4.4.2",
