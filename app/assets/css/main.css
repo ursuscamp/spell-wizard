@@ -331,7 +331,8 @@ button {
 }
 
 .field input,
-.field textarea {
+.field textarea,
+.field select {
   width: 100%;
   padding: 0.85rem 1rem;
   border: 1px solid rgba(33, 64, 88, 0.12);
@@ -341,6 +342,7 @@ button {
 
 .field input:focus,
 .field textarea:focus,
+.field select:focus,
 .button:focus-visible,
 .button-secondary:focus-visible,
 .button-ghost:focus-visible,
@@ -453,6 +455,30 @@ button {
   text-transform: uppercase;
 }
 
+.admin-toolbar {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 0.9fr);
+  align-items: end;
+}
+
+.admin-tts-tester {
+  display: grid;
+  gap: 1rem;
+  padding: 1.15rem;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(78, 182, 232, 0.12), rgba(255, 255, 255, 0.86));
+  border: 1px solid rgba(33, 64, 88, 0.08);
+}
+
+.admin-tts-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+  justify-content: space-between;
+}
+
 .admin-word-list {
   display: grid;
   gap: 0.9rem;
@@ -514,8 +540,28 @@ button {
   font-weight: 700;
 }
 
+.admin-chip-review {
+  background: rgba(238, 160, 79, 0.18);
+  color: #8c4f0f;
+}
+
+.admin-chip-unreviewed {
+  background: rgba(33, 64, 88, 0.1);
+  color: #4b5e6f;
+}
+
+.admin-chip-normal {
+  background: rgba(122, 198, 122, 0.18);
+  color: #2d6d2d;
+}
+
 .admin-search {
   font-size: 1rem;
+}
+
+.admin-select,
+.admin-tts-input {
+  font: inherit;
 }
 
 .admin-error-card {
@@ -558,6 +604,10 @@ button {
   }
 
   .admin-word-main {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-toolbar {
     grid-template-columns: 1fr;
   }
 

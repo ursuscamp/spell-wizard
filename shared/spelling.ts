@@ -1,4 +1,5 @@
 export type RewardType = 'level-up' | 'rank-up'
+export type WordReviewStatus = 'unreviewed' | 'needs-review' | 'reviewed'
 
 export interface WordCatalogEntry {
   id: string
@@ -21,6 +22,13 @@ export interface AdminWordReviewEntry {
   ageBandMin: number
   ageBandMax: number
   tags: string[]
+  reviewStatus: WordReviewStatus
+}
+
+export interface WordReviewFlag {
+  wordId: string
+  status: Exclude<WordReviewStatus, 'unreviewed'>
+  updatedAt: string
 }
 
 export interface Profile {
@@ -91,6 +99,7 @@ export interface DatabaseShape {
   profiles: Profile[]
   rewards: RewardEvent[]
   wordProgress: WordProgress[]
+  wordReviewFlags: WordReviewFlag[]
   sessions: SessionRecord[]
 }
 

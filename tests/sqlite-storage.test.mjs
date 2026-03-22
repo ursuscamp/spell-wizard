@@ -88,9 +88,10 @@ test('bootstraps sqlite schema on first server access', async () => {
       'session_prompt_history',
       'sessions',
       'storage_meta',
-      'word_progress'
+      'word_progress',
+      'word_review_flags'
     ])
-    assert.equal(version.value, '1')
+    assert.equal(version.value, '3')
     db.close()
   }
   finally {
@@ -212,6 +213,7 @@ test('admin words endpoint is read-only and exposes review metadata', async () =
     assert.equal(typeof words.body[0].difficulty, 'number')
     assert.equal(Array.isArray(words.body[0].tags), true)
     assert.equal(typeof words.body[0].enunciationText, 'string')
+    assert.equal(words.body[0].reviewStatus, 'unreviewed')
     assert.equal('canEnunciate' in words.body[0], false)
 
     const oneSyllableWord = words.body.find(entry => entry.word === 'blue')
@@ -219,6 +221,39 @@ test('admin words endpoint is read-only and exposes review metadata', async () =
 
     assert.equal(oneSyllableWord.enunciationText, 'blue')
     assert.equal(multiSyllableWord.enunciationText, 'ro...bot')
+
+    const flagged = await requestJson(context.baseUrl, `/api/admin/words/${multiSyllableWord.id}/review`, {
+      method: 'PATCH',
+      body: JSON.stringify({ reviewStatus: 'needs-review' })
+    })
+    assert.equal(flagged.response.status, 200)
+    assert.deepEqual(flagged.body, { wordId: multiSyllableWord.id, reviewStatus: 'needs-review' })
+
+    const afterFlag = await requestJson(context.baseUrl, '/api/admin/words')
+    const flaggedWord = afterFlag.body.find(entry => entry.id === multiSyllableWord.id)
+    assert.equal(flaggedWord.reviewStatus, 'needs-review')
+
+    const cleared = await requestJson(context.baseUrl, '/api/admin/words/reviewed', {
+      method: 'POST',
+      body: JSON.stringify({})
+    })
+    assert.equal(cleared.response.status, 200)
+    assert.deepEqual(cleared.body, { updatedCount: 1 })
+
+    const afterClear = await requestJson(context.baseUrl, '/api/admin/words')
+    const clearedWord = afterClear.body.find(entry => entry.id === multiSyllableWord.id)
+    assert.equal(clearedWord.reviewStatus, 'reviewed')
+
+    const reviewed = await requestJson(context.baseUrl, `/api/admin/words/${oneSyllableWord.id}/review`, {
+      method: 'PATCH',
+      body: JSON.stringify({ reviewStatus: 'reviewed' })
+    })
+    assert.equal(reviewed.response.status, 200)
+    assert.deepEqual(reviewed.body, { wordId: oneSyllableWord.id, reviewStatus: 'reviewed' })
+
+    const afterReviewed = await requestJson(context.baseUrl, '/api/admin/words')
+    const reviewedWord = afterReviewed.body.find(entry => entry.id === oneSyllableWord.id)
+    assert.equal(reviewedWord.reviewStatus, 'reviewed')
 
     const after = await requestJson(context.baseUrl, '/api/profiles')
     assert.equal(after.response.status, 200)
@@ -229,11 +264,15 @@ test('admin words endpoint is read-only and exposes review metadata', async () =
     const sessionCount = db.prepare('SELECT COUNT(*) AS count FROM sessions').get().count
     const rewardCount = db.prepare('SELECT COUNT(*) AS count FROM rewards').get().count
     const progressCount = db.prepare('SELECT COUNT(*) AS count FROM word_progress').get().count
+    const reviewFlagCount = db.prepare('SELECT COUNT(*) AS count FROM word_review_flags').get().count
+    const reviewedStatusCount = db.prepare("SELECT COUNT(*) AS count FROM word_review_flags WHERE status = 'reviewed'").get().count
 
     assert.equal(profileCount, 0)
     assert.equal(sessionCount, 0)
     assert.equal(rewardCount, 0)
     assert.equal(progressCount, 0)
+    assert.equal(reviewFlagCount, 2)
+    assert.equal(reviewedStatusCount, 2)
     db.close()
   }
   finally {

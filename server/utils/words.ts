@@ -1,5 +1,5 @@
 import { hasValidEnunciation, WORD_CATALOG } from '../../shared/word-catalog'
-import type { AdminWordReviewEntry, WordCatalogEntry, WordProgress } from '../../shared/spelling'
+import type { AdminWordReviewEntry, WordCatalogEntry, WordProgress, WordReviewStatus } from '../../shared/spelling'
 
 export function getAgeFromBirthdate(birthdate: string) {
   const now = new Date()
@@ -31,7 +31,7 @@ export function canEnunciateWord(entry?: WordCatalogEntry | null) {
   return Boolean(entry && entry.enunciationText && hasValidEnunciation(entry))
 }
 
-export function buildAdminWordReviewEntry(entry: WordCatalogEntry): AdminWordReviewEntry {
+export function buildAdminWordReviewEntry(entry: WordCatalogEntry, reviewStatus: WordReviewStatus = 'unreviewed'): AdminWordReviewEntry {
   return {
     id: entry.id,
     word: entry.word,
@@ -40,7 +40,8 @@ export function buildAdminWordReviewEntry(entry: WordCatalogEntry): AdminWordRev
     difficulty: entry.difficulty,
     ageBandMin: entry.ageBandMin,
     ageBandMax: entry.ageBandMax,
-    tags: [...entry.tags]
+    tags: [...entry.tags],
+    reviewStatus
   }
 }
 

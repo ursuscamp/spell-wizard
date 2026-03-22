@@ -2,7 +2,7 @@ import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 
-const DB_VERSION = 1
+const DB_VERSION = 3
 const DEFAULT_DATABASE_PATH = '.data/spelling-wizard.sqlite'
 const LEVEL_POINT_THRESHOLD = 100
 const LEVEL_REWARD_ROBUX = 100
@@ -229,6 +229,12 @@ function applySchema(db) {
       FOREIGN KEY (profile_id) REFERENCES profiles(id) ON DELETE CASCADE
     );
 
+    CREATE TABLE IF NOT EXISTS word_review_flags (
+      word_id TEXT PRIMARY KEY,
+      status TEXT NOT NULL,
+      updated_at TEXT NOT NULL
+    );
+
     CREATE TABLE IF NOT EXISTS sessions (
       id TEXT PRIMARY KEY,
       profile_id TEXT NOT NULL,
@@ -281,6 +287,7 @@ function clearAllData(db) {
     db.exec(`
       DELETE FROM session_prompt_history;
       DELETE FROM sessions;
+      DELETE FROM word_review_flags;
       DELETE FROM rewards;
       DELETE FROM word_progress;
       DELETE FROM profiles;

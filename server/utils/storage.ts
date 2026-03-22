@@ -1,9 +1,9 @@
 import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
-import type { DatabaseShape, Profile, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress } from '../../shared/spelling'
+import type { DatabaseShape, Profile, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress, WordReviewFlag } from '../../shared/spelling'
 
-const DB_VERSION = 1
+const DB_VERSION = 3
 
 let connection: DatabaseSync | undefined
 let connectionPath: string | undefined
@@ -44,6 +44,7 @@ const defaultDatabase = (): DatabaseShape => ({
   profiles: [],
   rewards: [],
   wordProgress: [],
+  wordReviewFlags: [],
   sessions: []
 })
 
@@ -224,6 +225,59 @@ function applyMigrations(db: DatabaseSync, config: StorageConfig) {
       console.info(`[storage] initialized sqlite schema v${DB_VERSION} at ${config.databasePath}`)
     }
   }
+
+  if (version < 2) {
+    db.exec(`
+      CREATE TABLE IF NOT EXISTS word_review_flags (
+        word_id TEXT PRIMARY KEY,
+        status TEXT NOT NULL DEFAULT 'needs-review',
+        updated_at TEXT NOT NULL
+      );
+    `)
+
+    db.prepare(`
+      INSERT INTO storage_meta (key, value)
+      VALUES (?, ?)
+      ON CONFLICT(key) DO UPDATE SET value = excluded.value
+    `).run('schema_version', String(DB_VERSION))
+
+    if (config.debugLogging) {
+      console.info(`[storage] migrated sqlite schema v${DB_VERSION} at ${config.databasePath}`)
+    }
+  }
+
+  if (version < 3) {
+    const columns = db.prepare('PRAGMA table_info(word_review_flags)').all() as Array<Record<string, unknown>>
+    const hasStatusColumn = columns.some(column => String(column.name) === 'status')
+
+    if (!hasStatusColumn) {
+      db.exec(`
+        ALTER TABLE word_review_flags RENAME TO word_review_flags_legacy;
+
+        CREATE TABLE word_review_flags (
+          word_id TEXT PRIMARY KEY,
+          status TEXT NOT NULL,
+          updated_at TEXT NOT NULL
+        );
+
+        INSERT INTO word_review_flags (word_id, status, updated_at)
+        SELECT word_id, 'needs-review', updated_at
+        FROM word_review_flags_legacy;
+
+        DROP TABLE word_review_flags_legacy;
+      `)
+    }
+
+    db.prepare(`
+      INSERT INTO storage_meta (key, value)
+      VALUES (?, ?)
+      ON CONFLICT(key) DO UPDATE SET value = excluded.value
+    `).run('schema_version', String(DB_VERSION))
+
+    if (config.debugLogging) {
+      console.info(`[storage] migrated sqlite schema v${DB_VERSION} at ${config.databasePath}`)
+    }
+  }
 }
 
 function loadDatabase(db: DatabaseSync): DatabaseShape {
@@ -245,6 +299,12 @@ function loadDatabase(db: DatabaseSync): DatabaseShape {
     SELECT profile_id, word_id, mastery_score, adaptive_weight, last_seen_at, times_prompted, times_correct, average_attempt_index, recent_misses, recent_successes
     FROM word_progress
   `).all().map(row => mapWordProgressRow(row as Record<string, unknown>))
+
+  state.wordReviewFlags = db.prepare(`
+    SELECT word_id, status, updated_at
+    FROM word_review_flags
+    ORDER BY updated_at DESC
+  `).all().map(row => mapWordReviewFlagRow(row as Record<string, unknown>))
 
   const promptHistoryRows = db.prepare(`
     SELECT session_id, sequence, word_id, attempts_json, completed_at, was_correct, awarded_points, correction_required, correction_completed
@@ -298,6 +358,7 @@ function loadDatabase(db: DatabaseSync): DatabaseShape {
 
 function persistDatabase(db: DatabaseSync, state: DatabaseShape) {
   db.exec(`
+    DELETE FROM word_review_flags;
     DELETE FROM session_prompt_history;
     DELETE FROM sessions;
     DELETE FROM rewards;
@@ -355,6 +416,18 @@ function persistDatabase(db: DatabaseSync, state: DatabaseShape) {
       entry.averageAttemptIndex,
       entry.recentMisses,
       entry.recentSuccesses
+    )
+  }
+
+  const insertWordReviewFlag = db.prepare(`
+    INSERT INTO word_review_flags (word_id, status, updated_at)
+    VALUES (?, ?, ?)
+  `)
+  for (const entry of state.wordReviewFlags) {
+    insertWordReviewFlag.run(
+      entry.wordId,
+      entry.status,
+      entry.updatedAt
     )
   }
 
@@ -483,6 +556,14 @@ function mapWordProgressRow(row: Record<string, unknown>): WordProgress {
     averageAttemptIndex: Number(row.average_attempt_index),
     recentMisses: Number(row.recent_misses),
     recentSuccesses: Number(row.recent_successes)
+  }
+}
+
+function mapWordReviewFlagRow(row: Record<string, unknown>): WordReviewFlag {
+  return {
+    wordId: String(row.word_id),
+    status: row.status === 'reviewed' ? 'reviewed' : 'needs-review',
+    updatedAt: String(row.updated_at)
   }
 }
 
