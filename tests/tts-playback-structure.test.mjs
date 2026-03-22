@@ -13,6 +13,17 @@ test('session page uses a single automatic TTS trigger path', async () => {
   assert.match(source, /@click="replayWord\(\{ interrupt: true \}\)"/)
 })
 
+test('session page reveals matching letters inside a masked prompt', async () => {
+  const source = await readFile(join(root, 'app/pages/profile/[id]/session.vue'), 'utf8')
+
+  assert.match(source, /const revealedLetters = ref<string\[]>\(\[\]\)/)
+  assert.match(source, /const maskedPrompt = computed\(\(\) => \{[\s\S]*\.map\(letter => revealed\.has\(letter\) \? letter : '_'\)[\s\S]*\.join\(' '\)/)
+  assert.match(source, /const wasCorrectionSubmission = session\.value\.correctionRequired/)
+  assert.match(source, /if \(!wasCorrectionSubmission && matchedLetters\.length\) \{[\s\S]*revealedLetters\.value = \[\.\.\.new Set\(\[\.\.\.revealedLetters\.value, \.\.\.matchedLetters\]\)\]/)
+  assert.match(source, /watch\(\(\) => session\.value\?\.currentPrompt\.wordId,[\s\S]*revealedLetters\.value = \[\]/)
+  assert.match(source, /\{\{ visiblePrompt \|\| '_ _ _' \}\}/)
+})
+
 test('prompt voice composable only cancels speech for explicit replays', async () => {
   const source = await readFile(join(root, 'app/composables/usePromptVoice.ts'), 'utf8')
 

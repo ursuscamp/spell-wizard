@@ -24,16 +24,24 @@ const currentEntry = computed(() => WORD_CATALOG.find(word => word.id === sessio
 const currentWord = computed(() => currentEntry.value?.word)
 const currentEnunciation = computed(() => currentEntry.value?.enunciationText)
 const canEnunciate = computed(() => Boolean(currentEntry.value && hasValidEnunciation(currentEntry.value)))
+const revealedLetters = ref<string[]>([])
+const maskedPrompt = computed(() => {
+  if (!currentWord.value) {
+    return undefined
+  }
+
+  const revealed = new Set(revealedLetters.value)
+  return currentWord.value
+    .split('')
+    .map(letter => revealed.has(letter) ? letter : '_')
+    .join(' ')
+})
 const visiblePrompt = computed(() => {
   if (session.value?.correctionRequired) {
     return session.value.currentPrompt.visibleWord
   }
 
-  if (!voiceEnabled.value || !speechSupported.value) {
-    return currentWord.value
-  }
-
-  return undefined
+  return maskedPrompt.value
 })
 
 async function startSession() {
@@ -92,6 +100,14 @@ async function submitAnswer() {
     return
   }
 
+  const wasCorrectionSubmission = session.value.correctionRequired
+  const submittedAnswer = answer.value
+  const guessedLetters = new Set(submittedAnswer.trim().toLowerCase().replace(/[^a-z]/g, '').split(''))
+  const matchedLetters = currentWord.value
+    ?.split('')
+    .filter(letter => guessedLetters.has(letter))
+    ?? []
+
   loading.value = true
   const endpoint = session.value.correctionRequired
     ? `/api/sessions/${session.value.sessionId}/correction`
@@ -109,6 +125,10 @@ async function submitAnswer() {
     : response.status === 'correction-required'
       ? 'error'
       : 'warning'
+
+  if (!wasCorrectionSubmission && matchedLetters.length) {
+    revealedLetters.value = [...new Set([...revealedLetters.value, ...matchedLetters])]
+  }
 
   if (response.status === 'correct' || response.status === 'correction-complete') {
     celebrate('correct')
@@ -139,6 +159,7 @@ async function endCurrentSession() {
 
 watch(() => session.value?.currentPrompt.wordId, async (wordId) => {
   if (wordId) {
+    revealedLetters.value = []
     await nextTick()
     replayWord({ interrupt: false })
   }
@@ -171,9 +192,9 @@ await startSession()
       <article class="session-card">
         <div class="badge">{{ session.currentPrompt.hint }}</div>
         <h2 class="prompt-word" style="margin-top: 1rem;">
-          {{ visiblePrompt || 'Listen and spell' }}
+          {{ visiblePrompt || '_ _ _' }}
         </h2>
-        <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : (!voiceEnabled || !speechSupported) ? 'Voice playback is off, so the word is shown on screen.' : canEnunciate ? 'Use the keyboard to spell the word you hear, or tap enunciate for extra-clear speech.' : 'Use the keyboard to spell the word you hear.' }}</p>
+        <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : canEnunciate ? 'Each guess reveals any matching letters in the word, even if they are not in the right place yet. You can also tap enunciate for extra-clear speech.' : 'Each guess reveals any matching letters in the word, even if they are not in the right place yet.' }}</p>
 
         <div class="stats-grid" style="margin: 1rem 0;">
           <div class="stat-card">
