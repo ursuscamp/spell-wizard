@@ -9,11 +9,13 @@ test('word catalog entries store explicit enunciation text and validation helper
   const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
 
   assert.match(source, /export function normalizeEnunciationText\(value: string\)/)
+  assert.match(source, /export function estimateSyllableCount\(word: string\)/)
+  assert.match(source, /export function shouldUseCanonicalEnunciation\(word: string\)/)
   assert.match(source, /export function hasValidEnunciation\(entry: Pick<WordCatalogEntry, 'word' \| 'normalizedWord' \| 'enunciationText'>\)/)
   assert.match(source, /\['corner', 'kor\.\.\.ner', 7, 9, 2, \['position'\]\]/)
   assert.match(source, /\['robot', 'row\.\.\.bot', 5, 7, 1, \['play'\]\]/)
   assert.match(source, /entries\.map\(\(\[word, enunciationText, ageBandMin, ageBandMax, difficulty, tags\]\) => \(\{/)
-  assert.match(source, /enunciationText,/)
+  assert.match(source, /enunciationText: shouldUseCanonicalEnunciation\(word\) \? word : enunciationText,/)
 })
 
 test('word catalog entry type includes enunciation text', async () => {

@@ -159,6 +159,7 @@ button {
 
 .profile-grid,
 .stats-grid,
+.admin-overview,
 .history-grid,
 .session-grid,
 .session-flow {
@@ -172,6 +173,10 @@ button {
 
 .stats-grid {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.admin-overview {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .history-grid {
@@ -375,6 +380,95 @@ button {
   border-top: 1px solid rgba(33, 64, 88, 0.1);
 }
 
+.admin-words-page {
+  padding-bottom: 4rem;
+}
+
+.admin-hero {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.3fr 0.9fr;
+  align-items: end;
+}
+
+.admin-list-summary {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.admin-word-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.admin-word-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.15rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(33, 64, 88, 0.08);
+}
+
+.admin-word-main,
+.admin-word-details {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.admin-word-main {
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+.admin-word-details {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.admin-word-title,
+.admin-preview-text {
+  margin: 0;
+}
+
+.admin-word-title {
+  font-size: 1.35rem;
+}
+
+.admin-preview-text {
+  margin-top: 0.3rem;
+  font-weight: 700;
+}
+
+.admin-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem;
+}
+
+.admin-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(78, 182, 232, 0.12);
+  color: var(--blue-deep);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.admin-search {
+  font-size: 1rem;
+}
+
+.admin-error-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
 .list {
   display: grid;
   gap: 0.8rem;
@@ -399,10 +493,19 @@ button {
 @media (max-width: 820px) {
   .hero-layout,
   .header-layout,
+  .admin-hero,
   .history-grid,
   .session-grid,
   .session-flow {
     grid-template-columns: 1fr;
+  }
+
+  .admin-word-main {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-meta-row {
+    justify-content: flex-start;
   }
 
   .session-flow {

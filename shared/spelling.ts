@@ -11,6 +11,16 @@ export interface WordCatalogEntry {
   tags: string[]
 }
 
+export interface AdminWordReviewEntry {
+  id: string
+  word: string
+  enunciationText: string
+  difficulty: number
+  ageBandMin: number
+  ageBandMax: number
+  tags: string[]
+}
+
 export interface Profile {
   id: string
   name: string

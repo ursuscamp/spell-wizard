@@ -196,3 +196,47 @@ test('persists profile and session flows in sqlite', async () => {
     await context.cleanup()
   }
 })
+
+test('admin words endpoint is read-only and exposes review metadata', async () => {
+  const context = await createTestContext()
+
+  try {
+    const before = await requestJson(context.baseUrl, '/api/profiles')
+    assert.equal(before.response.status, 200)
+    assert.deepEqual(before.body, [])
+
+    const words = await requestJson(context.baseUrl, '/api/admin/words')
+    assert.equal(words.response.status, 200)
+    assert.ok(words.body.length > 0)
+    assert.equal(words.body[0].id, words.body[0].word)
+    assert.equal(typeof words.body[0].difficulty, 'number')
+    assert.equal(Array.isArray(words.body[0].tags), true)
+    assert.equal(typeof words.body[0].enunciationText, 'string')
+    assert.equal('canEnunciate' in words.body[0], false)
+
+    const oneSyllableWord = words.body.find(entry => entry.word === 'blue')
+    const multiSyllableWord = words.body.find(entry => entry.word === 'robot')
+
+    assert.equal(oneSyllableWord.enunciationText, 'blue')
+    assert.equal(multiSyllableWord.enunciationText, 'row...bot')
+
+    const after = await requestJson(context.baseUrl, '/api/profiles')
+    assert.equal(after.response.status, 200)
+    assert.deepEqual(after.body, [])
+
+    const db = new DatabaseSync(context.databasePath)
+    const profileCount = db.prepare('SELECT COUNT(*) AS count FROM profiles').get().count
+    const sessionCount = db.prepare('SELECT COUNT(*) AS count FROM sessions').get().count
+    const rewardCount = db.prepare('SELECT COUNT(*) AS count FROM rewards').get().count
+    const progressCount = db.prepare('SELECT COUNT(*) AS count FROM word_progress').get().count
+
+    assert.equal(profileCount, 0)
+    assert.equal(sessionCount, 0)
+    assert.equal(rewardCount, 0)
+    assert.equal(progressCount, 0)
+    db.close()
+  }
+  finally {
+    await context.cleanup()
+  }
+})
