@@ -39,11 +39,30 @@ test('word catalog keeps unique ids and expected band counts', async () => {
     return counts
   }, new Map())
 
-  assert.equal(entries.length, 294)
+  assert.equal(entries.length, 394)
   assert.equal(uniqueWords.size, entries.length)
-  assert.equal(bandCounts.get('5-7-1'), 119)
-  assert.equal(bandCounts.get('7-9-2'), 116)
-  assert.equal(bandCounts.get('9-12-3'), 59)
+  assert.equal(bandCounts.get('5-7-1'), 164)
+  assert.equal(bandCounts.get('7-9-2'), 161)
+  assert.equal(bandCounts.get('9-12-3'), 69)
+})
+
+test('word catalog stays alphabetized within each age band and uses valid enunciation text', async () => {
+  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const entries = parseEntries(source)
+  const groups = new Map()
+
+  for (const entry of entries) {
+    assert.equal(normalizeLetters(entry.enunciationText), entry.word)
+
+    const key = `${entry.ageBandMin}-${entry.ageBandMax}-${entry.difficulty}`
+    const group = groups.get(key) ?? []
+    group.push(entry.word)
+    groups.set(key, group)
+  }
+
+  for (const words of groups.values()) {
+    assert.deepEqual(words, [...words].sort())
+  }
 })
 
 test('new lower-band words use unique entries with valid normalized enunciation text', async () => {
@@ -72,4 +91,42 @@ test('new lower-band words use unique entries with valid normalized enunciation 
     assert.ok(entry.ageBandMax <= 9, `${word} should stay in the lower two bands`)
     assert.ok(entry.tags.length > 0, `${word} should include at least one tag`)
   }
+})
+
+test('latest batch adds 100 unique words with only 10 in the upper band', async () => {
+  const source = await readFile(join(root, 'shared/word-catalog.ts'), 'utf8')
+  const entries = parseEntries(source)
+  const addedWords = [
+    'ankle', 'apron', 'badge', 'barn', 'berry', 'boots', 'bottle', 'bunny', 'cabin', 'cactus',
+    'candy', 'cheese', 'chick', 'chimney', 'clown', 'cookie', 'cottage', 'cow', 'crayon', 'crown',
+    'desk', 'donkey', 'eagle', 'earth', 'egg', 'elbow', 'engine', 'fence', 'field', 'fire',
+    'flashlight', 'ghost', 'honey', 'igloo', 'insect', 'jelly', 'koala', 'lizard', 'lunch', 'mirror',
+    'nail', 'notebook', 'owl', 'pancake', 'parrot', 'artist', 'baboon', 'bedroom', 'birthday', 'blossom',
+    'cartoon', 'cheetah', 'chicken', 'cupcake', 'curtain', 'daisy', 'desert', 'doctor', 'drawer', 'drizzle',
+    'fairy', 'fever', 'flamingo', 'ginger', 'giraffe', 'guitar', 'harbor', 'holiday', 'jigsaw', 'kangaroo',
+    'ketchup', 'ladybug', 'laundry', 'mailbox', 'mascot', 'misty', 'otter', 'pumpkin', 'raincoat', 'rowboat',
+    'seesaw', 'shiny', 'teapot', 'teaspoon', 'trombone', 'volcano', 'walrus', 'willow', 'yogurt', 'zipper',
+    'astronaut', 'avalanche', 'binoculars', 'dinosaur', 'equation', 'geography', 'horizon', 'microscope', 'president', 'volunteer'
+  ]
+
+  assert.equal(new Set(addedWords).size, 100)
+
+  let upperBandCount = 0
+
+  for (const word of addedWords) {
+    const entry = entries.find(candidate => candidate.word === word)
+
+    assert.ok(entry, `expected catalog entry for ${word}`)
+    assert.equal(normalizeLetters(entry.enunciationText), word)
+    assert.ok(entry.tags.length > 0, `${word} should include at least one tag`)
+
+    if (entry.ageBandMax === 12) {
+      upperBandCount += 1
+    }
+    else {
+      assert.ok(entry.ageBandMax <= 9, `${word} should stay in the lower two bands unless selected for the upper band`)
+    }
+  }
+
+  assert.equal(upperBandCount, 10)
 })

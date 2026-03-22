@@ -218,7 +218,7 @@ test('admin words endpoint is read-only and exposes review metadata', async () =
     const multiSyllableWord = words.body.find(entry => entry.word === 'robot')
 
     assert.equal(oneSyllableWord.enunciationText, 'blue')
-    assert.equal(multiSyllableWord.enunciationText, 'row...bot')
+    assert.equal(multiSyllableWord.enunciationText, 'ro...bot')
 
     const after = await requestJson(context.baseUrl, '/api/profiles')
     assert.equal(after.response.status, 200)
