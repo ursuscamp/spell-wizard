@@ -13,6 +13,10 @@ function normalizeLetters(value) {
   return value.toLowerCase().replace(/[^a-z]/g, '')
 }
 
+function tokenizeWords(value) {
+  return value.toLowerCase().split(/[^a-z]+/).filter(Boolean)
+}
+
 test('word catalog keeps unique ids and expected band counts', async () => {
   const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
@@ -38,6 +42,9 @@ test('word catalog stays alphabetized within each age band and uses valid enunci
 
   for (const entry of entries) {
     assert.equal(normalizeLetters(entry.enunciationText), entry.word)
+    assert.equal(typeof entry.exampleSentence, 'string')
+    assert.notEqual(entry.exampleSentence.trim(), '')
+    assert.ok(tokenizeWords(entry.exampleSentence).includes(entry.word), `${entry.word} should appear in its example sentence`)
 
     const key = `${entry.ageBandMin}-${entry.ageBandMax}-${entry.difficulty}`
     const group = groups.get(key) ?? []

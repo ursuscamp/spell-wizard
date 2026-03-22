@@ -4,6 +4,7 @@ import type { WordCatalogEntry } from './spelling'
 interface RawWordCatalogEntry {
   word: string
   enunciationText: string
+  exampleSentence: string
   ageBandMin: number
   ageBandMax: number
   difficulty: number
@@ -48,6 +49,7 @@ export const WORD_CATALOG: WordCatalogEntry[] = entries.map((entry) => ({
   word: entry.word,
   normalizedWord: entry.word.toLowerCase(),
   enunciationText: shouldUseCanonicalEnunciation(entry.word) ? entry.word : entry.enunciationText,
+  exampleSentence: entry.exampleSentence,
   ageBandMin: entry.ageBandMin,
   ageBandMax: entry.ageBandMax,
   difficulty: entry.difficulty,

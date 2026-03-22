@@ -15,6 +15,7 @@ const feedbackTone = ref<'success' | 'warning' | 'error' | 'info'>('info')
 const rewards = ref<AttemptResponse['rewards']>([])
 const loading = ref(false)
 const sessionEnded = ref(false)
+const sentenceTooltipVisible = ref(false)
 
 const { celebrate } = useFunEffects()
 const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
@@ -23,7 +24,22 @@ const appConfig = useAppConfig()
 const currentEntry = computed(() => WORD_CATALOG.find(word => word.id === session.value?.currentPrompt.wordId))
 const currentWord = computed(() => currentEntry.value?.word)
 const currentEnunciation = computed(() => currentEntry.value?.enunciationText)
+const currentExampleSentence = computed(() => currentEntry.value?.exampleSentence)
 const canEnunciate = computed(() => Boolean(currentEntry.value && hasValidEnunciation(currentEntry.value)))
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function maskWordInSentence(sentence?: string, word?: string) {
+  if (!sentence || !word) {
+    return undefined
+  }
+
+  return sentence.replace(new RegExp(`\\b${escapeRegExp(word)}\\b`, 'gi'), '_____')
+}
+
+const maskedExampleSentence = computed(() => maskWordInSentence(currentExampleSentence.value, currentWord.value))
 const revealedLetters = ref<string[]>([])
 const maskedPrompt = computed(() => {
   if (!currentWord.value) {
@@ -86,6 +102,24 @@ async function enunciateWord() {
     mode: 'enunciate',
     fallbackWord: canFallbackToStandard ? currentWord.value : undefined
   })
+}
+
+async function playExampleSentence() {
+  if (!voiceEnabled.value || !currentExampleSentence.value) {
+    return
+  }
+
+  sentenceTooltipVisible.value = true
+
+  try {
+    await speakWord(currentExampleSentence.value, {
+      interrupt: true,
+      mode: 'standard'
+    })
+  }
+  finally {
+    sentenceTooltipVisible.value = false
+  }
 }
 
 function handleRewards(emittedRewards: AttemptResponse['rewards']) {
@@ -176,12 +210,13 @@ await startSession()
         <h1 class="hero-title" style="margin-top: 1rem;">{{ profile.name }}'s spelling session</h1>
         <p class="hero-subtitle">Hear the word, type your answer, and keep going for as many words as you want.</p>
       </div>
-      <div class="button-row">
-        <button class="button-secondary" type="button" @click="replayWord({ interrupt: true })">Read word aloud</button>
-        <button class="button-secondary" type="button" :disabled="loading || !voiceEnabled || !speechSupported" @click="enunciateWord">Enunciate word</button>
-        <button class="button-ghost" type="button" @click="endCurrentSession">Finish session</button>
-      </div>
-    </section>
+        <div class="button-row">
+          <button class="button-secondary" type="button" @click="replayWord({ interrupt: true })">Read word aloud</button>
+          <button class="button-secondary" type="button" :disabled="loading || !voiceEnabled || !speechSupported" @click="enunciateWord">Enunciate word</button>
+          <button class="button-secondary" type="button" :disabled="loading || !voiceEnabled || !speechSupported || !currentExampleSentence" @click="playExampleSentence">Read sentence aloud</button>
+          <button class="button-ghost" type="button" @click="endCurrentSession">Finish session</button>
+        </div>
+      </section>
 
     <div v-if="sessionEnded" class="panel">
       <p class="feedback success">Session saved to your household server.</p>
@@ -194,6 +229,13 @@ await startSession()
         <h2 class="prompt-word" style="margin-top: 1rem;">
           {{ visiblePrompt || '_ _ _' }}
         </h2>
+        <div v-if="maskedExampleSentence" class="sentence-hint-row">
+          <div :class="['sentence-tooltip', { 'sentence-tooltip-visible': sentenceTooltipVisible }]">
+            <div class="sentence-tooltip-panel tiny" role="status" aria-live="polite">
+              {{ maskedExampleSentence }}
+            </div>
+          </div>
+        </div>
         <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : canEnunciate ? 'Each guess reveals any matching letters in the word, even if they are not in the right place yet. You can also tap enunciate for extra-clear speech.' : 'Each guess reveals any matching letters in the word, even if they are not in the right place yet.' }}</p>
 
         <div class="stats-grid" style="margin: 1rem 0;">
@@ -221,6 +263,7 @@ await startSession()
             <button class="button-secondary" :disabled="loading" type="submit">{{ session.correctionRequired ? 'Lock in correction' : 'Submit spelling' }}</button>
             <button class="button-ghost" :disabled="loading" type="button" @click="replayWord({ interrupt: true })">Hear it again</button>
             <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported" type="button" @click="enunciateWord">Enunciate</button>
+            <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported || !currentExampleSentence" type="button" @click="playExampleSentence">Read sentence</button>
           </div>
         </form>
 

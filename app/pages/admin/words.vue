@@ -15,6 +15,7 @@ function filterAdminWords(entries: AdminWordReviewEntry[], query: string) {
     const searchableText = [
       entry.word,
       entry.enunciationText,
+      entry.exampleSentence,
       entry.tags.join(' '),
       `difficulty ${entry.difficulty}`,
       `ages ${entry.ageBandMin}-${entry.ageBandMax}`
@@ -161,6 +162,10 @@ async function playAdminWord(entry: AdminWordReviewEntry, mode: PlaybackMode) {
               <div>
                 <span class="tiny muted">Enunciation</span>
                 <p class="admin-preview-text">{{ entry.enunciationText }}</p>
+              </div>
+              <div>
+                <span class="tiny muted">Example sentence</span>
+                <p class="admin-preview-text">{{ entry.exampleSentence }}</p>
               </div>
               <div>
                 <span class="tiny muted">Mode</span>

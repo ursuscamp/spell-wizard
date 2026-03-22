@@ -36,6 +36,7 @@ export function buildAdminWordReviewEntry(entry: WordCatalogEntry): AdminWordRev
     id: entry.id,
     word: entry.word,
     enunciationText: entry.enunciationText,
+    exampleSentence: entry.exampleSentence,
     difficulty: entry.difficulty,
     ageBandMin: entry.ageBandMin,
     ageBandMax: entry.ageBandMax,

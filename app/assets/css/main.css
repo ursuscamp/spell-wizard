@@ -371,6 +371,34 @@ button {
   margin: 0;
 }
 
+.sentence-hint-row {
+  margin-top: 0.9rem;
+}
+
+.sentence-tooltip {
+  position: relative;
+  display: block;
+}
+
+.sentence-tooltip-panel {
+  width: min(28rem, 100%);
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  background: rgba(33, 64, 88, 0.94);
+  color: white;
+  box-shadow: 0 18px 34px rgba(20, 44, 61, 0.24);
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.sentence-tooltip-visible .sentence-tooltip-panel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .session-input {
   font-size: 1.4rem;
   letter-spacing: 0.08em;

@@ -33,6 +33,9 @@ test('prompt voice composable only cancels speech for explicit replays', async (
   assert.match(source, /const config = buildVoiceConfig\(mode\)/)
   assert.match(source, /speech\.resume\(\)/)
   assert.match(source, /if \(interrupt && \(speech\.speaking \|\| speech\.pending\)\) \{\s+speech\.cancel\(\)/)
+  assert.match(source, /const finished = new Promise<boolean>\(\(resolve\) => \{/)
+  assert.match(source, /utterance\.onend = \(\) => resolve\(true\)/)
+  assert.match(source, /utterance\.onerror = \(\) => resolve\(false\)/)
 })
 
 test('prompt voice composable waits for async voice loading before selecting a voice', async () => {
@@ -60,4 +63,23 @@ test('session page offers a separate enunciate action', async () => {
   assert.match(source, /mode: 'enunciate'/)
   assert.match(source, /@click="enunciateWord"/)
   assert.match(source, />Enunciate</)
+})
+
+test('session page exposes masked example sentence hints during sentence playback', async () => {
+  const source = await readFile(join(root, 'app/pages/profile/[id]/session.vue'), 'utf8')
+
+  assert.match(source, /const currentExampleSentence = computed\(\(\) => currentEntry\.value\?\.exampleSentence\)/)
+  assert.match(source, /function maskWordInSentence\(sentence\?: string, word\?: string\)/)
+  assert.match(source, /const maskedExampleSentence = computed\(\(\) => maskWordInSentence\(currentExampleSentence\.value, currentWord\.value\)\)/)
+  assert.match(source, /const sentenceTooltipVisible = ref\(false\)/)
+  assert.match(source, /async function playExampleSentence\(\)/)
+  assert.match(source, /sentenceTooltipVisible\.value = true/)
+  assert.match(source, /await speakWord\(currentExampleSentence\.value, \{[\s\S]*mode: 'standard'/)
+  assert.match(source, /sentenceTooltipVisible\.value = false/)
+  assert.match(source, /v-if="maskedExampleSentence" class="sentence-hint-row"/)
+  assert.match(source, /'sentence-tooltip-visible': sentenceTooltipVisible/)
+  assert.match(source, /\{\{ maskedExampleSentence \}\}/)
+  assert.match(source, /@click="playExampleSentence"/)
+  assert.match(source, />Read sentence aloud</)
+  assert.match(source, />Read sentence</)
 })

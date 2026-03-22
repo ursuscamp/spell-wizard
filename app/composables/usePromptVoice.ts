@@ -92,8 +92,13 @@ export function usePromptVoice() {
       utterance.voice = voice
     }
 
+    const finished = new Promise<boolean>((resolve) => {
+      utterance.onend = () => resolve(true)
+      utterance.onerror = () => resolve(false)
+    })
+
     speech.speak(utterance)
-    return true
+    return finished
   }
 
   return {

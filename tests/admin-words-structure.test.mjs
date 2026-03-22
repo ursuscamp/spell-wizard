@@ -10,9 +10,9 @@ test('shared types and server utilities define admin word review data', async ()
   const wordsSource = await readFile(join(root, 'server/utils/words.ts'), 'utf8')
   const apiSource = await readFile(join(root, 'server/api/admin/words.get.ts'), 'utf8')
 
-  assert.match(sharedSource, /export interface AdminWordReviewEntry \{[\s\S]*enunciationText: string[\s\S]*tags: string\[\][\s\S]*\}/)
+  assert.match(sharedSource, /export interface AdminWordReviewEntry \{[\s\S]*enunciationText: string[\s\S]*exampleSentence: string[\s\S]*tags: string\[\][\s\S]*\}/)
   assert.doesNotMatch(sharedSource, /canEnunciate: boolean/)
-  assert.match(wordsSource, /export function buildAdminWordReviewEntry\(entry: WordCatalogEntry\): AdminWordReviewEntry \{[\s\S]*tags: \[\.\.\.entry\.tags\][\s\S]*\}/)
+  assert.match(wordsSource, /export function buildAdminWordReviewEntry\(entry: WordCatalogEntry\): AdminWordReviewEntry \{[\s\S]*exampleSentence: entry\.exampleSentence,[\s\S]*tags: \[\.\.\.entry\.tags\][\s\S]*\}/)
   assert.match(apiSource, /export default defineEventHandler\(\(\) => WORD_CATALOG\.map\(buildAdminWordReviewEntry\)\)/)
 })
 
@@ -21,6 +21,7 @@ test('admin words page supports filtering and separate playback controls', async
 
   assert.match(pageSource, /function filterAdminWords\(entries: AdminWordReviewEntry\[], query: string\)/)
   assert.match(pageSource, /const \{ data: words, pending, error, refresh \} = await useFetch<AdminWordReviewEntry\[]>\('\/api\/admin\/words'/)
+  assert.match(pageSource, /entry\.exampleSentence/)
   assert.match(pageSource, /@click="playAdminWord\(entry, 'standard'\)"/)
   assert.match(pageSource, /@click="playAdminWord\(entry, 'enunciate'\)"/)
   assert.match(pageSource, /const wordToSpeak = mode === 'enunciate' \? entry\.enunciationText : entry\.word/)

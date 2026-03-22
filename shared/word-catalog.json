@@ -7,7 +7,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I saw a rabbit in the yard."
   },
   {
     "word": "acorn",
@@ -17,7 +18,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw acorn outside today."
   },
   {
     "word": "all",
@@ -27,7 +29,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "All the kids lined up for recess."
   },
   {
     "word": "am",
@@ -37,7 +40,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I am ready to spell."
   },
   {
     "word": "an",
@@ -47,7 +51,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We saw an owl in the tree."
   },
   {
     "word": "and",
@@ -57,7 +62,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We packed crayons and paper for art."
   },
   {
     "word": "ankle",
@@ -67,7 +73,8 @@
     "difficulty": 1,
     "tags": [
       "body"
-    ]
+    ],
+    "exampleSentence": "My ankle feels better today."
   },
   {
     "word": "ant",
@@ -77,7 +84,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The ant moved across the yard."
   },
   {
     "word": "apple",
@@ -87,7 +95,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had apple with our meal."
   },
   {
     "word": "apron",
@@ -97,7 +106,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my apron before we left."
   },
   {
     "word": "are",
@@ -107,7 +117,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The flowers are bright today."
   },
   {
     "word": "as",
@@ -117,7 +128,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "She was quiet as a mouse."
   },
   {
     "word": "at",
@@ -127,7 +139,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "We met at the park gate."
   },
   {
     "word": "back",
@@ -137,7 +150,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Please put the book back on the shelf."
   },
   {
     "word": "badge",
@@ -147,7 +161,8 @@
     "difficulty": 1,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the badge carefully."
   },
   {
     "word": "ball",
@@ -157,7 +172,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the ball after lunch."
   },
   {
     "word": "barn",
@@ -167,7 +183,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the barn together."
   },
   {
     "word": "be",
@@ -177,7 +194,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I want to be a helper today."
   },
   {
     "word": "bear",
@@ -187,7 +205,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The bear moved across the yard."
   },
   {
     "word": "bed",
@@ -197,7 +216,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The bed is in the house."
   },
   {
     "word": "bee",
@@ -207,7 +227,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The bee moved across the yard."
   },
   {
     "word": "been",
@@ -217,7 +238,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We have been busy all morning."
   },
   {
     "word": "bell",
@@ -227,7 +249,8 @@
     "difficulty": 1,
     "tags": [
       "sound"
-    ]
+    ],
+    "exampleSentence": "The bell rang at noon."
   },
   {
     "word": "berry",
@@ -237,7 +260,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had berry with our meal."
   },
   {
     "word": "big",
@@ -247,7 +271,8 @@
     "difficulty": 1,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The big truck rolled past the farm."
   },
   {
     "word": "bird",
@@ -257,7 +282,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The bird moved across the yard."
   },
   {
     "word": "block",
@@ -267,7 +293,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the block after lunch."
   },
   {
     "word": "blue",
@@ -277,7 +304,8 @@
     "difficulty": 1,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is blue."
   },
   {
     "word": "boat",
@@ -287,7 +315,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The boat took us across town."
   },
   {
     "word": "book",
@@ -297,7 +326,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the book at school."
   },
   {
     "word": "boots",
@@ -307,7 +337,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my boots before we left."
   },
   {
     "word": "both",
@@ -317,7 +348,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Both socks were under the bed."
   },
   {
     "word": "bottle",
@@ -327,7 +359,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The bottle is in the house."
   },
   {
     "word": "boy",
@@ -337,7 +370,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The boy waved to us."
   },
   {
     "word": "bread",
@@ -347,7 +381,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had bread with our meal."
   },
   {
     "word": "broom",
@@ -357,7 +392,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The broom is in the house."
   },
   {
     "word": "brush",
@@ -367,7 +403,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The brush is in the house."
   },
   {
     "word": "bug",
@@ -377,7 +414,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The bug moved across the yard."
   },
   {
     "word": "bunny",
@@ -387,7 +425,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The bunny moved across the yard."
   },
   {
     "word": "bus",
@@ -397,7 +436,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The bus took us across town."
   },
   {
     "word": "but",
@@ -407,7 +447,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I wanted to run, but it started to rain."
   },
   {
     "word": "by",
@@ -417,7 +458,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The kitten slept by the fire."
   },
   {
     "word": "cabin",
@@ -427,7 +469,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the cabin together."
   },
   {
     "word": "cactus",
@@ -437,7 +480,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw cactus outside today."
   },
   {
     "word": "cake",
@@ -447,7 +491,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had cake with our meal."
   },
   {
     "word": "call",
@@ -457,7 +502,8 @@
     "difficulty": 1,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "Please call me when the bus arrives."
   },
   {
     "word": "can",
@@ -467,7 +513,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I can read this word."
   },
   {
     "word": "candy",
@@ -477,7 +524,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had candy with our meal."
   },
   {
     "word": "cat",
@@ -487,7 +535,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The cat moved across the yard."
   },
   {
     "word": "chair",
@@ -497,7 +546,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The chair is in the house."
   },
   {
     "word": "cheese",
@@ -507,7 +557,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had cheese with our meal."
   },
   {
     "word": "chick",
@@ -517,7 +568,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The chick moved across the yard."
   },
   {
     "word": "chimney",
@@ -527,7 +579,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The chimney is in the house."
   },
   {
     "word": "clock",
@@ -537,7 +590,8 @@
     "difficulty": 1,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "We talked about clock today."
   },
   {
     "word": "cloud",
@@ -547,7 +601,8 @@
     "difficulty": 1,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The cloud changed the sky today."
   },
   {
     "word": "clown",
@@ -557,7 +612,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the clown after lunch."
   },
   {
     "word": "coat",
@@ -567,7 +623,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my coat before we left."
   },
   {
     "word": "come",
@@ -577,7 +634,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Please come sit by me."
   },
   {
     "word": "cookie",
@@ -587,7 +645,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had cookie with our meal."
   },
   {
     "word": "corn",
@@ -597,7 +656,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had corn with our meal."
   },
   {
     "word": "cottage",
@@ -607,7 +667,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The cottage is in the house."
   },
   {
     "word": "cow",
@@ -617,7 +678,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The cow moved across the yard."
   },
   {
     "word": "crab",
@@ -627,7 +689,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The crab moved across the yard."
   },
   {
     "word": "crayon",
@@ -637,7 +700,8 @@
     "difficulty": 1,
     "tags": [
       "art"
-    ]
+    ],
+    "exampleSentence": "The crayon made the page bright."
   },
   {
     "word": "crow",
@@ -647,7 +711,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The crow moved across the yard."
   },
   {
     "word": "crown",
@@ -657,7 +722,8 @@
     "difficulty": 1,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The crown made the party feel special."
   },
   {
     "word": "cup",
@@ -667,7 +733,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The cup is in the house."
   },
   {
     "word": "dance",
@@ -677,7 +744,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We dance in a circle at the party."
   },
   {
     "word": "day",
@@ -687,7 +755,8 @@
     "difficulty": 1,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "It was a sunny day for a picnic."
   },
   {
     "word": "deer",
@@ -697,7 +766,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The deer moved across the yard."
   },
   {
     "word": "desk",
@@ -707,7 +777,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the desk at school."
   },
   {
     "word": "did",
@@ -717,7 +788,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Did you hear the bell ring?"
   },
   {
     "word": "dish",
@@ -727,7 +799,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The dish is in the house."
   },
   {
     "word": "do",
@@ -737,7 +810,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Do your best on every word."
   },
   {
     "word": "does",
@@ -747,7 +821,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Does the robot need a battery?"
   },
   {
     "word": "dog",
@@ -757,7 +832,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The dog moved across the yard."
   },
   {
     "word": "doll",
@@ -767,7 +843,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the doll after lunch."
   },
   {
     "word": "donkey",
@@ -777,7 +854,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The donkey moved across the yard."
   },
   {
     "word": "door",
@@ -787,7 +865,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The door is in the house."
   },
   {
     "word": "down",
@@ -797,7 +876,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The leaf drifted down to the ground."
   },
   {
     "word": "drum",
@@ -807,7 +887,8 @@
     "difficulty": 1,
     "tags": [
       "music"
-    ]
+    ],
+    "exampleSentence": "The drum made a joyful sound."
   },
   {
     "word": "duck",
@@ -817,7 +898,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The duck moved across the yard."
   },
   {
     "word": "eagle",
@@ -827,7 +909,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The eagle moved across the yard."
   },
   {
     "word": "earth",
@@ -837,7 +920,8 @@
     "difficulty": 1,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The earth looked bright tonight."
   },
   {
     "word": "eat",
@@ -847,7 +931,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We eat lunch after recess."
   },
   {
     "word": "egg",
@@ -857,7 +942,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had egg with our meal."
   },
   {
     "word": "elbow",
@@ -867,7 +953,8 @@
     "difficulty": 1,
     "tags": [
       "body"
-    ]
+    ],
+    "exampleSentence": "My elbow feels better today."
   },
   {
     "word": "engine",
@@ -877,7 +964,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The engine took us across town."
   },
   {
     "word": "farm",
@@ -887,7 +975,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the farm together."
   },
   {
     "word": "fence",
@@ -897,7 +986,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The fence is in the house."
   },
   {
     "word": "field",
@@ -907,7 +997,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw field outside today."
   },
   {
     "word": "find",
@@ -917,7 +1008,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Can you find the red crayon?"
   },
   {
     "word": "fire",
@@ -927,7 +1019,8 @@
     "difficulty": 1,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The fire kept the cabin warm."
   },
   {
     "word": "first",
@@ -937,7 +1030,8 @@
     "difficulty": 1,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Mila was first in line."
   },
   {
     "word": "fish",
@@ -947,7 +1041,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The fish moved across the yard."
   },
   {
     "word": "flag",
@@ -957,7 +1052,8 @@
     "difficulty": 1,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the flag carefully."
   },
   {
     "word": "flashlight",
@@ -967,7 +1063,8 @@
     "difficulty": 1,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the flashlight carefully."
   },
   {
     "word": "for",
@@ -977,7 +1074,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "This gift is for you."
   },
   {
     "word": "fox",
@@ -987,7 +1085,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The fox moved across the yard."
   },
   {
     "word": "frog",
@@ -997,7 +1096,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The frog moved across the yard."
   },
   {
     "word": "game",
@@ -1007,7 +1107,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "Our game lasted until sunset."
   },
   {
     "word": "gate",
@@ -1017,7 +1118,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The gate is in the house."
   },
   {
     "word": "get",
@@ -1027,7 +1129,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I will get my backpack now."
   },
   {
     "word": "ghost",
@@ -1037,7 +1140,8 @@
     "difficulty": 1,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "The ghost made the story exciting."
   },
   {
     "word": "gift",
@@ -1047,7 +1151,8 @@
     "difficulty": 1,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The gift made the party feel special."
   },
   {
     "word": "glad",
@@ -1057,7 +1162,8 @@
     "difficulty": 1,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "I am glad you came today."
   },
   {
     "word": "glove",
@@ -1067,7 +1173,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my glove before we left."
   },
   {
     "word": "go",
@@ -1077,7 +1184,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We go to the park after lunch."
   },
   {
     "word": "goat",
@@ -1087,7 +1195,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The goat moved across the yard."
   },
   {
     "word": "good",
@@ -1097,7 +1206,8 @@
     "difficulty": 1,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The soup tastes good on a cold day."
   },
   {
     "word": "grape",
@@ -1107,7 +1217,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had grape with our meal."
   },
   {
     "word": "grass",
@@ -1117,7 +1228,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw grass outside today."
   },
   {
     "word": "green",
@@ -1127,7 +1239,8 @@
     "difficulty": 1,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is green."
   },
   {
     "word": "had",
@@ -1137,7 +1250,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We had soup for dinner."
   },
   {
     "word": "hand",
@@ -1147,7 +1261,8 @@
     "difficulty": 1,
     "tags": [
       "body"
-    ]
+    ],
+    "exampleSentence": "My hand feels better today."
   },
   {
     "word": "has",
@@ -1157,7 +1272,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The dragon has shiny wings."
   },
   {
     "word": "hat",
@@ -1167,7 +1283,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my hat before we left."
   },
   {
     "word": "have",
@@ -1177,7 +1294,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I have a new library book."
   },
   {
     "word": "he",
@@ -1187,7 +1305,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "He carried the ladder to the barn."
   },
   {
     "word": "help",
@@ -1197,7 +1316,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Can you help me zip my jacket?"
   },
   {
     "word": "her",
@@ -1207,7 +1327,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "I gave her the blue crayon."
   },
   {
     "word": "here",
@@ -1217,7 +1338,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "Please come here for your turn."
   },
   {
     "word": "hill",
@@ -1227,7 +1349,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw hill outside today."
   },
   {
     "word": "him",
@@ -1237,7 +1360,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "We waved to him from the bus."
   },
   {
     "word": "his",
@@ -1247,7 +1371,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "His backpack was by the door."
   },
   {
     "word": "home",
@@ -1257,7 +1382,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "We walked home before sunset."
   },
   {
     "word": "honey",
@@ -1267,7 +1393,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had honey with our meal."
   },
   {
     "word": "horse",
@@ -1277,7 +1404,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The horse moved across the yard."
   },
   {
     "word": "house",
@@ -1287,7 +1415,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The house is in the house."
   },
   {
     "word": "i",
@@ -1297,7 +1426,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "I can hear the rain on the roof."
   },
   {
     "word": "if",
@@ -1307,7 +1437,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "If it rains, we will stay inside."
   },
   {
     "word": "igloo",
@@ -1317,7 +1448,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the igloo together."
   },
   {
     "word": "in",
@@ -1327,7 +1459,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The spoon is in the drawer."
   },
   {
     "word": "insect",
@@ -1337,7 +1470,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The insect moved across the yard."
   },
   {
     "word": "into",
@@ -1347,7 +1481,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The frog jumped into the pond."
   },
   {
     "word": "is",
@@ -1357,7 +1492,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The kitten is sleepy."
   },
   {
     "word": "it",
@@ -1367,7 +1503,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I found a shell, and it was smooth."
   },
   {
     "word": "its",
@@ -1377,7 +1514,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The bird flapped its wings."
   },
   {
     "word": "jam",
@@ -1387,7 +1525,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had jam with our meal."
   },
   {
     "word": "jelly",
@@ -1397,7 +1536,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had jelly with our meal."
   },
   {
     "word": "juice",
@@ -1407,7 +1547,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had juice with our meal."
   },
   {
     "word": "jump",
@@ -1417,7 +1558,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "I can jump over the rope."
   },
   {
     "word": "key",
@@ -1427,7 +1569,8 @@
     "difficulty": 1,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the key carefully."
   },
   {
     "word": "kite",
@@ -1437,7 +1580,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the kite after lunch."
   },
   {
     "word": "koala",
@@ -1447,7 +1591,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The koala moved across the yard."
   },
   {
     "word": "lamp",
@@ -1457,7 +1602,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The lamp is in the house."
   },
   {
     "word": "leaf",
@@ -1467,7 +1613,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw leaf outside today."
   },
   {
     "word": "light",
@@ -1477,7 +1624,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The light is in the house."
   },
   {
     "word": "like",
@@ -1487,7 +1635,8 @@
     "difficulty": 1,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "I like to draw after school."
   },
   {
     "word": "lion",
@@ -1497,7 +1646,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The lion moved across the yard."
   },
   {
     "word": "lizard",
@@ -1507,7 +1657,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The lizard moved across the yard."
   },
   {
     "word": "log",
@@ -1517,7 +1668,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw log outside today."
   },
   {
     "word": "look",
@@ -1527,7 +1679,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Look at the rainbow outside."
   },
   {
     "word": "lunch",
@@ -1537,7 +1690,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had lunch with our meal."
   },
   {
     "word": "make",
@@ -1547,7 +1701,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We make a pattern with blocks."
   },
   {
     "word": "map",
@@ -1557,7 +1712,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "The map showed us the way to the park."
   },
   {
     "word": "me",
@@ -1567,7 +1723,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Please save a seat for me."
   },
   {
     "word": "milk",
@@ -1577,7 +1734,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had milk with our meal."
   },
   {
     "word": "mirror",
@@ -1587,7 +1745,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The mirror is in the house."
   },
   {
     "word": "moon",
@@ -1597,7 +1756,8 @@
     "difficulty": 1,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The moon looked bright tonight."
   },
   {
     "word": "mouse",
@@ -1607,7 +1767,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The mouse moved across the yard."
   },
   {
     "word": "my",
@@ -1617,7 +1778,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "My pencil is in the desk."
   },
   {
     "word": "nail",
@@ -1627,7 +1789,8 @@
     "difficulty": 1,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the nail carefully."
   },
   {
     "word": "name",
@@ -1637,7 +1800,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Please write your name on the paper."
   },
   {
     "word": "nest",
@@ -1647,7 +1811,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The nest moved across the yard."
   },
   {
     "word": "no",
@@ -1657,7 +1822,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "No one touched the wet paint."
   },
   {
     "word": "not",
@@ -1667,7 +1833,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The road is not busy today."
   },
   {
     "word": "notebook",
@@ -1677,7 +1844,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the notebook at school."
   },
   {
     "word": "now",
@@ -1687,7 +1855,8 @@
     "difficulty": 1,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "We can start the game now."
   },
   {
     "word": "of",
@@ -1697,7 +1866,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The top of the hill was windy."
   },
   {
     "word": "on",
@@ -1707,7 +1877,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The cup is on the table."
   },
   {
     "word": "one",
@@ -1717,7 +1888,8 @@
     "difficulty": 1,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "I found one smooth stone."
   },
   {
     "word": "or",
@@ -1727,7 +1899,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Do you want an apple or a pear?"
   },
   {
     "word": "our",
@@ -1737,7 +1910,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Our garden grows tomatoes and peppers."
   },
   {
     "word": "out",
@@ -1747,7 +1921,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The dog ran out the door."
   },
   {
     "word": "owl",
@@ -1757,7 +1932,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The owl moved across the yard."
   },
   {
     "word": "pancake",
@@ -1767,7 +1943,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had pancake with our meal."
   },
   {
     "word": "park",
@@ -1777,7 +1954,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the park together."
   },
   {
     "word": "parrot",
@@ -1787,7 +1965,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The parrot moved across the yard."
   },
   {
     "word": "peach",
@@ -1797,7 +1976,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had peach with our meal."
   },
   {
     "word": "pear",
@@ -1807,7 +1987,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had pear with our meal."
   },
   {
     "word": "pen",
@@ -1817,7 +1998,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the pen at school."
   },
   {
     "word": "pink",
@@ -1827,7 +2009,8 @@
     "difficulty": 1,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is pink."
   },
   {
     "word": "plane",
@@ -1837,7 +2020,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The plane flew above the clouds."
   },
   {
     "word": "plant",
@@ -1847,7 +2031,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw plant outside today."
   },
   {
     "word": "put",
@@ -1857,7 +2042,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Put the pencil in your pocket."
   },
   {
     "word": "rain",
@@ -1867,7 +2053,8 @@
     "difficulty": 1,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The rain changed the sky today."
   },
   {
     "word": "ring",
@@ -1877,7 +2064,8 @@
     "difficulty": 1,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the ring carefully."
   },
   {
     "word": "road",
@@ -1887,7 +2075,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The road took us across town."
   },
   {
     "word": "robot",
@@ -1897,7 +2086,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "The robot moved across the room."
   },
   {
     "word": "rope",
@@ -1907,7 +2097,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the rope after lunch."
   },
   {
     "word": "said",
@@ -1917,7 +2108,8 @@
     "difficulty": 1,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "Mom said it was time for bed."
   },
   {
     "word": "same",
@@ -1927,7 +2119,8 @@
     "difficulty": 1,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "We wore the same color hat."
   },
   {
     "word": "sand",
@@ -1937,7 +2130,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw sand outside today."
   },
   {
     "word": "say",
@@ -1947,7 +2141,8 @@
     "difficulty": 1,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "Please say the answer clearly."
   },
   {
     "word": "scarf",
@@ -1957,7 +2152,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my scarf before we left."
   },
   {
     "word": "school",
@@ -1967,7 +2163,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the school at school."
   },
   {
     "word": "see",
@@ -1977,7 +2174,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I can see the moon tonight."
   },
   {
     "word": "seed",
@@ -1987,7 +2185,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw seed outside today."
   },
   {
     "word": "shark",
@@ -1997,7 +2196,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The shark moved across the yard."
   },
   {
     "word": "she",
@@ -2007,7 +2207,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "She found a shell near the water."
   },
   {
     "word": "shell",
@@ -2017,7 +2218,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw shell outside today."
   },
   {
     "word": "ship",
@@ -2027,7 +2229,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The ship took us across town."
   },
   {
     "word": "shoe",
@@ -2037,7 +2240,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my shoe before we left."
   },
   {
     "word": "shop",
@@ -2047,7 +2251,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the shop together."
   },
   {
     "word": "sing",
@@ -2057,7 +2262,8 @@
     "difficulty": 1,
     "tags": [
       "music"
-    ]
+    ],
+    "exampleSentence": "We sing together in music class."
   },
   {
     "word": "small",
@@ -2067,7 +2273,8 @@
     "difficulty": 1,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "A small frog sat by the pond."
   },
   {
     "word": "smile",
@@ -2077,7 +2284,8 @@
     "difficulty": 1,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "Her smile made the room feel warm."
   },
   {
     "word": "snack",
@@ -2087,7 +2295,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had snack with our meal."
   },
   {
     "word": "snow",
@@ -2097,7 +2306,8 @@
     "difficulty": 1,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The snow changed the sky today."
   },
   {
     "word": "sock",
@@ -2107,7 +2317,8 @@
     "difficulty": 1,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my sock before we left."
   },
   {
     "word": "some",
@@ -2117,7 +2328,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We saved some cake for later."
   },
   {
     "word": "spoon",
@@ -2127,7 +2339,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The spoon is in the house."
   },
   {
     "word": "stamp",
@@ -2137,7 +2350,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the stamp at school."
   },
   {
     "word": "star",
@@ -2147,7 +2361,8 @@
     "difficulty": 1,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The star looked bright tonight."
   },
   {
     "word": "stick",
@@ -2157,7 +2372,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw stick outside today."
   },
   {
     "word": "stone",
@@ -2167,7 +2383,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw stone outside today."
   },
   {
     "word": "storm",
@@ -2177,7 +2394,8 @@
     "difficulty": 1,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The storm changed the sky today."
   },
   {
     "word": "sun",
@@ -2187,7 +2405,8 @@
     "difficulty": 1,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The sun looked bright tonight."
   },
   {
     "word": "swing",
@@ -2197,7 +2416,8 @@
     "difficulty": 1,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the swing after lunch."
   },
   {
     "word": "table",
@@ -2207,7 +2427,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The table is in the house."
   },
   {
     "word": "tent",
@@ -2217,7 +2438,8 @@
     "difficulty": 1,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the tent together."
   },
   {
     "word": "that",
@@ -2227,7 +2449,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "That bird is on the fence."
   },
   {
     "word": "the",
@@ -2237,7 +2460,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The bus stopped by the school."
   },
   {
     "word": "them",
@@ -2247,7 +2471,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "We saw the puppies and fed them."
   },
   {
     "word": "there",
@@ -2257,7 +2482,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "There is a rainbow over the hill."
   },
   {
     "word": "this",
@@ -2267,7 +2493,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "This puzzle has bright colors."
   },
   {
     "word": "tiger",
@@ -2277,7 +2504,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The tiger moved across the yard."
   },
   {
     "word": "to",
@@ -2287,7 +2515,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "We walked to the library together."
   },
   {
     "word": "toast",
@@ -2297,7 +2526,8 @@
     "difficulty": 1,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had toast with our meal."
   },
   {
     "word": "train",
@@ -2307,7 +2537,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The train took us across town."
   },
   {
     "word": "tree",
@@ -2317,7 +2548,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw tree outside today."
   },
   {
     "word": "truck",
@@ -2327,7 +2559,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The truck took us across town."
   },
   {
     "word": "two",
@@ -2337,7 +2570,8 @@
     "difficulty": 1,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "Two ducks splashed in the pond."
   },
   {
     "word": "up",
@@ -2347,7 +2581,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The balloon floated up to the ceiling."
   },
   {
     "word": "use",
@@ -2357,7 +2592,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We use a compass on the hike."
   },
   {
     "word": "want",
@@ -2367,7 +2603,8 @@
     "difficulty": 1,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "I want to hear the word again."
   },
   {
     "word": "was",
@@ -2377,7 +2614,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The blanket was warm and soft."
   },
   {
     "word": "water",
@@ -2387,7 +2625,8 @@
     "difficulty": 1,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw water outside today."
   },
   {
     "word": "we",
@@ -2397,7 +2636,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "We built a tall block tower."
   },
   {
     "word": "well",
@@ -2407,7 +2647,8 @@
     "difficulty": 1,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "You did well on that word."
   },
   {
     "word": "went",
@@ -2417,7 +2658,8 @@
     "difficulty": 1,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "We went to the farm on Saturday."
   },
   {
     "word": "whale",
@@ -2427,7 +2669,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The whale moved across the yard."
   },
   {
     "word": "what",
@@ -2437,7 +2680,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "What made that loud sound?"
   },
   {
     "word": "when",
@@ -2447,7 +2691,8 @@
     "difficulty": 1,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Tell me when the bus arrives."
   },
   {
     "word": "where",
@@ -2457,7 +2702,8 @@
     "difficulty": 1,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "Where did you put the key?"
   },
   {
     "word": "who",
@@ -2467,7 +2713,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Who put the crayons away?"
   },
   {
     "word": "will",
@@ -2477,7 +2724,8 @@
     "difficulty": 1,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I will read the story next."
   },
   {
     "word": "window",
@@ -2487,7 +2735,8 @@
     "difficulty": 1,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The window is in the house."
   },
   {
     "word": "worm",
@@ -2497,7 +2746,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The worm moved across the yard."
   },
   {
     "word": "write",
@@ -2507,7 +2757,8 @@
     "difficulty": 1,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the write at school."
   },
   {
     "word": "yellow",
@@ -2517,7 +2768,8 @@
     "difficulty": 1,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is yellow."
   },
   {
     "word": "you",
@@ -2527,7 +2779,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "You can try the word again."
   },
   {
     "word": "your",
@@ -2537,7 +2790,8 @@
     "difficulty": 1,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Your coat is on the chair."
   },
   {
     "word": "zebra",
@@ -2547,7 +2801,8 @@
     "difficulty": 1,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The zebra moved across the yard."
   },
   {
     "word": "above",
@@ -2557,7 +2812,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The moon hung above the trees."
   },
   {
     "word": "across",
@@ -2567,7 +2823,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "We ran across the field at recess."
   },
   {
     "word": "afraid",
@@ -2577,7 +2834,8 @@
     "difficulty": 2,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "The kitten was afraid of the thunder."
   },
   {
     "word": "after",
@@ -2587,7 +2845,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "We read after dinner every night."
   },
   {
     "word": "again",
@@ -2597,7 +2856,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Please try that word again."
   },
   {
     "word": "airplane",
@@ -2607,7 +2867,8 @@
     "difficulty": 2,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The airplane took us across town."
   },
   {
     "word": "airport",
@@ -2617,7 +2878,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the airport together."
   },
   {
     "word": "almost",
@@ -2627,7 +2889,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I am almost done with my homework."
   },
   {
     "word": "animal",
@@ -2637,7 +2900,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The animal moved across the yard."
   },
   {
     "word": "any",
@@ -2647,7 +2911,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Do you have any paper left?"
   },
   {
     "word": "around",
@@ -2657,7 +2922,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "We walked around the garden path."
   },
   {
     "word": "artist",
@@ -2667,7 +2933,8 @@
     "difficulty": 2,
     "tags": [
       "art"
-    ]
+    ],
+    "exampleSentence": "The artist mixed blue and yellow."
   },
   {
     "word": "ask",
@@ -2677,7 +2944,8 @@
     "difficulty": 2,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "I will ask the teacher for help."
   },
   {
     "word": "away",
@@ -2687,7 +2955,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The bird flew away at dawn."
   },
   {
     "word": "baboon",
@@ -2697,7 +2966,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The baboon moved across the yard."
   },
   {
     "word": "backpack",
@@ -2707,7 +2977,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the backpack at school."
   },
   {
     "word": "balance",
@@ -2717,7 +2988,8 @@
     "difficulty": 2,
     "tags": [
       "body"
-    ]
+    ],
+    "exampleSentence": "I can balance on one foot."
   },
   {
     "word": "banana",
@@ -2727,7 +2999,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had banana with our meal."
   },
   {
     "word": "basket",
@@ -2737,7 +3010,8 @@
     "difficulty": 2,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the basket carefully."
   },
   {
     "word": "beach",
@@ -2747,7 +3021,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the beach together."
   },
   {
     "word": "bedroom",
@@ -2757,7 +3032,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The bedroom is in the house."
   },
   {
     "word": "beetle",
@@ -2767,7 +3043,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The beetle moved across the yard."
   },
   {
     "word": "before",
@@ -2777,7 +3054,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Wash your hands before lunch."
   },
   {
     "word": "begin",
@@ -2787,7 +3065,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We begin class with a story."
   },
   {
     "word": "between",
@@ -2797,7 +3076,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The pencil rolled between the books."
   },
   {
     "word": "bicycle",
@@ -2807,7 +3087,8 @@
     "difficulty": 2,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The bicycle took us across town."
   },
   {
     "word": "birthday",
@@ -2817,7 +3098,8 @@
     "difficulty": 2,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The birthday made the party feel special."
   },
   {
     "word": "blanket",
@@ -2827,7 +3109,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The blanket is in the house."
   },
   {
     "word": "blossom",
@@ -2837,7 +3120,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw blossom outside today."
   },
   {
     "word": "branch",
@@ -2847,7 +3131,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw branch outside today."
   },
   {
     "word": "bright",
@@ -2857,7 +3142,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The bright sun warmed the playground."
   },
   {
     "word": "bubble",
@@ -2867,7 +3153,8 @@
     "difficulty": 2,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the bubble after lunch."
   },
   {
     "word": "button",
@@ -2877,7 +3164,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "Please button your coat before we leave."
   },
   {
     "word": "candle",
@@ -2887,7 +3175,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The candle is in the house."
   },
   {
     "word": "captain",
@@ -2897,7 +3186,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The captain waved to us."
   },
   {
     "word": "carrot",
@@ -2907,7 +3197,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had carrot with our meal."
   },
   {
     "word": "cartoon",
@@ -2917,7 +3208,8 @@
     "difficulty": 2,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "The cartoon made the story exciting."
   },
   {
     "word": "castle",
@@ -2927,7 +3219,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the castle together."
   },
   {
     "word": "cereal",
@@ -2937,7 +3230,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had cereal with our meal."
   },
   {
     "word": "cheetah",
@@ -2947,7 +3241,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The cheetah moved across the yard."
   },
   {
     "word": "chicken",
@@ -2957,7 +3252,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The chicken moved across the yard."
   },
   {
     "word": "children",
@@ -2967,7 +3263,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The children waved to us."
   },
   {
     "word": "circle",
@@ -2977,7 +3274,8 @@
     "difficulty": 2,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "We used circle in math class."
   },
   {
     "word": "climber",
@@ -2987,7 +3285,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The climber waved to us."
   },
   {
     "word": "closet",
@@ -2997,7 +3296,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The closet is in the house."
   },
   {
     "word": "cobweb",
@@ -3007,7 +3307,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw cobweb outside today."
   },
   {
     "word": "corner",
@@ -3017,7 +3318,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The lamp is in the corner of the room."
   },
   {
     "word": "could",
@@ -3027,7 +3329,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We could hear the thunder far away."
   },
   {
     "word": "cousin",
@@ -3037,7 +3340,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The cousin waved to us."
   },
   {
     "word": "cupcake",
@@ -3047,7 +3351,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had cupcake with our meal."
   },
   {
     "word": "curtain",
@@ -3057,7 +3362,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The curtain is in the house."
   },
   {
     "word": "daisy",
@@ -3067,7 +3373,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw daisy outside today."
   },
   {
     "word": "dentist",
@@ -3077,7 +3384,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The dentist waved to us."
   },
   {
     "word": "desert",
@@ -3087,7 +3395,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the desert together."
   },
   {
     "word": "dinner",
@@ -3097,7 +3406,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had dinner with our meal."
   },
   {
     "word": "doctor",
@@ -3107,7 +3417,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The doctor waved to us."
   },
   {
     "word": "dolphin",
@@ -3117,7 +3428,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The dolphin moved across the yard."
   },
   {
     "word": "dragon",
@@ -3127,7 +3439,8 @@
     "difficulty": 2,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The dragon filled the story with wonder."
   },
   {
     "word": "drawer",
@@ -3137,7 +3450,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The drawer is in the house."
   },
   {
     "word": "dream",
@@ -3147,7 +3461,8 @@
     "difficulty": 2,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "I dream about flying over the ocean."
   },
   {
     "word": "drizzle",
@@ -3157,7 +3472,8 @@
     "difficulty": 2,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "A light drizzle covered the playground."
   },
   {
     "word": "every",
@@ -3167,7 +3483,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Every student brought a notebook."
   },
   {
     "word": "fairy",
@@ -3177,7 +3494,8 @@
     "difficulty": 2,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The fairy filled the story with wonder."
   },
   {
     "word": "family",
@@ -3187,7 +3505,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The family waved to us."
   },
   {
     "word": "farmer",
@@ -3197,7 +3516,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The farmer waved to us."
   },
   {
     "word": "feather",
@@ -3207,7 +3527,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The feather moved across the yard."
   },
   {
     "word": "fever",
@@ -3217,7 +3538,8 @@
     "difficulty": 2,
     "tags": [
       "body"
-    ]
+    ],
+    "exampleSentence": "The nurse checked my fever at school."
   },
   {
     "word": "flamingo",
@@ -3227,7 +3549,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The flamingo moved across the yard."
   },
   {
     "word": "flower",
@@ -3237,7 +3560,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw flower outside today."
   },
   {
     "word": "forest",
@@ -3247,7 +3571,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw forest outside today."
   },
   {
     "word": "found",
@@ -3257,7 +3582,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We found a feather by the tree."
   },
   {
     "word": "friend",
@@ -3267,7 +3593,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The friend waved to us."
   },
   {
     "word": "from",
@@ -3277,7 +3604,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The letter came from Grandpa."
   },
   {
     "word": "garden",
@@ -3287,7 +3615,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw garden outside today."
   },
   {
     "word": "giant",
@@ -3297,7 +3626,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "A giant pumpkin sat by the gate."
   },
   {
     "word": "ginger",
@@ -3307,7 +3637,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had ginger with our meal."
   },
   {
     "word": "giraffe",
@@ -3317,7 +3648,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The giraffe moved across the yard."
   },
   {
     "word": "give",
@@ -3327,7 +3659,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Please give the book to your sister."
   },
   {
     "word": "glitter",
@@ -3337,7 +3670,8 @@
     "difficulty": 2,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The glitter filled the story with wonder."
   },
   {
     "word": "goblin",
@@ -3347,7 +3681,8 @@
     "difficulty": 2,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "The goblin made the story exciting."
   },
   {
     "word": "great",
@@ -3357,7 +3692,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "You did a great job reading."
   },
   {
     "word": "guitar",
@@ -3367,7 +3703,8 @@
     "difficulty": 2,
     "tags": [
       "music"
-    ]
+    ],
+    "exampleSentence": "The guitar made a joyful sound."
   },
   {
     "word": "hammer",
@@ -3377,7 +3714,8 @@
     "difficulty": 2,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the hammer carefully."
   },
   {
     "word": "happen",
@@ -3387,7 +3725,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "What will happen after the storm?"
   },
   {
     "word": "happy",
@@ -3397,7 +3736,8 @@
     "difficulty": 2,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "We felt happy on the last day of school."
   },
   {
     "word": "harbor",
@@ -3407,7 +3747,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the harbor together."
   },
   {
     "word": "helmet",
@@ -3417,7 +3758,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my helmet before we left."
   },
   {
     "word": "hidden",
@@ -3427,7 +3769,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The hidden treasure was under the sand."
   },
   {
     "word": "holiday",
@@ -3437,7 +3780,8 @@
     "difficulty": 2,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The holiday made the party feel special."
   },
   {
     "word": "island",
@@ -3447,7 +3791,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the island together."
   },
   {
     "word": "jacket",
@@ -3457,7 +3802,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my jacket before we left."
   },
   {
     "word": "jigsaw",
@@ -3467,7 +3813,8 @@
     "difficulty": 2,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the jigsaw after lunch."
   },
   {
     "word": "jumper",
@@ -3477,7 +3824,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my jumper before we left."
   },
   {
     "word": "jungle",
@@ -3487,7 +3835,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the jungle together."
   },
   {
     "word": "just",
@@ -3497,7 +3846,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I just finished the last word."
   },
   {
     "word": "kangaroo",
@@ -3507,7 +3857,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The kangaroo moved across the yard."
   },
   {
     "word": "ketchup",
@@ -3517,7 +3868,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had ketchup with our meal."
   },
   {
     "word": "kitten",
@@ -3527,7 +3879,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The kitten moved across the yard."
   },
   {
     "word": "know",
@@ -3537,7 +3890,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "I know the answer to that question."
   },
   {
     "word": "ladder",
@@ -3547,7 +3901,8 @@
     "difficulty": 2,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the ladder carefully."
   },
   {
     "word": "ladybug",
@@ -3557,7 +3912,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The ladybug moved across the yard."
   },
   {
     "word": "lantern",
@@ -3567,7 +3923,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The lantern is in the house."
   },
   {
     "word": "laundry",
@@ -3577,7 +3934,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The laundry is in the house."
   },
   {
     "word": "lemon",
@@ -3587,7 +3945,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had lemon with our meal."
   },
   {
     "word": "letter",
@@ -3597,7 +3956,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "I wrote a letter to my cousin."
   },
   {
     "word": "little",
@@ -3607,7 +3967,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The little bird hopped on the path."
   },
   {
     "word": "long",
@@ -3617,7 +3978,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The long rope reached the tree."
   },
   {
     "word": "made",
@@ -3627,7 +3989,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The artist made a bright poster."
   },
   {
     "word": "magic",
@@ -3637,7 +4000,8 @@
     "difficulty": 2,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The magic filled the story with wonder."
   },
   {
     "word": "mailbox",
@@ -3647,7 +4011,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The mailbox is in the house."
   },
   {
     "word": "man",
@@ -3657,7 +4022,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The man waved to us."
   },
   {
     "word": "many",
@@ -3667,7 +4033,8 @@
     "difficulty": 2,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "Many stars filled the sky."
   },
   {
     "word": "marble",
@@ -3677,7 +4044,8 @@
     "difficulty": 2,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the marble after lunch."
   },
   {
     "word": "market",
@@ -3687,7 +4055,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the market together."
   },
   {
     "word": "mascot",
@@ -3697,7 +4066,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the mascot at school."
   },
   {
     "word": "meadow",
@@ -3707,7 +4077,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw meadow outside today."
   },
   {
     "word": "middle",
@@ -3717,7 +4088,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The marble stopped in the middle of the floor."
   },
   {
     "word": "minute",
@@ -3727,7 +4099,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Wait a minute for your turn."
   },
   {
     "word": "misty",
@@ -3737,7 +4110,8 @@
     "difficulty": 2,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The hill looked misty in the early light."
   },
   {
     "word": "monkey",
@@ -3747,7 +4121,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The monkey moved across the yard."
   },
   {
     "word": "more",
@@ -3757,7 +4132,8 @@
     "difficulty": 2,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "I would like more juice, please."
   },
   {
     "word": "morning",
@@ -3767,7 +4143,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "The morning air felt cool and fresh."
   },
   {
     "word": "mother",
@@ -3777,7 +4154,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The mother waved to us."
   },
   {
     "word": "much",
@@ -3787,7 +4165,8 @@
     "difficulty": 2,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "How much water is in the cup?"
   },
   {
     "word": "muffin",
@@ -3797,7 +4176,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had muffin with our meal."
   },
   {
     "word": "music",
@@ -3807,7 +4187,8 @@
     "difficulty": 2,
     "tags": [
       "music"
-    ]
+    ],
+    "exampleSentence": "The music made a joyful sound."
   },
   {
     "word": "must",
@@ -3817,7 +4198,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "You must wear a helmet on the bike."
   },
   {
     "word": "napkin",
@@ -3827,7 +4209,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The napkin is in the house."
   },
   {
     "word": "need",
@@ -3837,7 +4220,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I need a spoon for my soup."
   },
   {
     "word": "ocean",
@@ -3847,7 +4231,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw ocean outside today."
   },
   {
     "word": "old",
@@ -3857,7 +4242,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "An old map hung on the wall."
   },
   {
     "word": "only",
@@ -3867,7 +4253,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Only one candle is still lit."
   },
   {
     "word": "orange",
@@ -3877,7 +4264,8 @@
     "difficulty": 2,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is orange."
   },
   {
     "word": "other",
@@ -3887,7 +4275,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The other shoe is by the door."
   },
   {
     "word": "otter",
@@ -3897,7 +4286,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The otter moved across the yard."
   },
   {
     "word": "outside",
@@ -3907,7 +4297,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "We played outside after lunch."
   },
   {
     "word": "over",
@@ -3917,7 +4308,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The plane flew over the town."
   },
   {
     "word": "paint",
@@ -3927,7 +4319,8 @@
     "difficulty": 2,
     "tags": [
       "art"
-    ]
+    ],
+    "exampleSentence": "The paint dried on the paper."
   },
   {
     "word": "panda",
@@ -3937,7 +4330,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The panda moved across the yard."
   },
   {
     "word": "people",
@@ -3947,7 +4341,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The people waved to us."
   },
   {
     "word": "pepper",
@@ -3957,7 +4352,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had pepper with our meal."
   },
   {
     "word": "picnic",
@@ -3967,7 +4363,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had picnic with our meal."
   },
   {
     "word": "pillow",
@@ -3977,7 +4374,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The pillow is in the house."
   },
   {
     "word": "pirate",
@@ -3987,7 +4385,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The pirate waved to us."
   },
   {
     "word": "planet",
@@ -3997,7 +4396,8 @@
     "difficulty": 2,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The planet looked bright tonight."
   },
   {
     "word": "pocket",
@@ -4007,7 +4407,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put the ticket in my pocket."
   },
   {
     "word": "polar",
@@ -4017,7 +4418,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The polar moved across the yard."
   },
   {
     "word": "pretty",
@@ -4027,7 +4429,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The pretty flower opened in the sun."
   },
   {
     "word": "pumpkin",
@@ -4037,7 +4440,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had pumpkin with our meal."
   },
   {
     "word": "puppy",
@@ -4047,7 +4451,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The puppy moved across the yard."
   },
   {
     "word": "purple",
@@ -4057,7 +4462,8 @@
     "difficulty": 2,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is purple."
   },
   {
     "word": "rabbit",
@@ -4067,7 +4473,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The rabbit moved across the yard."
   },
   {
     "word": "rainbow",
@@ -4077,7 +4484,8 @@
     "difficulty": 2,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The rainbow changed the sky today."
   },
   {
     "word": "raincoat",
@@ -4087,7 +4495,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "I put on my raincoat before we left."
   },
   {
     "word": "read",
@@ -4097,7 +4506,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We read together before bed."
   },
   {
     "word": "right",
@@ -4107,7 +4517,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "Turn right at the mailbox."
   },
   {
     "word": "river",
@@ -4117,7 +4528,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw river outside today."
   },
   {
     "word": "rocket",
@@ -4127,7 +4539,8 @@
     "difficulty": 2,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The rocket looked bright tonight."
   },
   {
     "word": "rowboat",
@@ -4137,7 +4550,8 @@
     "difficulty": 2,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The rowboat took us across town."
   },
   {
     "word": "saddle",
@@ -4147,7 +4561,8 @@
     "difficulty": 2,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the saddle carefully."
   },
   {
     "word": "sailor",
@@ -4157,7 +4572,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The sailor waved to us."
   },
   {
     "word": "salad",
@@ -4167,7 +4583,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had salad with our meal."
   },
   {
     "word": "sandbox",
@@ -4177,7 +4594,8 @@
     "difficulty": 2,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the sandbox after lunch."
   },
   {
     "word": "seesaw",
@@ -4187,7 +4605,8 @@
     "difficulty": 2,
     "tags": [
       "play"
-    ]
+    ],
+    "exampleSentence": "We played with the seesaw after lunch."
   },
   {
     "word": "shiny",
@@ -4197,7 +4616,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The shiny badge sparkled in the light."
   },
   {
     "word": "silver",
@@ -4207,7 +4627,8 @@
     "difficulty": 2,
     "tags": [
       "colors"
-    ]
+    ],
+    "exampleSentence": "The kite is silver."
   },
   {
     "word": "snowman",
@@ -4217,7 +4638,8 @@
     "difficulty": 2,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The snowman wore a carrot nose."
   },
   {
     "word": "spring",
@@ -4227,7 +4649,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Flowers bloom in spring every year."
   },
   {
     "word": "story",
@@ -4237,7 +4660,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "The story made us laugh."
   },
   {
     "word": "street",
@@ -4247,7 +4671,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the street together."
   },
   {
     "word": "summer",
@@ -4257,7 +4682,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "We swim at the lake in summer."
   },
   {
     "word": "sunlight",
@@ -4267,7 +4693,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw sunlight outside today."
   },
   {
     "word": "tadpole",
@@ -4277,7 +4704,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The tadpole moved across the yard."
   },
   {
     "word": "take",
@@ -4287,7 +4715,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Take your lunch to the table."
   },
   {
     "word": "teacher",
@@ -4297,7 +4726,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The teacher waved to us."
   },
   {
     "word": "teapot",
@@ -4307,7 +4737,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The teapot is in the house."
   },
   {
     "word": "teaspoon",
@@ -4317,7 +4748,8 @@
     "difficulty": 2,
     "tags": [
       "home"
-    ]
+    ],
+    "exampleSentence": "The teaspoon is in the house."
   },
   {
     "word": "tell",
@@ -4327,7 +4759,8 @@
     "difficulty": 2,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "Can you tell me the rule again?"
   },
   {
     "word": "than",
@@ -4337,7 +4770,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The puppy is smaller than the dog."
   },
   {
     "word": "their",
@@ -4347,7 +4781,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "Their lunch boxes were on the table."
   },
   {
     "word": "then",
@@ -4357,7 +4792,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "We packed our bags, and then we left."
   },
   {
     "word": "these",
@@ -4367,7 +4803,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "These flowers smell sweet."
   },
   {
     "word": "they",
@@ -4377,7 +4814,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "They waved from the train window."
   },
   {
     "word": "think",
@@ -4387,7 +4825,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "I think the puzzle goes here."
   },
   {
     "word": "those",
@@ -4397,7 +4836,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Those clouds look heavy with rain."
   },
   {
     "word": "three",
@@ -4407,7 +4847,8 @@
     "difficulty": 2,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "Three birds sat on the fence."
   },
   {
     "word": "through",
@@ -4417,7 +4858,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "Sunlight shone through the window."
   },
   {
     "word": "thunder",
@@ -4427,7 +4869,8 @@
     "difficulty": 2,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The thunder changed the sky today."
   },
   {
     "word": "ticket",
@@ -4437,7 +4880,8 @@
     "difficulty": 2,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the ticket carefully."
   },
   {
     "word": "tomato",
@@ -4447,7 +4891,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had tomato with our meal."
   },
   {
     "word": "tractor",
@@ -4457,7 +4902,8 @@
     "difficulty": 2,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "The tractor took us across town."
   },
   {
     "word": "traffic",
@@ -4467,7 +4913,8 @@
     "difficulty": 2,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "Heavy traffic slowed the bus downtown."
   },
   {
     "word": "trombone",
@@ -4477,7 +4924,8 @@
     "difficulty": 2,
     "tags": [
       "music"
-    ]
+    ],
+    "exampleSentence": "The trombone made a joyful sound."
   },
   {
     "word": "tunnel",
@@ -4487,7 +4935,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the tunnel together."
   },
   {
     "word": "turkey",
@@ -4497,7 +4946,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The turkey moved across the yard."
   },
   {
     "word": "under",
@@ -4507,7 +4957,8 @@
     "difficulty": 2,
     "tags": [
       "position"
-    ]
+    ],
+    "exampleSentence": "The cat hid under the bed."
   },
   {
     "word": "very",
@@ -4517,7 +4968,8 @@
     "difficulty": 2,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The snow felt very cold."
   },
   {
     "word": "volcano",
@@ -4527,7 +4979,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw volcano outside today."
   },
   {
     "word": "wallet",
@@ -4537,7 +4990,8 @@
     "difficulty": 2,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the wallet carefully."
   },
   {
     "word": "walrus",
@@ -4547,7 +5001,8 @@
     "difficulty": 2,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The walrus moved across the yard."
   },
   {
     "word": "were",
@@ -4557,7 +5012,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The children were excited for the trip."
   },
   {
     "word": "which",
@@ -4567,7 +5023,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Which game should we play first?"
   },
   {
     "word": "why",
@@ -4577,7 +5034,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Why is the dragonfly near the water?"
   },
   {
     "word": "willow",
@@ -4587,7 +5045,8 @@
     "difficulty": 2,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw willow outside today."
   },
   {
     "word": "winter",
@@ -4597,7 +5056,8 @@
     "difficulty": 2,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "Snow covered the yard in winter."
   },
   {
     "word": "with",
@@ -4607,7 +5067,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I ate toast with jam."
   },
   {
     "word": "wonder",
@@ -4617,7 +5078,8 @@
     "difficulty": 2,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "I wonder what is inside the box."
   },
   {
     "word": "work",
@@ -4627,7 +5089,8 @@
     "difficulty": 2,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We work quietly during reading time."
   },
   {
     "word": "world",
@@ -4637,7 +5100,8 @@
     "difficulty": 2,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "The world looks blue from space."
   },
   {
     "word": "would",
@@ -4647,7 +5111,8 @@
     "difficulty": 2,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "I would like a turn on the swing."
   },
   {
     "word": "yogurt",
@@ -4657,7 +5122,8 @@
     "difficulty": 2,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had yogurt with our meal."
   },
   {
     "word": "zipper",
@@ -4667,7 +5133,8 @@
     "difficulty": 2,
     "tags": [
       "clothes"
-    ]
+    ],
+    "exampleSentence": "The zipper on my jacket got stuck."
   },
   {
     "word": "zookeeper",
@@ -4677,7 +5144,8 @@
     "difficulty": 2,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The zookeeper waved to us."
   },
   {
     "word": "adventure",
@@ -4687,7 +5155,8 @@
     "difficulty": 3,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "Our adventure started at sunrise."
   },
   {
     "word": "answer",
@@ -4697,7 +5166,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "I know the answer to the riddle."
   },
   {
     "word": "astronaut",
@@ -4707,7 +5177,8 @@
     "difficulty": 3,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The astronaut looked bright tonight."
   },
   {
     "word": "avalanche",
@@ -4717,7 +5188,8 @@
     "difficulty": 3,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "The avalanche changed the sky today."
   },
   {
     "word": "beautiful",
@@ -4727,7 +5199,8 @@
     "difficulty": 3,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "The beautiful garden was full of color."
   },
   {
     "word": "because",
@@ -4737,7 +5210,8 @@
     "difficulty": 3,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We stayed inside because the storm was loud."
   },
   {
     "word": "binoculars",
@@ -4747,7 +5221,8 @@
     "difficulty": 3,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the binoculars carefully."
   },
   {
     "word": "calendar",
@@ -4757,7 +5232,8 @@
     "difficulty": 3,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "I marked the trip on the calendar."
   },
   {
     "word": "careful",
@@ -4767,7 +5243,8 @@
     "difficulty": 3,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "Be careful on the wet floor."
   },
   {
     "word": "celebrate",
@@ -4777,7 +5254,8 @@
     "difficulty": 3,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The celebrate made the party feel special."
   },
   {
     "word": "century",
@@ -4787,7 +5265,8 @@
     "difficulty": 3,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "That castle is more than a century old."
   },
   {
     "word": "chocolate",
@@ -4797,7 +5276,8 @@
     "difficulty": 3,
     "tags": [
       "food"
-    ]
+    ],
+    "exampleSentence": "We had chocolate with our meal."
   },
   {
     "word": "collect",
@@ -4807,7 +5287,8 @@
     "difficulty": 3,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We collect smooth stones at the beach."
   },
   {
     "word": "compass",
@@ -4817,7 +5298,8 @@
     "difficulty": 3,
     "tags": [
       "objects"
-    ]
+    ],
+    "exampleSentence": "I picked up the compass carefully."
   },
   {
     "word": "crystal",
@@ -4827,7 +5309,8 @@
     "difficulty": 3,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The crystal filled the story with wonder."
   },
   {
     "word": "curious",
@@ -4837,7 +5320,8 @@
     "difficulty": 3,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "The curious child peeked into the bag."
   },
   {
     "word": "daughter",
@@ -4847,7 +5331,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The daughter waved to us."
   },
   {
     "word": "dinosaur",
@@ -4857,7 +5342,8 @@
     "difficulty": 3,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The dinosaur moved across the yard."
   },
   {
     "word": "discover",
@@ -4867,7 +5353,8 @@
     "difficulty": 3,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "The class will discover a new planet in the story."
   },
   {
     "word": "distant",
@@ -4877,7 +5364,8 @@
     "difficulty": 3,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "We could see a distant mountain at sunset."
   },
   {
     "word": "dragonfly",
@@ -4887,7 +5375,8 @@
     "difficulty": 3,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The dragonfly moved across the yard."
   },
   {
     "word": "electric",
@@ -4897,7 +5386,8 @@
     "difficulty": 3,
     "tags": [
       "science"
-    ]
+    ],
+    "exampleSentence": "The electric fan hummed softly."
   },
   {
     "word": "enough",
@@ -4907,7 +5397,8 @@
     "difficulty": 3,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "We have enough crayons for everyone."
   },
   {
     "word": "equation",
@@ -4917,7 +5408,8 @@
     "difficulty": 3,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "We used equation in math class."
   },
   {
     "word": "feast",
@@ -4927,7 +5419,8 @@
     "difficulty": 3,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The feast made the party feel special."
   },
   {
     "word": "festival",
@@ -4937,7 +5430,8 @@
     "difficulty": 3,
     "tags": [
       "celebration"
-    ]
+    ],
+    "exampleSentence": "The festival made the party feel special."
   },
   {
     "word": "fraction",
@@ -4947,7 +5441,8 @@
     "difficulty": 3,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "We used fraction in math class."
   },
   {
     "word": "galaxy",
@@ -4957,7 +5452,8 @@
     "difficulty": 3,
     "tags": [
       "space"
-    ]
+    ],
+    "exampleSentence": "The galaxy looked bright tonight."
   },
   {
     "word": "geography",
@@ -4967,7 +5463,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the geography at school."
   },
   {
     "word": "giggle",
@@ -4977,7 +5474,8 @@
     "difficulty": 3,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "The kids giggle at the silly puppet."
   },
   {
     "word": "guardian",
@@ -4987,7 +5485,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The guardian waved to us."
   },
   {
     "word": "history",
@@ -4997,7 +5496,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the history at school."
   },
   {
     "word": "horizon",
@@ -5007,7 +5507,8 @@
     "difficulty": 3,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw horizon outside today."
   },
   {
     "word": "imagine",
@@ -5017,7 +5518,8 @@
     "difficulty": 3,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "I imagine a castle in the clouds."
   },
   {
     "word": "journey",
@@ -5027,7 +5529,8 @@
     "difficulty": 3,
     "tags": [
       "travel"
-    ]
+    ],
+    "exampleSentence": "Our journey ended at the harbor."
   },
   {
     "word": "library",
@@ -5037,7 +5540,8 @@
     "difficulty": 3,
     "tags": [
       "places"
-    ]
+    ],
+    "exampleSentence": "We went to the library together."
   },
   {
     "word": "measure",
@@ -5047,7 +5551,8 @@
     "difficulty": 3,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "We used measure in math class."
   },
   {
     "word": "message",
@@ -5057,7 +5562,8 @@
     "difficulty": 3,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "I left a message on the table."
   },
   {
     "word": "microscope",
@@ -5067,7 +5573,8 @@
     "difficulty": 3,
     "tags": [
       "science"
-    ]
+    ],
+    "exampleSentence": "The microscope experiment was fun."
   },
   {
     "word": "mountain",
@@ -5077,7 +5584,8 @@
     "difficulty": 3,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw mountain outside today."
   },
   {
     "word": "musician",
@@ -5087,7 +5595,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The musician waved to us."
   },
   {
     "word": "mystery",
@@ -5097,7 +5606,8 @@
     "difficulty": 3,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "The mystery kept us guessing."
   },
   {
     "word": "neighbor",
@@ -5107,7 +5617,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The neighbor waved to us."
   },
   {
     "word": "orchard",
@@ -5117,7 +5628,8 @@
     "difficulty": 3,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw orchard outside today."
   },
   {
     "word": "outline",
@@ -5127,7 +5639,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We used the outline at school."
   },
   {
     "word": "pattern",
@@ -5137,7 +5650,8 @@
     "difficulty": 3,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "We used pattern in math class."
   },
   {
     "word": "penguin",
@@ -5147,7 +5661,8 @@
     "difficulty": 3,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The penguin moved across the yard."
   },
   {
     "word": "picture",
@@ -5157,7 +5672,8 @@
     "difficulty": 3,
     "tags": [
       "art"
-    ]
+    ],
+    "exampleSentence": "The picture hung by the window."
   },
   {
     "word": "pioneer",
@@ -5167,7 +5683,8 @@
     "difficulty": 3,
     "tags": [
       "history"
-    ]
+    ],
+    "exampleSentence": "The pioneer helped build a new home."
   },
   {
     "word": "practice",
@@ -5177,7 +5694,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We practice spelling every day."
   },
   {
     "word": "president",
@@ -5187,7 +5705,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The president waved to us."
   },
   {
     "word": "protect",
@@ -5197,7 +5716,8 @@
     "difficulty": 3,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Tall boots protect your feet from mud."
   },
   {
     "word": "recess",
@@ -5207,7 +5727,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "We run outside at recess."
   },
   {
     "word": "remember",
@@ -5217,7 +5738,8 @@
     "difficulty": 3,
     "tags": [
       "core"
-    ]
+    ],
+    "exampleSentence": "Please remember your library book."
   },
   {
     "word": "science",
@@ -5227,7 +5749,8 @@
     "difficulty": 3,
     "tags": [
       "school"
-    ]
+    ],
+    "exampleSentence": "Science is my favorite class today."
   },
   {
     "word": "shadow",
@@ -5237,7 +5760,8 @@
     "difficulty": 3,
     "tags": [
       "nature"
-    ]
+    ],
+    "exampleSentence": "We saw shadow outside today."
   },
   {
     "word": "special",
@@ -5247,7 +5771,8 @@
     "difficulty": 3,
     "tags": [
       "describing"
-    ]
+    ],
+    "exampleSentence": "Grandma baked a special cake for us."
   },
   {
     "word": "squirrel",
@@ -5257,7 +5782,8 @@
     "difficulty": 3,
     "tags": [
       "animals"
-    ]
+    ],
+    "exampleSentence": "The squirrel moved across the yard."
   },
   {
     "word": "stretch",
@@ -5267,7 +5793,8 @@
     "difficulty": 3,
     "tags": [
       "body"
-    ]
+    ],
+    "exampleSentence": "We stretch before we run laps."
   },
   {
     "word": "student",
@@ -5277,7 +5804,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The student waved to us."
   },
   {
     "word": "surprise",
@@ -5287,7 +5815,8 @@
     "difficulty": 3,
     "tags": [
       "feelings"
-    ]
+    ],
+    "exampleSentence": "The gift was a surprise for Dad."
   },
   {
     "word": "treasure",
@@ -5297,7 +5826,8 @@
     "difficulty": 3,
     "tags": [
       "stories"
-    ]
+    ],
+    "exampleSentence": "The pirate buried treasure by the tree."
   },
   {
     "word": "triangle",
@@ -5307,7 +5837,8 @@
     "difficulty": 3,
     "tags": [
       "math"
-    ]
+    ],
+    "exampleSentence": "We used triangle in math class."
   },
   {
     "word": "umbrella",
@@ -5317,7 +5848,8 @@
     "difficulty": 3,
     "tags": [
       "weather"
-    ]
+    ],
+    "exampleSentence": "I opened my umbrella in the rain."
   },
   {
     "word": "unicorn",
@@ -5327,7 +5859,8 @@
     "difficulty": 3,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The unicorn filled the story with wonder."
   },
   {
     "word": "vacation",
@@ -5337,7 +5870,8 @@
     "difficulty": 3,
     "tags": [
       "time"
-    ]
+    ],
+    "exampleSentence": "We went to the beach on vacation."
   },
   {
     "word": "volunteer",
@@ -5347,7 +5881,8 @@
     "difficulty": 3,
     "tags": [
       "people"
-    ]
+    ],
+    "exampleSentence": "The volunteer waved to us."
   },
   {
     "word": "whisper",
@@ -5357,7 +5892,8 @@
     "difficulty": 3,
     "tags": [
       "communication"
-    ]
+    ],
+    "exampleSentence": "Please whisper in the library."
   },
   {
     "word": "wizard",
@@ -5367,6 +5903,7 @@
     "difficulty": 3,
     "tags": [
       "magic"
-    ]
+    ],
+    "exampleSentence": "The wizard filled the story with wonder."
   }
 ]
