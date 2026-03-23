@@ -2,7 +2,7 @@ import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 
-const DB_VERSION = 3
+const DB_VERSION = 4
 const DEFAULT_DATABASE_PATH = '.data/spelling-wizard.sqlite'
 const LEVEL_POINT_THRESHOLD = 100
 const LEVEL_REWARD_ROBUX = 100
@@ -34,12 +34,12 @@ const SAMPLE_WORD_IDS = [
 ]
 
 const PROFILE_BLUEPRINTS = [
-  { slug: 'spark', name: 'Ava Rank Edge', birthdate: '2018-05-14' },
-  { slug: 'scroll-keeper', name: 'Noah Rank Edge', birthdate: '2017-11-02' },
-  { slug: 'rune-reader', name: 'Mia Rank Edge', birthdate: '2016-08-21' },
-  { slug: 'spell-scribe', name: 'Leo Rank Edge', birthdate: '2015-03-09' },
-  { slug: 'charm-caster', name: 'Zoe Rank Edge', birthdate: '2014-12-17' },
-  { slug: 'enchanter', name: 'Ethan Rank Edge', birthdate: '2013-06-25' }
+  { slug: 'spark', name: 'Ava', birthdate: '2018-05-14' },
+  { slug: 'scroll-keeper', name: 'Noah', birthdate: '2017-11-02' },
+  { slug: 'rune-reader', name: 'Mia', birthdate: '2016-08-21' },
+  { slug: 'spell-scribe', name: 'Leo', birthdate: '2015-03-09' },
+  { slug: 'charm-caster', name: 'Zoe', birthdate: '2014-12-17' },
+  { slug: 'enchanter', name: 'Ethan', birthdate: '2013-06-25' }
 ]
 
 export function resolveDatabasePath() {
@@ -75,8 +75,8 @@ export async function seedRankEdgeProfiles(databasePath = resolveDatabasePath())
 
     try {
       const profileInsert = db.prepare(`
-        INSERT INTO profiles (id, name, birthdate, avatar_uri, points_total, level, rank_key, created_at, updated_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO profiles (id, name, birthdate, points_total, level, rank_key, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
       `)
       const rewardInsert = db.prepare(`
         INSERT INTO rewards (id, profile_id, type, level_reached, rank_key, robux_awarded, created_at)
@@ -102,7 +102,6 @@ export async function seedRankEdgeProfiles(databasePath = resolveDatabasePath())
           profile.profileRow.id,
           profile.profileRow.name,
           profile.profileRow.birthdate,
-          profile.profileRow.avatarUri ?? null,
           profile.profileRow.pointsTotal,
           profile.profileRow.level,
           profile.profileRow.rankKey,
@@ -195,7 +194,6 @@ function applySchema(db) {
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
       birthdate TEXT NOT NULL,
-      avatar_uri TEXT,
       points_total INTEGER NOT NULL,
       level INTEGER NOT NULL,
       rank_key TEXT NOT NULL,
@@ -368,7 +366,6 @@ function buildProfileSeed(blueprint, index) {
       id: profileId,
       name: blueprint.name,
       birthdate: blueprint.birthdate,
-      avatarUri: undefined,
       pointsTotal,
       level: currentLevel,
       rankKey: currentRank.key,

@@ -15,7 +15,6 @@ export default defineEventHandler(async (event) => {
       id: generateId('profile'),
       name: body.name.trim(),
       birthdate: body.birthdate,
-      avatarUri: body.avatarUri,
       pointsTotal: 0,
       level: 0,
       rankKey: getRankForLevel(0).key,

@@ -81,6 +81,7 @@ test('bootstraps sqlite schema on first server access', async () => {
     const db = new DatabaseSync(context.databasePath)
     const tables = db.prepare("SELECT name FROM sqlite_master WHERE type = 'table' ORDER BY name").all().map(row => row.name)
     const version = db.prepare('SELECT value FROM storage_meta WHERE key = ?').get('schema_version')
+    const profileColumns = db.prepare('PRAGMA table_info(profiles)').all().map(row => row.name)
 
     assert.deepEqual(tables, [
       'profiles',
@@ -91,7 +92,8 @@ test('bootstraps sqlite schema on first server access', async () => {
       'word_progress',
       'word_review_flags'
     ])
-    assert.equal(version.value, '3')
+    assert.equal(version.value, '4')
+    assert.equal(profileColumns.includes('avatar_uri'), false)
     db.close()
   }
   finally {
@@ -117,14 +119,12 @@ test('persists profile and session flows in sqlite', async () => {
     const updated = await requestJson(context.baseUrl, `/api/profiles/${created.body.id}`, {
       method: 'PATCH',
       body: JSON.stringify({
-        name: 'Luna Star',
-        avatarUri: '/avatars/luna.png'
+        name: 'Luna Star'
       })
     })
 
     assert.equal(updated.response.status, 200)
     assert.equal(updated.body.name, 'Luna Star')
-    assert.equal(updated.body.avatarUri, '/avatars/luna.png')
 
     const session = await requestJson(context.baseUrl, '/api/sessions', {
       method: 'POST',

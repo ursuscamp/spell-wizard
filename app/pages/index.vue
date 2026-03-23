@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Profile } from '~~/shared/spelling'
+import { getRankArtPath } from '~~/app/utils/rank-art'
 
 const { data: profiles, refresh } = await useFetch<Profile[]>('/api/profiles')
 
@@ -18,7 +19,7 @@ function openEdit(profile: Profile) {
   modalOpen.value = true
 }
 
-async function submitProfile(payload: { name: string; birthdate: string; avatarUri?: string }) {
+async function submitProfile(payload: { name: string; birthdate: string }) {
   pending.value = true
   error.value = ''
 
@@ -55,20 +56,33 @@ async function deleteProfile(profile: Profile) {
   await $fetch(`/api/profiles/${profile.id}`, { method: 'DELETE' })
   await refresh()
 }
+
+function getAgeLabel(birthdate: string) {
+  const today = new Date()
+  const birth = new Date(`${birthdate}T00:00:00`)
+
+  let age = today.getFullYear() - birth.getFullYear()
+  const monthDelta = today.getMonth() - birth.getMonth()
+
+  if (monthDelta < 0 || (monthDelta === 0 && today.getDate() < birth.getDate())) {
+    age -= 1
+  }
+
+  return `${age} years old`
+}
 </script>
 
 <template>
   <main class="page-shell grid">
     <section class="hero-card hero-layout">
       <div>
-        <div class="badge"><span class="sparkles">✦ ✧ ✦</span> Spelling Wizard</div>
-        <h1 class="hero-title" style="margin-top: 1rem;">A bright spelling adventure for your whole house.</h1>
+        <div class="badge"><span class="sparkles">✦ ✧ ✦</span> Spell Wizard</div>
+        <h1 class="hero-title" style="margin-top: 1rem;">A bright Spell Wizard adventure for your whole house.</h1>
         <p class="hero-subtitle" style="font-size: 1.05rem; max-width: 38rem;">
-          Build a profile for each child, let the app speak each word aloud, and watch points, Robux rewards, and magical ranks grow across your home server.
+          Build a profile for each child, let the app speak each word aloud, and watch points, Robux rewards, and magical ranks grow as they practice.
         </p>
         <div class="button-row" style="margin-top: 1rem;">
           <button class="button-secondary" type="button" @click="openCreate">Create a profile</button>
-          <a class="button-ghost" href="https://nuxt.com" target="_blank" rel="noreferrer">Powered by Nuxt</a>
         </div>
       </div>
 
@@ -85,18 +99,18 @@ async function deleteProfile(profile: Profile) {
       </div>
 
       <p v-if="error" class="feedback error">{{ error }}</p>
-      <p v-if="pending" class="feedback info">Saving to your household server...</p>
+      <p v-if="pending" class="feedback info">Saving profile...</p>
 
       <div class="profile-grid">
         <article v-for="profile in profiles || []" :key="profile.id" class="profile-card">
-          <div class="profile-avatar">
-            <img v-if="profile.avatarUri" :src="profile.avatarUri" :alt="`${profile.name} avatar`" />
-            <span v-else>🪄</span>
+          <div class="profile-avatar profile-card-avatar">
+            <img :src="getRankArtPath(profile.rankKey, 'badge')" :alt="`${profile.rankKey} badge art`" class="rank-art-badge" />
           </div>
 
           <div>
             <h3 style="margin: 0;">{{ profile.name }}</h3>
-            <p class="tiny muted" style="margin: 0.35rem 0 0;">Born {{ profile.birthdate }} • Rank {{ profile.rankKey }}</p>
+            <p class="tiny muted" style="margin: 0.35rem 0 0;">Born {{ profile.birthdate }} • {{ getAgeLabel(profile.birthdate) }}</p>
+            <p class="profile-rank-label" style="margin: 0.2rem 0 0;">{{ profile.rankKey }}</p>
           </div>
 
           <div class="stats-grid">
@@ -120,7 +134,7 @@ async function deleteProfile(profile: Profile) {
         <div v-if="!(profiles || []).length" class="profile-card">
           <div class="profile-avatar">🌈</div>
           <h3 style="margin: 0;">No profiles yet</h3>
-          <p class="helper-text" style="margin: 0;">Create the first wizard profile to start spelling.</p>
+          <p class="helper-text" style="margin: 0;">Create the first wizard profile to start practicing.</p>
         </div>
       </div>
     </section>

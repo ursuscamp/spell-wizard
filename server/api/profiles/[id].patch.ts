@@ -17,9 +17,6 @@ export default defineEventHandler(async (event) => {
     if (body.birthdate !== undefined) {
       profile.birthdate = body.birthdate
     }
-    if (body.avatarUri !== undefined) {
-      profile.avatarUri = body.avatarUri
-    }
 
     profile.updatedAt = new Date().toISOString()
     return profile

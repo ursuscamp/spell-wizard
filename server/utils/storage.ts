@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 import type { DatabaseShape, Profile, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress, WordReviewFlag } from '../../shared/spelling'
 
-const DB_VERSION = 3
+const DB_VERSION = 4
 
 let connection: DatabaseSync | undefined
 let connectionPath: string | undefined
@@ -147,7 +147,6 @@ function applyMigrations(db: DatabaseSync, config: StorageConfig) {
         id TEXT PRIMARY KEY,
         name TEXT NOT NULL,
         birthdate TEXT NOT NULL,
-        avatar_uri TEXT,
         points_total INTEGER NOT NULL,
         level INTEGER NOT NULL,
         rank_key TEXT NOT NULL,
@@ -278,33 +277,73 @@ function applyMigrations(db: DatabaseSync, config: StorageConfig) {
       console.info(`[storage] migrated sqlite schema v${DB_VERSION} at ${config.databasePath}`)
     }
   }
+
+  if (version < 4) {
+    const profileColumns = db.prepare('PRAGMA table_info(profiles)').all() as Array<Record<string, unknown>>
+    const hasAvatarColumn = profileColumns.some(column => String(column.name) === 'avatar_uri')
+
+    if (hasAvatarColumn) {
+      db.exec(`
+        ALTER TABLE profiles RENAME TO profiles_legacy;
+
+        CREATE TABLE profiles (
+          id TEXT PRIMARY KEY,
+          name TEXT NOT NULL,
+          birthdate TEXT NOT NULL,
+          points_total INTEGER NOT NULL,
+          level INTEGER NOT NULL,
+          rank_key TEXT NOT NULL,
+          created_at TEXT NOT NULL,
+          updated_at TEXT NOT NULL
+        );
+
+        INSERT INTO profiles (id, name, birthdate, points_total, level, rank_key, created_at, updated_at)
+        SELECT id, name, birthdate, points_total, level, rank_key, created_at, updated_at
+        FROM profiles_legacy;
+
+        DROP TABLE profiles_legacy;
+
+        CREATE INDEX IF NOT EXISTS idx_profiles_created_at ON profiles(created_at);
+      `)
+    }
+
+    db.prepare(`
+      INSERT INTO storage_meta (key, value)
+      VALUES (?, ?)
+      ON CONFLICT(key) DO UPDATE SET value = excluded.value
+    `).run('schema_version', String(DB_VERSION))
+
+    if (config.debugLogging) {
+      console.info(`[storage] migrated sqlite schema v${DB_VERSION} at ${config.databasePath}`)
+    }
+  }
 }
 
 function loadDatabase(db: DatabaseSync): DatabaseShape {
   const state = defaultDatabase()
 
   state.profiles = sortProfiles(db.prepare(`
-    SELECT id, name, birthdate, avatar_uri, points_total, level, rank_key, created_at, updated_at
+    SELECT id, name, birthdate, points_total, level, rank_key, created_at, updated_at
     FROM profiles
     ORDER BY created_at ASC
-  `).all().map(row => mapProfileRow(row as Record<string, unknown>)))
+  `).all().map((row: unknown) => mapProfileRow(row as Record<string, unknown>)))
 
   state.rewards = db.prepare(`
     SELECT id, profile_id, type, level_reached, rank_key, robux_awarded, created_at
     FROM rewards
     ORDER BY created_at ASC
-  `).all().map(row => mapRewardRow(row as Record<string, unknown>))
+  `).all().map((row: unknown) => mapRewardRow(row as Record<string, unknown>))
 
   state.wordProgress = db.prepare(`
     SELECT profile_id, word_id, mastery_score, adaptive_weight, last_seen_at, times_prompted, times_correct, average_attempt_index, recent_misses, recent_successes
     FROM word_progress
-  `).all().map(row => mapWordProgressRow(row as Record<string, unknown>))
+  `).all().map((row: unknown) => mapWordProgressRow(row as Record<string, unknown>))
 
   state.wordReviewFlags = db.prepare(`
     SELECT word_id, status, updated_at
     FROM word_review_flags
     ORDER BY updated_at DESC
-  `).all().map(row => mapWordReviewFlagRow(row as Record<string, unknown>))
+  `).all().map((row: unknown) => mapWordReviewFlagRow(row as Record<string, unknown>))
 
   const promptHistoryRows = db.prepare(`
     SELECT session_id, sequence, word_id, attempts_json, completed_at, was_correct, awarded_points, correction_required, correction_completed
@@ -367,15 +406,14 @@ function persistDatabase(db: DatabaseSync, state: DatabaseShape) {
   `)
 
   const insertProfile = db.prepare(`
-    INSERT INTO profiles (id, name, birthdate, avatar_uri, points_total, level, rank_key, created_at, updated_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO profiles (id, name, birthdate, points_total, level, rank_key, created_at, updated_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `)
   for (const profile of state.profiles) {
     insertProfile.run(
       profile.id,
       profile.name,
       profile.birthdate,
-      profile.avatarUri ?? null,
       profile.pointsTotal,
       profile.level,
       profile.rankKey,
@@ -523,7 +561,6 @@ function mapProfileRow(row: Record<string, unknown>): Profile {
     id: String(row.id),
     name: String(row.name),
     birthdate: String(row.birthdate),
-    avatarUri: row.avatar_uri ? String(row.avatar_uri) : undefined,
     pointsTotal: Number(row.points_total),
     level: Number(row.level),
     rankKey: String(row.rank_key),

@@ -15,6 +15,6 @@ defineProps<{
         <span v-if="session.rewardEvents.length"> • {{ session.rewardEvents.length }} reward{{ session.rewardEvents.length === 1 ? '' : 's' }}</span>
       </p>
     </div>
-    <div v-if="!sessions.length" class="list-item tiny muted">No sessions yet. Start a spelling adventure to fill this shelf.</div>
+    <div v-if="!sessions.length" class="list-item tiny muted">No sessions yet. Start a Spell Wizard adventure to fill this shelf.</div>
   </div>
 </template>

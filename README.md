@@ -1,6 +1,6 @@
 # Spell Wizard
 
-Spell Wizard is a Nuxt app for household spelling practice with shared local persistence.
+Spell Wizard is a Nuxt app for spelling practice with shared local persistence.
 
 ## Setup
 

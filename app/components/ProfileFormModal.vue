@@ -8,41 +8,20 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   close: []
-  submit: [payload: { name: string; birthdate: string; avatarUri?: string }]
+  submit: [payload: { name: string; birthdate: string }]
 }>()
 
 const name = ref('')
 const birthdate = ref('')
-const avatarUri = ref('')
 const error = ref('')
 
 watch(() => props.open, (value) => {
   if (value) {
     name.value = props.profile?.name ?? ''
     birthdate.value = props.profile?.birthdate ?? ''
-    avatarUri.value = props.profile?.avatarUri ?? ''
     error.value = ''
   }
 })
-
-function handleFileChange(event: Event) {
-  const target = event.target as HTMLInputElement
-  const file = target.files?.[0]
-  if (!file) {
-    return
-  }
-
-  if (!file.type.startsWith('image/')) {
-    error.value = 'Choose a picture file for the profile avatar.'
-    return
-  }
-
-  const reader = new FileReader()
-  reader.onload = () => {
-    avatarUri.value = String(reader.result ?? '')
-  }
-  reader.readAsDataURL(file)
-}
 
 function submit() {
   if (!name.value.trim() || !birthdate.value) {
@@ -52,8 +31,7 @@ function submit() {
 
   emit('submit', {
     name: name.value.trim(),
-    birthdate: birthdate.value,
-    avatarUri: avatarUri.value || undefined
+    birthdate: birthdate.value
   })
 }
 </script>
@@ -79,19 +57,6 @@ function submit() {
           <span>Birthdate</span>
           <input v-model="birthdate" type="date" />
         </label>
-
-        <label class="field">
-          <span>Profile picture</span>
-          <input type="file" accept="image/*" @change="handleFileChange" />
-        </label>
-
-        <div class="button-row" style="align-items: center;">
-          <div class="avatar-preview">
-            <img v-if="avatarUri" :src="avatarUri" alt="Profile preview" />
-            <span v-else>✨</span>
-          </div>
-          <p class="helper-text tiny" style="margin: 0; max-width: 16rem;">Pick any fun picture your child likes. It stays on your household server with the profile.</p>
-        </div>
 
         <p v-if="error" class="feedback error">{{ error }}</p>
 

@@ -35,7 +35,6 @@ export interface Profile {
   id: string
   name: string
   birthdate: string
-  avatarUri?: string
   pointsTotal: number
   level: number
   rankKey: string
@@ -152,7 +151,6 @@ export interface HistoryView {
 export interface ProfileInput {
   name: string
   birthdate: string
-  avatarUri?: string
 }
 
 export interface AppRuleSet {

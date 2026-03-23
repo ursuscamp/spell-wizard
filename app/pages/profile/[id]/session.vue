@@ -10,6 +10,7 @@ const { data: profile } = await useFetch<Profile>(() => `/api/profiles/${profile
 
 const session = ref<SessionView | null>(null)
 const answer = ref('')
+const answerInput = ref<HTMLInputElement | null>(null)
 const feedback = ref('')
 const feedbackTone = ref<'success' | 'warning' | 'error' | 'info'>('info')
 const rewards = ref<AttemptResponse['rewards']>([])
@@ -60,6 +61,20 @@ const visiblePrompt = computed(() => {
   return maskedPrompt.value
 })
 
+async function focusAnswerInput() {
+  await nextTick()
+
+  if (!answerInput.value) {
+    return
+  }
+
+  answerInput.value.focus()
+
+  setTimeout(() => {
+    answerInput.value?.focus()
+  }, 0)
+}
+
 async function startSession() {
   loading.value = true
   const created = await $fetch<SessionView>('/api/sessions', {
@@ -102,6 +117,8 @@ async function enunciateWord() {
     mode: 'enunciate',
     fallbackWord: canFallbackToStandard ? currentWord.value : undefined
   })
+
+  await focusAnswerInput()
 }
 
 async function playExampleSentence() {
@@ -119,6 +136,7 @@ async function playExampleSentence() {
   }
   finally {
     sentenceTooltipVisible.value = false
+    await focusAnswerInput()
   }
 }
 
@@ -196,7 +214,24 @@ watch(() => session.value?.currentPrompt.wordId, async (wordId) => {
     revealedLetters.value = []
     await nextTick()
     replayWord({ interrupt: false })
+    await focusAnswerInput()
   }
+})
+
+watch(session, async (value) => {
+  if (value && !sessionEnded.value) {
+    await focusAnswerInput()
+  }
+})
+
+onMounted(() => {
+  if (!session.value || sessionEnded.value) {
+    return
+  }
+
+  setTimeout(() => {
+    focusAnswerInput()
+  }, 50)
 })
 
 await startSession()
@@ -210,16 +245,13 @@ await startSession()
         <h1 class="hero-title" style="margin-top: 1rem;">{{ profile.name }}'s spelling session</h1>
         <p class="hero-subtitle">Hear the word, type your answer, and keep going for as many words as you want.</p>
       </div>
-        <div class="button-row">
-          <button class="button-secondary" type="button" @click="replayWord({ interrupt: true })">Read word aloud</button>
-          <button class="button-secondary" type="button" :disabled="loading || !voiceEnabled || !speechSupported" @click="enunciateWord">Enunciate word</button>
-          <button class="button-secondary" type="button" :disabled="loading || !voiceEnabled || !speechSupported || !currentExampleSentence" @click="playExampleSentence">Read sentence aloud</button>
-          <button class="button-ghost" type="button" @click="endCurrentSession">Finish session</button>
-        </div>
-      </section>
+      <div class="button-row">
+        <button class="button-ghost" type="button" @click="endCurrentSession">Finish session</button>
+      </div>
+    </section>
 
     <div v-if="sessionEnded" class="panel">
-      <p class="feedback success">Session saved to your household server.</p>
+      <p class="feedback success">Session saved.</p>
       <NuxtLink class="button-secondary" :to="`/profile/${profileId}`">Return to dashboard</NuxtLink>
     </div>
 
@@ -229,13 +261,6 @@ await startSession()
         <h2 class="prompt-word" style="margin-top: 1rem;">
           {{ visiblePrompt || '_ _ _' }}
         </h2>
-        <div v-if="maskedExampleSentence" class="sentence-hint-row">
-          <div :class="['sentence-tooltip', { 'sentence-tooltip-visible': sentenceTooltipVisible }]">
-            <div class="sentence-tooltip-panel tiny" role="status" aria-live="polite">
-              {{ maskedExampleSentence }}
-            </div>
-          </div>
-        </div>
         <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : canEnunciate ? 'Each guess reveals any matching letters in the word, even if they are not in the right place yet. You can also tap enunciate for extra-clear speech.' : 'Each guess reveals any matching letters in the word, even if they are not in the right place yet.' }}</p>
 
         <div class="stats-grid" style="margin: 1rem 0;">
@@ -256,14 +281,23 @@ await startSession()
         <form class="form-grid" @submit.prevent="submitAnswer">
           <label class="field">
             <span>{{ session.correctionRequired ? 'Type the revealed word' : 'Type your spelling' }}</span>
-            <input v-model="answer" class="session-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" />
+            <input ref="answerInput" v-model="answer" class="session-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus />
           </label>
 
           <div class="button-row">
             <button class="button-secondary" :disabled="loading" type="submit">{{ session.correctionRequired ? 'Lock in correction' : 'Submit spelling' }}</button>
-            <button class="button-ghost" :disabled="loading" type="button" @click="replayWord({ interrupt: true })">Hear it again</button>
+            <button class="button-ghost" :disabled="loading" type="button" @click="replayWord({ interrupt: true }).then(() => focusAnswerInput())">Hear it again</button>
             <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported" type="button" @click="enunciateWord">Enunciate</button>
-            <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported || !currentExampleSentence" type="button" @click="playExampleSentence">Read sentence</button>
+            <div
+              v-if="maskedExampleSentence"
+              :class="['sentence-tooltip-anchor', { 'sentence-tooltip-visible': sentenceTooltipVisible }]"
+            >
+              <div class="sentence-tooltip-panel tiny" role="status" aria-live="polite">
+                {{ maskedExampleSentence }}
+              </div>
+              <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported || !currentExampleSentence" type="button" @click="playExampleSentence">Read sentence</button>
+            </div>
+            <button v-else class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported || !currentExampleSentence" type="button" @click="playExampleSentence">Read sentence</button>
           </div>
         </form>
 

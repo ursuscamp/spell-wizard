@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { DashboardView } from '~~/shared/spelling'
+import { getRankArtPath } from '~~/app/utils/rank-art'
 
 const route = useRoute()
 const profileId = computed(() => route.params.id as string)
@@ -21,7 +22,7 @@ watch(profileId, () => refresh())
       <div>
         <NuxtLink class="badge" to="/">← Back to profiles</NuxtLink>
         <h1 class="hero-title" style="margin-top: 1rem;">{{ data.profile.name }}'s wizard dashboard</h1>
-        <p class="hero-subtitle">Age-aware practice, adaptive review, and rewards that stay synced on your home server.</p>
+        <p class="hero-subtitle">Age-aware practice, adaptive review, and rewards that stay in sync.</p>
 
         <div class="button-row" style="margin-top: 1rem;">
           <NuxtLink class="button-secondary" :to="`/profile/${data.profile.id}/session`">Start spelling session</NuxtLink>
@@ -29,7 +30,9 @@ watch(profileId, () => refresh())
         </div>
       </div>
 
-      <div class="wizard-art" />
+      <div class="rank-hero-art">
+        <img :src="getRankArtPath(data.profile.rankKey, 'portrait')" :alt="`${data.profile.rankKey} portrait art`" />
+      </div>
     </section>
 
     <section class="stats-grid">
@@ -43,6 +46,9 @@ watch(profileId, () => refresh())
       </div>
       <div class="stat-card">
         <span class="tiny muted">Rank</span>
+        <div class="rank-stat-badge-frame">
+          <img class="rank-stat-badge" :src="getRankArtPath(data.profile.rankKey, 'badge')" :alt="`${data.profile.rankKey} badge art`" />
+        </div>
         <strong>{{ data.profile.rankKey }}</strong>
       </div>
       <div class="stat-card">

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { HistoryView } from '~~/shared/spelling'
+import { getRankArtPath } from '~~/app/utils/rank-art'
 
 const route = useRoute()
 const profileId = computed(() => route.params.id as string)
@@ -9,13 +10,15 @@ const { data, error } = await useFetch<HistoryView>(() => `/api/profiles/${profi
 <template>
   <main class="page-shell grid" v-if="data">
     <section class="hero-card">
-      <div class="header-layout">
+      <div class="hero-layout">
         <div>
           <NuxtLink class="badge" :to="`/profile/${data.profile.id}`">← Back to dashboard</NuxtLink>
           <h1 class="hero-title" style="margin-top: 1rem;">{{ data.profile.name }}'s spelling history</h1>
           <p class="hero-subtitle">Review recent sessions, reward bursts, and words that need another magical pass.</p>
         </div>
-        <div class="wizard-art" style="min-height: 130px;" />
+        <div class="rank-history-art">
+          <img :src="getRankArtPath(data.profile.rankKey, 'portrait')" :alt="`${data.profile.rankKey} portrait art`" />
+        </div>
       </div>
     </section>
 
