@@ -7,13 +7,39 @@ const profileId = computed(() => route.params.id as string)
 const { data, refresh, error } = await useFetch<DashboardView>(() => `/api/profiles/${profileId.value}/dashboard`)
 
 const { soundEnabled, reducedMotion } = useFunEffects()
-const { voiceEnabled } = usePromptVoice()
+const {
+  availableVoices,
+  loadVoices,
+  selectedVoiceUri,
+  setSelectedVoiceUri,
+  speechReady,
+  speechSupported,
+  speakWord,
+  voiceEnabled
+} = usePromptVoice()
 
 function formatRewardLabel(amount: number) {
   return `${amount} Robux`
 }
 
+function updateSelectedVoice(event: Event) {
+  setSelectedVoiceUri((event.target as HTMLSelectElement).value)
+}
+
+async function testSelectedVoice() {
+  await speakWord('Welcome to Spell Wizard!', {
+    interrupt: true,
+    mode: 'standard'
+  })
+}
+
 watch(profileId, () => refresh())
+
+onMounted(() => {
+  if (speechSupported.value) {
+    loadVoices()
+  }
+})
 </script>
 
 <template>
@@ -75,6 +101,40 @@ watch(profileId, () => refresh())
           <button class="button-ghost" type="button" @click="soundEnabled = !soundEnabled">{{ soundEnabled ? 'Mute sparkle sounds' : 'Enable sparkle sounds' }}</button>
           <button class="button-ghost" type="button" @click="voiceEnabled = !voiceEnabled">{{ voiceEnabled ? 'Mute spoken words' : 'Enable spoken words' }}</button>
           <button class="button-ghost" type="button" @click="reducedMotion = !reducedMotion">{{ reducedMotion ? 'Enable motion' : 'Reduce motion' }}</button>
+        </div>
+
+        <label class="field" style="margin-top: 1rem; max-width: 24rem;">
+          <span>Spoken voice</span>
+          <select
+            :disabled="!voiceEnabled || !speechSupported || !availableVoices.length"
+            :value="selectedVoiceUri ?? ''"
+            @change="updateSelectedVoice"
+          >
+            <option value="">Default browser voice</option>
+            <option v-for="voice in availableVoices" :key="voice.id" :value="voice.id">
+              {{ `${voice.name} (${voice.lang})${voice.default ? ' - default' : ''}` }}
+            </option>
+          </select>
+          <p class="tiny muted" style="margin: 0;">
+            {{ !voiceEnabled
+              ? 'Turn on spoken words to choose a voice.'
+              : !speechSupported
+                ? 'This browser does not expose speech voices on this device.'
+                : !speechReady && !availableVoices.length
+                  ? 'Loading available voices from this browser and device...'
+                  : 'Voices come from this browser and device, so choices may differ across computers.' }}
+          </p>
+        </label>
+
+        <div class="button-row" style="margin-top: 0.75rem;">
+          <button
+            class="button-ghost"
+            type="button"
+            :disabled="!voiceEnabled || !speechSupported || !availableVoices.length"
+            @click="testSelectedVoice"
+          >
+            Test voice
+          </button>
         </div>
 
         <div class="list" style="margin-top: 1rem;">
