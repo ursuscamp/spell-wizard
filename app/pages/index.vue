@@ -86,7 +86,9 @@ function getAgeLabel(birthdate: string) {
         </div>
       </div>
 
-      <div class="wizard-art" aria-hidden="true" />
+      <div class="wizard-art">
+        <img src="/logo.png" alt="Spell Wizard logo" class="hero-logo" />
+      </div>
     </section>
 
     <section class="panel">

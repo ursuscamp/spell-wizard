@@ -236,20 +236,16 @@ button {
 
 .wizard-art {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 180px;
+  padding: 1rem;
   border-radius: var(--radius-xl);
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.72), transparent 30%),
     linear-gradient(135deg, rgba(78, 182, 232, 0.9), rgba(99, 215, 197, 0.82));
   overflow: hidden;
-}
-
-.wizard-art::before {
-  content: '🦉';
-  position: absolute;
-  right: 1rem;
-  bottom: 0.4rem;
-  font-size: 5rem;
 }
 
 .wizard-art::after {
@@ -260,6 +256,16 @@ button {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.35rem;
+}
+
+.hero-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 420px);
+  max-height: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 30px rgba(22, 63, 96, 0.18));
 }
 
 .rank-hero-art,

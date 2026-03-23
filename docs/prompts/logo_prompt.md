@@ -1,0 +1,7 @@
+Create a premium logo for a children's spelling game called Spell Wizard. Combine a friendly magical owl mascot icon with the words "Spell Wizard" in one unified logo. The full logo should be centered on the canvas and scaled to fill most of the canvas area, with very little empty margin around it. Make the owl and wordmark large, prominent, and compositionally tight so the design nearly reaches the canvas edges without being cropped. Do not make the logo small inside a large empty transparent area.
+
+The owl should feel bright, clever, and welcoming for parents and kids, with a polished storybook-fantasy style: soft rounded shapes, big expressive eyes, and subtle wizard details like a tiny star-tipped hat, glowing wand accent, or small magical sparkles. Typography should feel whimsical, premium, and highly legible, like a magical storybook title, not overly ornate or hard to read. Use a clean horizontal or stacked layout that maximizes canvas usage and reads clearly at a glance.
+
+Color palette: sky blue, teal, warm gold, and soft cream. Transparent background only. Crisp vector-style illustration, clean edges, high contrast silhouette, balanced composition, production-ready logo. No watermark, no mockup, no extra scene, no clutter, no photorealism, no dark fantasy, no horror, no distorted letters.
+
+Important composition instruction: scale the logo mark and text so they occupy about 85% to 95% of the total canvas, with minimal padding, while keeping the full logo fully visible.
