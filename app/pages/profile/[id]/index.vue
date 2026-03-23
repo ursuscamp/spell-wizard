@@ -36,9 +36,7 @@ async function testSelectedVoice() {
 watch(profileId, () => refresh())
 
 onMounted(() => {
-  if (speechSupported.value) {
-    loadVoices()
-  }
+  loadVoices()
 })
 </script>
 
@@ -116,15 +114,15 @@ onMounted(() => {
             </option>
           </select>
           <p class="tiny muted" style="margin: 0;">
-            {{ !voiceEnabled
-              ? 'Turn on spoken words to choose a voice.'
-              : !speechSupported
-                ? 'This browser does not expose speech voices on this device.'
-                : !speechReady && !availableVoices.length
-                  ? 'Loading available voices from this browser and device...'
-                  : 'Voices come from this browser and device, so choices may differ across computers.' }}
-          </p>
-        </label>
+              {{ !voiceEnabled
+                ? 'Turn on spoken words to choose a voice.'
+                : !speechSupported
+                  ? 'The Edge TTS voice service is unavailable right now.'
+                  : !speechReady && !availableVoices.length
+                  ? 'Loading available English Edge voices from the server...'
+                  : 'Voices come from the Edge TTS service, so every device uses the same English voice list.' }}
+           </p>
+         </label>
 
         <div class="button-row" style="margin-top: 0.75rem;">
           <button

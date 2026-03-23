@@ -7,6 +7,12 @@ export default defineNuxtConfig({
     storage: {
       databasePath: '.data/spelling-wizard.sqlite',
       debugLogging: false
+    },
+    tts: {
+      cacheDirectory: '.data/tts-cache',
+      defaultVoice: 'en-US-AvaNeural',
+      outputFormat: 'audio-24khz-96kbitrate-mono-mp3',
+      mockEnabled: false
     }
   }
 })

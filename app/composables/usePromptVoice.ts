@@ -2,6 +2,8 @@ type SpeakWordOptions = {
   interrupt?: boolean
   mode?: 'standard' | 'enunciate'
   fallbackWord?: string
+  bypassCache?: boolean
+  voiceId?: string | null
 }
 
 type VoiceOption = {
@@ -14,29 +16,40 @@ type VoiceOption = {
 const VOICE_LOAD_TIMEOUT_MS = 1500
 const SELECTED_VOICE_STORAGE_KEY = 'spell-wizard:selected-voice'
 
-function formatVoiceOption(voice: SpeechSynthesisVoice): VoiceOption {
-  return {
-    id: voice.voiceURI,
-    name: voice.name,
-    lang: voice.lang,
-    default: voice.default
+let activeAudio: HTMLAudioElement | null = null
+let activeAudioUrl: string | null = null
+
+function releaseActiveAudio() {
+  if (activeAudio) {
+    activeAudio.pause()
+    activeAudio.currentTime = 0
+    activeAudio = null
+  }
+
+  if (activeAudioUrl) {
+    URL.revokeObjectURL(activeAudioUrl)
+    activeAudioUrl = null
   }
 }
 
-function scoreVoiceOption(voice: SpeechSynthesisVoice) {
-  const isEnglish = voice.lang.toLowerCase().startsWith('en')
-  return Number(isEnglish) * 2 + Number(voice.default)
-}
-
-function isEnglishVoice(voice: SpeechSynthesisVoice) {
+function isEnglishVoice(voice: VoiceOption) {
   return voice.lang.toLowerCase().startsWith('en')
 }
 
-function sortVoices(voices: SpeechSynthesisVoice[]) {
+function getVoiceLocalePriority(locale: string) {
+  return locale.toLowerCase() === 'en-us' ? 0 : 1
+}
+
+function sortVoices(voices: VoiceOption[]) {
   return [...voices].sort((left, right) => {
-    const scoreDifference = scoreVoiceOption(right) - scoreVoiceOption(left)
-    if (scoreDifference !== 0) {
-      return scoreDifference
+    const localePriorityDifference = getVoiceLocalePriority(left.lang) - getVoiceLocalePriority(right.lang)
+    if (localePriorityDifference !== 0) {
+      return localePriorityDifference
+    }
+
+    const localeComparison = left.lang.localeCompare(right.lang)
+    if (localeComparison !== 0) {
+      return localeComparison
     }
 
     const nameComparison = left.name.localeCompare(right.name)
@@ -44,7 +57,7 @@ function sortVoices(voices: SpeechSynthesisVoice[]) {
       return nameComparison
     }
 
-    return left.lang.localeCompare(right.lang)
+    return left.id.localeCompare(right.id)
   })
 }
 
@@ -80,10 +93,9 @@ export function usePromptVoice() {
     window.localStorage.removeItem(SELECTED_VOICE_STORAGE_KEY)
   }
 
-  function syncAvailableVoices(voices: SpeechSynthesisVoice[]) {
+  function syncAvailableVoices(voices: VoiceOption[]) {
     availableVoices.value = sortVoices(voices)
       .filter(isEnglishVoice)
-      .map(formatVoiceOption)
 
     if (selectedVoiceUri.value && !availableVoices.value.some(voice => voice.id === selectedVoiceUri.value)) {
       setSelectedVoiceUri(null)
@@ -99,50 +111,39 @@ export function usePromptVoice() {
 
   if (import.meta.client) {
     loadSelectedVoiceUri()
-    speechSupported.value = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window
-    speechReady.value = speechSupported.value && window.speechSynthesis.getVoices().length > 0
-    if (speechReady.value) {
-      syncAvailableVoices(window.speechSynthesis.getVoices())
-    }
+    speechSupported.value = typeof Audio !== 'undefined'
+    speechReady.value = speechSupported.value
   }
 
   async function waitForVoices() {
-    if (!import.meta.client || !speechSupported.value) {
+    if (!import.meta.client) {
       return []
     }
 
-    const speech = window.speechSynthesis
-    const availableSpeechVoices = speech.getVoices()
-
-    if (availableSpeechVoices.length > 0) {
-      syncAvailableVoices(availableSpeechVoices)
+    if (availableVoices.value.length > 0) {
       speechReady.value = true
-      return availableSpeechVoices
+      return availableVoices.value
     }
 
-    const voices = await new Promise<SpeechSynthesisVoice[]>((resolve) => {
-      const timeoutId = window.setTimeout(() => {
-        cleanup()
-        resolve(speech.getVoices())
-      }, VOICE_LOAD_TIMEOUT_MS)
+    const timeoutId = window.setTimeout(() => {
+      speechReady.value = false
+    }, VOICE_LOAD_TIMEOUT_MS)
 
-      const handleVoicesChanged = () => {
-        cleanup()
-        resolve(speech.getVoices())
-      }
-
-      const cleanup = () => {
-        window.clearTimeout(timeoutId)
-        speech.removeEventListener('voiceschanged', handleVoicesChanged)
-      }
-
-      speech.addEventListener('voiceschanged', handleVoicesChanged, { once: true })
-    })
-
-    const sortedVoices = sortVoices(voices)
-    syncAvailableVoices(sortedVoices)
-    speechReady.value = sortedVoices.length > 0
-    return sortedVoices
+    try {
+      const voices = await $fetch<VoiceOption[]>('/api/tts/voices')
+      const sortedVoices = sortVoices(voices)
+      syncAvailableVoices(sortedVoices)
+      speechReady.value = true
+      return sortedVoices
+    }
+    catch {
+      speechReady.value = false
+      availableVoices.value = []
+      return []
+    }
+    finally {
+      window.clearTimeout(timeoutId)
+    }
   }
 
   async function speakWord(word?: string, options: SpeakWordOptions = {}) {
@@ -150,41 +151,63 @@ export function usePromptVoice() {
       return false
     }
 
-    const speech = window.speechSynthesis
-    const { interrupt = false, mode = 'standard', fallbackWord } = options
-    const voices = await waitForVoices()
-    const config = buildVoiceConfig(mode)
+    const { interrupt = false, mode = 'standard', fallbackWord, bypassCache = false, voiceId } = options
     const textToSpeak = word?.trim() || fallbackWord?.trim()
 
     if (!textToSpeak) {
       return false
     }
 
-    if (interrupt && (speech.speaking || speech.pending)) {
-      speech.cancel()
+    if (interrupt) {
+      releaseActiveAudio()
     }
 
-    speech.resume()
+    try {
+      const response = await fetch('/api/tts', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          text: textToSpeak,
+          mode,
+          voiceId: voiceId ?? selectedVoiceUri.value,
+          bypassCache
+        })
+      })
 
-    const utterance = new SpeechSynthesisUtterance(textToSpeak)
-    utterance.rate = config.rate
-    utterance.pitch = config.pitch
-    utterance.volume = config.volume
-    const voice = voices.find(item => item.voiceURI === selectedVoiceUri.value)
-      ?? voices.find(item => item.lang.toLowerCase().startsWith('en'))
-      ?? voices.find(item => item.default)
-      ?? voices[0]
-    if (voice) {
-      utterance.voice = voice
+      if (!response.ok) {
+        return false
+      }
+
+      const audioBlob = await response.blob()
+      releaseActiveAudio()
+      activeAudioUrl = URL.createObjectURL(audioBlob)
+      activeAudio = new Audio(activeAudioUrl)
+
+      const finished = new Promise<boolean>((resolve) => {
+        if (!activeAudio) {
+          resolve(false)
+          return
+        }
+
+        activeAudio.onended = () => {
+          releaseActiveAudio()
+          resolve(true)
+        }
+        activeAudio.onerror = () => {
+          releaseActiveAudio()
+          resolve(false)
+        }
+      })
+
+      await activeAudio.play()
+      return finished
     }
-
-    const finished = new Promise<boolean>((resolve) => {
-      utterance.onend = () => resolve(true)
-      utterance.onerror = () => resolve(false)
-    })
-
-    speech.speak(utterance)
-    return finished
+    catch {
+      releaseActiveAudio()
+      return false
+    }
   }
 
   return {

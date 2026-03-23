@@ -55,19 +55,30 @@ const playbackTone = ref<FeedbackTone>('info')
 const reviewActionKey = ref('')
 const ttsInput = ref('')
 const ttsMode = ref<PlaybackMode>('standard')
+const testerVoiceId = ref('')
 
 const { data: words, pending, error, refresh } = await useFetch<AdminWordReviewEntry[]>('/api/admin/words', {
   default: () => []
 })
 
-const { speakWord, speechSupported, voiceEnabled } = usePromptVoice()
+const {
+  availableVoices,
+  loadVoices,
+  speakWord,
+  speechReady,
+  speechSupported
+} = usePromptVoice()
 
 const wordEntries = computed(() => words.value ?? [])
 const filteredWords = computed(() => filterAdminWords(wordEntries.value, query.value, reviewFilter.value))
-const playbackEnabled = computed(() => voiceEnabled.value && speechSupported.value)
+const playbackEnabled = computed(() => speechSupported.value)
 const unreviewedCount = computed(() => wordEntries.value.filter(entry => entry.reviewStatus === 'unreviewed').length)
 const needsReviewCount = computed(() => wordEntries.value.filter(entry => entry.reviewStatus === 'needs-review').length)
 const reviewedCount = computed(() => wordEntries.value.filter(entry => entry.reviewStatus === 'reviewed').length)
+
+if (import.meta.client && !availableVoices.value.length) {
+  await loadVoices()
+}
 
 function setPlaybackFeedback(tone: FeedbackTone, message: string) {
   playbackTone.value = tone
@@ -92,10 +103,10 @@ function loadTtsTester(entry: AdminWordReviewEntry, mode: PlaybackMode = 'standa
 async function playAdminWord(entry: AdminWordReviewEntry, mode: PlaybackMode) {
   playbackFeedback.value = ''
 
-  if (!playbackEnabled.value) {
-    setPlaybackFeedback('warning', 'Browser speech is unavailable, so playback controls are disabled on this device.')
-    return
-  }
+    if (!playbackEnabled.value) {
+      setPlaybackFeedback('warning', 'Server TTS is unavailable right now, so playback controls are disabled.')
+      return
+    }
 
   const wordToSpeak = mode === 'enunciate' ? entry.enunciationText : entry.word
 
@@ -108,9 +119,9 @@ async function playAdminWord(entry: AdminWordReviewEntry, mode: PlaybackMode) {
       fallbackWord: entry.word
     })
 
-    if (!spoken) {
-      setPlaybackFeedback('warning', 'Playback did not start. Check that browser speech is enabled for this device.')
-    }
+      if (!spoken) {
+        setPlaybackFeedback('warning', 'Playback did not start. Check that the Edge TTS service is available and try again.')
+      }
   }
   catch {
     setPlaybackFeedback('error', `Could not play ${entry.word}. The rest of the review list is still ready to use.`)
@@ -176,10 +187,10 @@ async function markAllReviewed() {
 async function testTts() {
   playbackFeedback.value = ''
 
-  if (!playbackEnabled.value) {
-    setPlaybackFeedback('warning', 'Browser speech is unavailable, so the TTS tester cannot play audio on this device.')
-    return
-  }
+    if (!playbackEnabled.value) {
+      setPlaybackFeedback('warning', 'Server TTS is unavailable, so the TTS tester cannot play audio right now.')
+      return
+    }
 
   const textToSpeak = ttsInput.value.trim()
   if (!textToSpeak) {
@@ -193,11 +204,13 @@ async function testTts() {
     const spoken = await speakWord(textToSpeak, {
       interrupt: true,
       mode: ttsMode.value,
-      fallbackWord: textToSpeak
+      fallbackWord: textToSpeak,
+      bypassCache: true,
+      voiceId: testerVoiceId.value || null
     })
 
     if (!spoken) {
-      setPlaybackFeedback('warning', 'The TTS tester did not start playback. Check browser speech settings and try again.')
+      setPlaybackFeedback('warning', 'The TTS tester did not start playback. Check the Edge TTS service and try again.')
     }
   }
   catch {
@@ -307,14 +320,33 @@ async function testTts() {
             </select>
           </label>
 
+          <label class="field" style="margin: 0;">
+            <span>Voice</span>
+            <select
+              v-model="testerVoiceId"
+              class="admin-select"
+            >
+              <option value="">Default voice</option>
+              <option v-for="voice in availableVoices" :key="voice.id" :value="voice.id">
+                {{ voice.name }} ({{ voice.lang }})
+              </option>
+            </select>
+          </label>
+
           <button class="button-secondary" type="button" :disabled="!playbackEnabled || activePlaybackKey === 'tts-tester'" @click="testTts">
             Test TTS
           </button>
         </div>
+
+        <p class="helper-text" style="margin: 0;">
+          {{ !speechReady && !availableVoices.length
+            ? 'Loading available English Edge voices from the server. You can still use the default voice while this loads.'
+            : 'Choose a tester voice here without changing the rest of the review tools or learner playback.' }}
+        </p>
       </section>
 
       <p v-if="!playbackEnabled" class="feedback warning">
-        Browser speech is not available here, so you can still browse the catalog but not play pronunciation.
+        Edge TTS is not available here right now, so you can still browse the catalog but not play pronunciation.
       </p>
       <p v-else-if="playbackFeedback" :class="['feedback', playbackTone]">
         {{ playbackFeedback }}

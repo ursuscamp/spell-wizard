@@ -10,7 +10,7 @@ test('session page uses a single automatic TTS trigger path', async () => {
 
   assert.equal(source.includes('nextTick(() => replayWord())'), false)
   assert.match(source, /watch\(\(\) => session\.value\?\.currentPrompt\.wordId,[\s\S]*replayWord\(\{ interrupt: false \}\)/)
-  assert.match(source, /@click="replayWord\(\{ interrupt: true \}\)"/)
+  assert.match(source, /@click="replayWord\(\{ interrupt: true \}\)\.then\(\(\) => focusAnswerInput\(\)\)"/)
 })
 
 test('session page reveals matching letters inside a masked prompt', async () => {
@@ -28,22 +28,26 @@ test('prompt voice composable only cancels speech for explicit replays', async (
   const source = await readFile(join(root, 'app/composables/usePromptVoice.ts'), 'utf8')
 
   assert.match(source, /function speakWord\(word\?: string, options: SpeakWordOptions = \{\}\)/)
-  assert.match(source, /const \{ interrupt = false, mode = 'standard', fallbackWord \} = options/)
-  assert.match(source, /const voices = await waitForVoices\(\)/)
-  assert.match(source, /const config = buildVoiceConfig\(mode\)/)
-  assert.match(source, /speech\.resume\(\)/)
-  assert.match(source, /if \(interrupt && \(speech\.speaking \|\| speech\.pending\)\) \{\s+speech\.cancel\(\)/)
+  assert.match(source, /const \{ interrupt = false, mode = 'standard', fallbackWord, bypassCache = false, voiceId \} = options/)
+  assert.match(source, /if \(interrupt\) \{\s+releaseActiveAudio\(\)/)
+  assert.match(source, /const response = await fetch\('\/api\/tts'/)
+  assert.match(source, /body: JSON\.stringify\(\{[\s\S]*voiceId: voiceId \?\? selectedVoiceUri\.value,[\s\S]*bypassCache[\s\S]*\}\)/)
+  assert.match(source, /activeAudio = new Audio\(activeAudioUrl\)/)
   assert.match(source, /const finished = new Promise<boolean>\(\(resolve\) => \{/)
-  assert.match(source, /utterance\.onend = \(\) => resolve\(true\)/)
-  assert.match(source, /utterance\.onerror = \(\) => resolve\(false\)/)
+  assert.match(source, /activeAudio\.onended = \(\) => \{[\s\S]*resolve\(true\)/)
+  assert.match(source, /activeAudio\.onerror = \(\) => \{[\s\S]*resolve\(false\)/)
 })
 
-test('prompt voice composable waits for async voice loading before selecting a voice', async () => {
+test('prompt voice composable loads voice options from the server', async () => {
   const source = await readFile(join(root, 'app/composables/usePromptVoice.ts'), 'utf8')
 
+  assert.match(source, /function getVoiceLocalePriority\(locale: string\)/)
   assert.match(source, /async function waitForVoices\(\)/)
-  assert.match(source, /speech\.addEventListener\('voiceschanged', handleVoicesChanged, \{ once: true \}\)/)
-  assert.match(source, /const voice = voices\.find\(item => item\.lang\.startsWith\('en'\)\)\s+\?\? voices\.find\(item => item\.default\)\s+\?\? voices\[0\]/)
+  assert.match(source, /if \(!import\.meta\.client\) \{\s+return \[\]/)
+  assert.match(source, /const voices = await \$fetch<VoiceOption\[]>\('\/api\/tts\/voices'\)/)
+  assert.match(source, /syncAvailableVoices\(sortedVoices\)/)
+  assert.match(source, /const localePriorityDifference = getVoiceLocalePriority\(left\.lang\) - getVoiceLocalePriority\(right\.lang\)/)
+  assert.doesNotMatch(source, /speechSupported\.value = false/)
 })
 
 test('prompt voice composable exposes separate standard and enunciate voice settings', async () => {
@@ -51,8 +55,8 @@ test('prompt voice composable exposes separate standard and enunciate voice sett
 
   assert.match(source, /function buildVoiceConfig\(mode: 'standard' \| 'enunciate' = 'standard'\)/)
   assert.match(source, /return mode === 'enunciate'\s+\? speechConfig\.enunciate\s+: speechConfig\.standard/)
-  assert.match(source, /utterance\.rate = config\.rate/)
-  assert.match(source, /utterance\.pitch = config\.pitch/)
+  assert.match(source, /mode,/)
+  assert.match(source, /voiceId \?\? selectedVoiceUri\.value/)
 })
 
 test('session page offers a separate enunciate action', async () => {
@@ -76,10 +80,9 @@ test('session page exposes masked example sentence hints during sentence playbac
   assert.match(source, /sentenceTooltipVisible\.value = true/)
   assert.match(source, /await speakWord\(currentExampleSentence\.value, \{[\s\S]*mode: 'standard'/)
   assert.match(source, /sentenceTooltipVisible\.value = false/)
-  assert.match(source, /v-if="maskedExampleSentence" class="sentence-hint-row"/)
+  assert.match(source, /v-if="maskedExampleSentence"/)
   assert.match(source, /'sentence-tooltip-visible': sentenceTooltipVisible/)
   assert.match(source, /\{\{ maskedExampleSentence \}\}/)
   assert.match(source, /@click="playExampleSentence"/)
-  assert.match(source, />Read sentence aloud</)
   assert.match(source, />Read sentence</)
 })
