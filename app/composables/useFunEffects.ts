@@ -1,6 +1,29 @@
 export function useFunEffects() {
   const soundEnabled = useState('sound-enabled', () => true)
   const reducedMotion = useState('reduced-motion', () => false)
+  let mediaQuery: MediaQueryList | null = null
+
+  function syncReducedMotionPreference() {
+    if (!import.meta.client) {
+      return
+    }
+
+    mediaQuery ??= window.matchMedia('(prefers-reduced-motion: reduce)')
+    reducedMotion.value = mediaQuery.matches
+  }
+
+  if (import.meta.client) {
+    onMounted(() => {
+      syncReducedMotionPreference()
+
+      mediaQuery ??= window.matchMedia('(prefers-reduced-motion: reduce)')
+      mediaQuery.addEventListener('change', syncReducedMotionPreference)
+    })
+
+    onBeforeUnmount(() => {
+      mediaQuery?.removeEventListener('change', syncReducedMotionPreference)
+    })
+  }
 
   function playTone(frequency: number, duration = 0.15, type: OscillatorType = 'sine') {
     if (!import.meta.client || !soundEnabled.value) {

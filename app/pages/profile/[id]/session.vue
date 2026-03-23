@@ -13,12 +13,16 @@ const answer = ref('')
 const answerInput = ref<HTMLInputElement | null>(null)
 const feedback = ref('')
 const feedbackTone = ref<'success' | 'warning' | 'error' | 'info'>('info')
+const visualResult = ref<'idle' | 'correct' | 'incorrect' | 'correction-required' | 'correction-complete'>('idle')
+const animationKey = ref(0)
+const animatedLetters = ref<string[]>([])
 const rewards = ref<AttemptResponse['rewards']>([])
 const loading = ref(false)
 const sessionEnded = ref(false)
 const sentenceTooltipVisible = ref(false)
+let clearVisualTimer: ReturnType<typeof setTimeout> | null = null
 
-const { celebrate } = useFunEffects()
+const { celebrate, reducedMotion } = useFunEffects()
 const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
 const appConfig = useAppConfig()
 
@@ -60,6 +64,60 @@ const visiblePrompt = computed(() => {
 
   return maskedPrompt.value
 })
+const promptLetters = computed(() => {
+  if (!currentWord.value) {
+    return []
+  }
+
+  const revealed = new Set(revealedLetters.value)
+  const pulsing = new Set(animatedLetters.value)
+  const correctionRequired = session.value?.correctionRequired ?? false
+
+  return currentWord.value.split('').map((letter, index) => {
+    const isVisible = correctionRequired || revealed.has(letter)
+
+    return {
+      key: `${index}-${letter}`,
+      letter,
+      display: isVisible ? letter : '_',
+      isRevealed: !correctionRequired && revealed.has(letter),
+      shouldPulse: !correctionRequired && pulsing.has(letter)
+    }
+  })
+})
+const isSuccessVisual = computed(() => visualResult.value === 'correct' || visualResult.value === 'correction-complete')
+const sparkleParticles = computed(() => {
+  if (reducedMotion.value || !isSuccessVisual.value) {
+    return []
+  }
+
+  return [
+    { symbol: '✦', style: { '--spark-x': '-4.8rem', '--spark-y': '-3.2rem', '--spark-rotate': '-16deg', '--spark-delay': '0ms' } },
+    { symbol: '✧', style: { '--spark-x': '4.6rem', '--spark-y': '-3.4rem', '--spark-rotate': '18deg', '--spark-delay': '40ms' } },
+    { symbol: '✦', style: { '--spark-x': '-5.8rem', '--spark-y': '-0.8rem', '--spark-rotate': '-24deg', '--spark-delay': '90ms' } },
+    { symbol: '✧', style: { '--spark-x': '5.4rem', '--spark-y': '-0.4rem', '--spark-rotate': '22deg', '--spark-delay': '120ms' } },
+    { symbol: '✦', style: { '--spark-x': '-3.8rem', '--spark-y': '2.9rem', '--spark-rotate': '-14deg', '--spark-delay': '150ms' } },
+    { symbol: '✧', style: { '--spark-x': '4.1rem', '--spark-y': '2.7rem', '--spark-rotate': '14deg', '--spark-delay': '180ms' } },
+    { symbol: '✦', style: { '--spark-x': '0rem', '--spark-y': '-4.1rem', '--spark-rotate': '0deg', '--spark-delay': '70ms' } },
+    { symbol: '✧', style: { '--spark-x': '0.4rem', '--spark-y': '3.5rem', '--spark-rotate': '8deg', '--spark-delay': '210ms' } }
+  ]
+})
+
+function setVisualState(state: 'correct' | 'incorrect' | 'correction-required' | 'correction-complete', lettersToPulse: string[] = []) {
+  animationKey.value += 1
+  visualResult.value = state
+  animatedLetters.value = lettersToPulse
+
+  if (clearVisualTimer) {
+    clearTimeout(clearVisualTimer)
+  }
+
+  clearVisualTimer = window.setTimeout(() => {
+    visualResult.value = 'idle'
+    animatedLetters.value = []
+    clearVisualTimer = null
+  }, state === 'incorrect' ? 520 : 700)
+}
 
 async function focusAnswerInput() {
   await nextTick()
@@ -84,6 +142,9 @@ async function startSession() {
   session.value = created
   feedback.value = 'Listen for the word, then type your best spelling.'
   feedbackTone.value = 'info'
+  visualResult.value = 'idle'
+  animationKey.value = 0
+  animatedLetters.value = []
   rewards.value = []
   answer.value = ''
   loading.value = false
@@ -183,11 +244,13 @@ async function submitAnswer() {
   }
 
   if (response.status === 'correct' || response.status === 'correction-complete') {
+    setVisualState(response.status)
     celebrate('correct')
     answer.value = ''
     handleRewards(response.rewards)
   }
-  else if (response.status === 'incorrect') {
+  else if (response.status === 'incorrect' || response.status === 'correction-required') {
+    setVisualState(response.status, !wasCorrectionSubmission ? matchedLetters : [])
     celebrate('retry')
     answer.value = ''
   }
@@ -212,6 +275,7 @@ async function endCurrentSession() {
 watch(() => session.value?.currentPrompt.wordId, async (wordId) => {
   if (wordId) {
     revealedLetters.value = []
+    animatedLetters.value = []
     await nextTick()
     replayWord({ interrupt: false })
     await focusAnswerInput()
@@ -232,6 +296,12 @@ onMounted(() => {
   setTimeout(() => {
     focusAnswerInput()
   }, 50)
+})
+
+onBeforeUnmount(() => {
+  if (clearVisualTimer) {
+    clearTimeout(clearVisualTimer)
+  }
 })
 
 await startSession()
@@ -256,10 +326,51 @@ await startSession()
     </div>
 
     <section v-else-if="session" class="session-flow">
-      <article class="session-card">
+      <article
+        :class="[
+          'session-card',
+          'session-card-animated',
+          `session-card-${visualResult}`,
+          { 'session-card-reduced-motion': reducedMotion }
+        ]"
+      >
         <div class="badge">{{ session.currentPrompt.hint }}</div>
-        <h2 class="prompt-word" style="margin-top: 1rem;">
-          {{ visiblePrompt || '_ _ _' }}
+        <h2
+          :class="[
+            'prompt-word',
+            `prompt-word-${visualResult}`,
+            { 'prompt-word-reduced-motion': reducedMotion }
+          ]"
+          :data-animation-key="animationKey"
+          style="margin-top: 1rem;"
+        >
+          <span
+            v-for="item in sparkleParticles"
+            :key="`${animationKey}-${item.symbol}-${item.style['--spark-x']}`"
+            class="prompt-word-sparkle"
+            :style="item.style"
+            aria-hidden="true"
+          >
+            {{ item.symbol }}
+          </span>
+          <template v-if="promptLetters.length">
+            <span
+              v-for="entry in promptLetters"
+              :key="entry.key"
+              :class="[
+                'prompt-letter',
+                {
+                  'prompt-letter-revealed': entry.isRevealed,
+                  'prompt-letter-pulse': entry.shouldPulse && animationKey > 0
+                }
+              ]"
+            >
+              {{ entry.display }}
+            </span>
+          </template>
+          <template v-else>
+            {{ visiblePrompt || '_ _ _' }}
+          </template>
         </h2>
         <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : canEnunciate ? 'Each guess reveals any matching letters in the word, even if they are not in the right place yet. You can also tap enunciate for extra-clear speech.' : 'Each guess reveals any matching letters in the word, even if they are not in the right place yet.' }}</p>
 
@@ -281,7 +392,20 @@ await startSession()
         <form class="form-grid" @submit.prevent="submitAnswer">
           <label class="field">
             <span>{{ session.correctionRequired ? 'Type the revealed word' : 'Type your spelling' }}</span>
-            <input ref="answerInput" v-model="answer" class="session-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus />
+            <input
+              ref="answerInput"
+              v-model="answer"
+              :class="[
+                'session-input',
+                `session-input-${visualResult}`,
+                { 'session-input-reduced-motion': reducedMotion }
+              ]"
+              type="text"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              autofocus
+            />
           </label>
 
           <div class="button-row">
@@ -301,7 +425,7 @@ await startSession()
           </div>
         </form>
 
-        <div :class="['feedback', feedbackTone]" style="margin-top: 1rem;">{{ feedback }}</div>
+        <div :key="animationKey" :class="['feedback', feedbackTone, 'feedback-animated', `feedback-${visualResult}`]" style="margin-top: 1rem;">{{ feedback }}</div>
         <section v-if="rewards.length" class="session-rewards">
           <h3 style="margin-bottom: 0.75rem;">Rewards earned this turn</h3>
           <RewardList :rewards="rewards" />
