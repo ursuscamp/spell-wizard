@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { AttemptResponse, Profile, SessionView } from '~~/shared/spelling'
+import type { AttemptResponse, Profile, RewardEvent, SessionView } from '~~/shared/spelling'
+import { getRankArtPath } from '~~/app/utils/rank-art'
 import { hasValidEnunciation, WORD_CATALOG } from '~~/shared/word-catalog'
 
 const route = useRoute()
@@ -17,10 +18,17 @@ const visualResult = ref<'idle' | 'correct' | 'incorrect' | 'correction-required
 const animationKey = ref(0)
 const animatedLetters = ref<string[]>([])
 const rewards = ref<AttemptResponse['rewards']>([])
+const rewardQueue = ref<RewardEvent[]>([])
+const activeReward = ref<RewardEvent | null>(null)
+const rewardInterstitialVisible = ref(false)
+const rewardInterstitialKey = ref(0)
+const rewardInterstitialPending = ref(false)
 const loading = ref(false)
 const sessionEnded = ref(false)
 const sentenceTooltipVisible = ref(false)
+const rewardInterstitialButton = ref<HTMLButtonElement | null>(null)
 let clearVisualTimer: ReturnType<typeof setTimeout> | null = null
+let rewardInterstitialTimer: ReturnType<typeof setTimeout> | null = null
 
 const { celebrate, reducedMotion } = useFunEffects()
 const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
@@ -86,6 +94,59 @@ const promptLetters = computed(() => {
   })
 })
 const isSuccessVisual = computed(() => visualResult.value === 'correct' || visualResult.value === 'correction-complete')
+const activeRewardStyle = computed(() => activeReward.value?.type === 'rank-up' ? 'rank' : 'level')
+const activeRewardArtPath = computed(() => {
+  if (!activeReward.value?.rankKey) {
+    return undefined
+  }
+
+  return getRankArtPath(activeReward.value.rankKey, 'card') ?? getRankArtPath(activeReward.value.rankKey, 'portrait')
+})
+const activeRewardHeadline = computed(() => activeReward.value?.type === 'rank-up' ? 'Rank Up!' : 'Level Up!')
+const activeRewardTitle = computed(() => {
+  if (!activeReward.value) {
+    return ''
+  }
+
+  return activeReward.value.type === 'rank-up'
+    ? activeReward.value.rankKey ?? 'New rank unlocked'
+    : `Level ${activeReward.value.levelReached}`
+})
+const activeRewardSubtitle = computed(() => {
+  if (!activeReward.value) {
+    return ''
+  }
+
+  return activeReward.value.type === 'rank-up'
+    ? `You reached level ${activeReward.value.levelReached} and unlocked a new magical rank.`
+    : 'Your spelling streak pushed your wizard training to the next level.'
+})
+const activeRewardButtonLabel = computed(() => rewardQueue.value.length ? 'Next reward' : 'Keep spelling')
+const activeRewardDuration = computed(() => 10000)
+const rewardInterstitialParticles = computed(() => {
+  if (reducedMotion.value || !activeReward.value) {
+    return []
+  }
+
+  if (activeReward.value.type === 'rank-up') {
+    return [
+      { symbol: '✦', style: { '--burst-x': '-18rem', '--burst-y': '-12rem', '--burst-delay': '0ms', '--burst-rotate': '-12deg' } },
+      { symbol: '✧', style: { '--burst-x': '16rem', '--burst-y': '-11rem', '--burst-delay': '80ms', '--burst-rotate': '18deg' } },
+      { symbol: '✦', style: { '--burst-x': '-20rem', '--burst-y': '2rem', '--burst-delay': '130ms', '--burst-rotate': '-20deg' } },
+      { symbol: '✧', style: { '--burst-x': '18rem', '--burst-y': '3rem', '--burst-delay': '180ms', '--burst-rotate': '16deg' } },
+      { symbol: '✦', style: { '--burst-x': '-9rem', '--burst-y': '13rem', '--burst-delay': '210ms', '--burst-rotate': '-8deg' } },
+      { symbol: '✧', style: { '--burst-x': '8rem', '--burst-y': '14rem', '--burst-delay': '260ms', '--burst-rotate': '12deg' } }
+    ]
+  }
+
+  return [
+    { symbol: '✦', style: { '--burst-x': '-14rem', '--burst-y': '-10rem', '--burst-delay': '0ms', '--burst-rotate': '-12deg' } },
+    { symbol: '✧', style: { '--burst-x': '12rem', '--burst-y': '-9rem', '--burst-delay': '60ms', '--burst-rotate': '14deg' } },
+    { symbol: '✦', style: { '--burst-x': '-16rem', '--burst-y': '4rem', '--burst-delay': '120ms', '--burst-rotate': '-18deg' } },
+    { symbol: '✧', style: { '--burst-x': '15rem', '--burst-y': '5rem', '--burst-delay': '170ms', '--burst-rotate': '18deg' } },
+    { symbol: '✦', style: { '--burst-x': '0rem', '--burst-y': '14rem', '--burst-delay': '240ms', '--burst-rotate': '0deg' } }
+  ]
+})
 const sparkleParticles = computed(() => {
   if (reducedMotion.value || !isSuccessVisual.value) {
     return []
@@ -119,6 +180,75 @@ function setVisualState(state: 'correct' | 'incorrect' | 'correction-required' |
   }, state === 'incorrect' ? 520 : 700)
 }
 
+function clearRewardInterstitialTimer() {
+  if (rewardInterstitialTimer) {
+    clearTimeout(rewardInterstitialTimer)
+    rewardInterstitialTimer = null
+  }
+}
+
+function scheduleRewardInterstitialTimer() {
+  clearRewardInterstitialTimer()
+  rewardInterstitialTimer = window.setTimeout(() => {
+    advanceRewardInterstitial()
+  }, activeRewardDuration.value)
+}
+
+async function resumePromptAfterInterstitial() {
+  rewardInterstitialPending.value = false
+  await nextTick()
+  await replayWord({ interrupt: false })
+  await focusAnswerInput()
+}
+
+function showNextRewardInterstitial() {
+  if (rewardInterstitialVisible.value || !rewardQueue.value.length) {
+    return
+  }
+
+  activeReward.value = rewardQueue.value.shift() ?? null
+
+  if (!activeReward.value) {
+    rewardInterstitialPending.value = false
+    return
+  }
+
+  rewardInterstitialVisible.value = true
+  rewardInterstitialKey.value += 1
+  celebrate(activeReward.value.type === 'rank-up' ? 'rank' : 'level')
+  scheduleRewardInterstitialTimer()
+
+  void nextTick(() => {
+    rewardInterstitialButton.value?.focus()
+  })
+}
+
+function enqueueRewardInterstitials(emittedRewards: RewardEvent[]) {
+  if (!emittedRewards.length) {
+    rewardInterstitialPending.value = false
+    return
+  }
+
+  rewardInterstitialPending.value = true
+  rewardQueue.value.push(...emittedRewards)
+  showNextRewardInterstitial()
+}
+
+function advanceRewardInterstitial() {
+  clearRewardInterstitialTimer()
+
+  if (rewardQueue.value.length) {
+    rewardInterstitialVisible.value = false
+    activeReward.value = null
+    showNextRewardInterstitial()
+    return
+  }
+
+  rewardInterstitialVisible.value = false
+  activeReward.value = null
+  void resumePromptAfterInterstitial()
+}
+
 async function focusAnswerInput() {
   await nextTick()
 
@@ -146,6 +276,11 @@ async function startSession() {
   animationKey.value = 0
   animatedLetters.value = []
   rewards.value = []
+  rewardQueue.value = []
+  activeReward.value = null
+  rewardInterstitialVisible.value = false
+  rewardInterstitialKey.value = 0
+  rewardInterstitialPending.value = false
   answer.value = ''
   loading.value = false
 }
@@ -203,9 +338,7 @@ async function playExampleSentence() {
 
 function handleRewards(emittedRewards: AttemptResponse['rewards']) {
   rewards.value = emittedRewards
-  for (const reward of emittedRewards) {
-    celebrate(reward.type === 'rank-up' ? 'rank' : 'level')
-  }
+  enqueueRewardInterstitials(emittedRewards)
 }
 
 async function submitAnswer() {
@@ -276,6 +409,11 @@ watch(() => session.value?.currentPrompt.wordId, async (wordId) => {
   if (wordId) {
     revealedLetters.value = []
     animatedLetters.value = []
+
+    if (rewardInterstitialPending.value || rewardInterstitialVisible.value) {
+      return
+    }
+
     await nextTick()
     replayWord({ interrupt: false })
     await focusAnswerInput()
@@ -283,7 +421,7 @@ watch(() => session.value?.currentPrompt.wordId, async (wordId) => {
 })
 
 watch(session, async (value) => {
-  if (value && !sessionEnded.value) {
+  if (value && !sessionEnded.value && !rewardInterstitialPending.value && !rewardInterstitialVisible.value) {
     await focusAnswerInput()
   }
 })
@@ -302,6 +440,8 @@ onBeforeUnmount(() => {
   if (clearVisualTimer) {
     clearTimeout(clearVisualTimer)
   }
+
+  clearRewardInterstitialTimer()
 })
 
 await startSession()
@@ -309,6 +449,79 @@ await startSession()
 
 <template>
   <main class="page-shell grid">
+    <div
+      v-if="activeReward && rewardInterstitialVisible"
+      :key="rewardInterstitialKey"
+      :class="[
+        'reward-interstitial',
+        `reward-interstitial-${activeRewardStyle}`,
+        { 'reward-interstitial-reduced-motion': reducedMotion }
+      ]"
+      role="dialog"
+      aria-modal="true"
+      aria-live="polite"
+    >
+      <span
+        v-for="particle in rewardInterstitialParticles"
+        :key="`${rewardInterstitialKey}-${particle.symbol}-${particle.style['--burst-x']}`"
+        class="reward-interstitial-burst"
+        :style="particle.style"
+        aria-hidden="true"
+      >
+        {{ particle.symbol }}
+      </span>
+
+      <div class="reward-interstitial-shell">
+        <div class="reward-interstitial-copy">
+          <div class="badge reward-interstitial-badge" :class="{ 'badge-rank-up': activeReward.type === 'rank-up' }">
+            {{ activeRewardHeadline }}
+          </div>
+          <p class="reward-interstitial-kicker">{{ profile?.name }} just unlocked a magical milestone.</p>
+          <h2 class="reward-interstitial-title">{{ activeRewardTitle }}</h2>
+          <p class="reward-interstitial-subtitle">{{ activeRewardSubtitle }}</p>
+
+          <div class="reward-interstitial-stats">
+            <div class="reward-interstitial-stat">
+              <span class="tiny muted">Reward</span>
+              <strong>{{ activeReward.robuxAwarded }} Robux</strong>
+            </div>
+            <div class="reward-interstitial-stat">
+              <span class="tiny muted">Level</span>
+              <strong>{{ activeReward.levelReached }}</strong>
+            </div>
+            <div v-if="activeReward.rankKey" class="reward-interstitial-stat">
+              <span class="tiny muted">Rank</span>
+              <strong>{{ activeReward.rankKey }}</strong>
+            </div>
+          </div>
+
+          <div class="button-row reward-interstitial-actions">
+            <button
+              ref="rewardInterstitialButton"
+              class="button"
+              type="button"
+              @click="advanceRewardInterstitial"
+            >
+              {{ activeRewardButtonLabel }}
+            </button>
+          </div>
+        </div>
+
+        <div class="reward-interstitial-hero" :class="{ 'reward-interstitial-hero-rank': activeReward.type === 'rank-up' }">
+          <img
+            v-if="activeRewardArtPath"
+            class="reward-interstitial-art"
+            :src="activeRewardArtPath"
+            :alt="`${activeReward.rankKey} rank art`"
+          />
+          <div v-else class="reward-interstitial-level-emblem" aria-hidden="true">
+            <span>Level</span>
+            <strong>{{ activeReward.levelReached }}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="hero-card header-layout" v-if="profile">
       <div>
         <NuxtLink class="badge" :to="`/profile/${profile.id}`">← Dashboard</NuxtLink>

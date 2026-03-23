@@ -35,6 +35,7 @@ const SAMPLE_WORD_IDS = [
 
 const PROFILE_BLUEPRINTS = [
   { slug: 'spark', name: 'Ava', birthdate: '2018-05-14' },
+  { slug: 'level-two-tester', name: 'Ivy', birthdate: '2018-09-03', targetLevel: 2 },
   { slug: 'scroll-keeper', name: 'Noah', birthdate: '2017-11-02' },
   { slug: 'rune-reader', name: 'Mia', birthdate: '2016-08-21' },
   { slug: 'spell-scribe', name: 'Leo', birthdate: '2015-03-09' },
@@ -300,10 +301,9 @@ function clearAllData(db) {
 }
 
 function buildProfileSeed(blueprint, index) {
-  const nextRankIndex = index + 1
-  const nextRankLevel = nextRankIndex * 3
-  const currentLevel = nextRankLevel - 1
-  const pointsTotal = (nextRankLevel * LEVEL_POINT_THRESHOLD) - 1
+  const targetLevel = blueprint.targetLevel ?? ((index + 1) * 3)
+  const currentLevel = targetLevel - 1
+  const pointsTotal = (targetLevel * LEVEL_POINT_THRESHOLD) - 1
   const currentRank = getRankForLevel(currentLevel)
   const createdAt = isoAt(-28 + (index * 3), 9)
   const updatedAt = isoAt(-1, 16 + index)
