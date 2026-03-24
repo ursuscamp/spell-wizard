@@ -265,17 +265,18 @@ function playLevelEffect(ctx: AudioContext) {
   stopRewardTail()
 
   const voice = playLayeredTone(ctx, ctx.destination, [
-    { startFrequency: 392, endFrequency: 523, duration: 0.28, gain: 0.055, type: 'triangle' },
-    { startFrequency: 523, endFrequency: 659, duration: 0.34, delay: 0.12, gain: 0.066, type: 'sine' },
-    { startFrequency: 659, endFrequency: 784, duration: 0.52, delay: 0.24, gain: 0.072, type: 'sine' },
-    { startFrequency: 1046, endFrequency: 1175, duration: 0.34, delay: 0.42, gain: 0.028, type: 'sine' }
+    { startFrequency: 392, endFrequency: 392, duration: 0.2, gain: 0.048, type: 'triangle' },
+    { startFrequency: 494, endFrequency: 494, duration: 0.22, delay: 0.11, gain: 0.055, type: 'triangle' },
+    { startFrequency: 587, endFrequency: 587, duration: 0.24, delay: 0.22, gain: 0.062, type: 'sine' },
+    { startFrequency: 784, endFrequency: 784, duration: 0.52, delay: 0.34, gain: 0.058, type: 'sine' },
+    { startFrequency: 1175, endFrequency: 1175, duration: 0.24, delay: 0.48, gain: 0.02, type: 'sine' }
   ])
 
   playNoiseBurst(ctx, ctx.destination, {
-    delay: 0.34,
-    duration: 0.12,
-    filterFrequency: 2100,
-    gain: 0.014,
+    delay: 0.5,
+    duration: 0.08,
+    filterFrequency: 2300,
+    gain: 0.005,
     type: 'bandpass'
   })
 
@@ -286,19 +287,20 @@ function playRankEffect(ctx: AudioContext) {
   stopRewardTail()
 
   const voice = playLayeredTone(ctx, ctx.destination, [
-    { startFrequency: 220, endFrequency: 330, duration: 1.55, gain: 0.024, type: 'triangle' },
-    { startFrequency: 440, endFrequency: 587, duration: 0.44, gain: 0.056, type: 'sine' },
-    { startFrequency: 554, endFrequency: 740, duration: 0.52, delay: 0.1, gain: 0.06, type: 'triangle' },
-    { startFrequency: 659, endFrequency: 880, duration: 0.7, delay: 0.24, gain: 0.066, type: 'sine' },
-    { startFrequency: 880, endFrequency: 1175, duration: 0.92, delay: 0.42, gain: 0.04, type: 'sine' },
-    { startFrequency: 1320, endFrequency: 1568, duration: 0.64, delay: 0.58, gain: 0.02, type: 'sine' }
+    { startFrequency: 196, endFrequency: 196, duration: 1.35, gain: 0.016, type: 'triangle' },
+    { startFrequency: 392, endFrequency: 392, duration: 0.28, gain: 0.042, type: 'triangle' },
+    { startFrequency: 494, endFrequency: 494, duration: 0.3, delay: 0.1, gain: 0.05, type: 'triangle' },
+    { startFrequency: 587, endFrequency: 587, duration: 0.34, delay: 0.22, gain: 0.058, type: 'sine' },
+    { startFrequency: 784, endFrequency: 784, duration: 0.92, delay: 0.36, gain: 0.062, type: 'sine' },
+    { startFrequency: 1175, endFrequency: 1175, duration: 0.62, delay: 0.52, gain: 0.026, type: 'sine' },
+    { startFrequency: 784, endFrequency: 784, duration: 0.5, delay: 0.78, gain: 0.03, type: 'triangle' }
   ])
 
   playNoiseBurst(ctx, ctx.destination, {
-    delay: 0.22,
-    duration: 0.16,
-    filterFrequency: 2500,
-    gain: 0.018,
+    delay: 0.6,
+    duration: 0.1,
+    filterFrequency: 2600,
+    gain: 0.006,
     type: 'bandpass'
   })
 
