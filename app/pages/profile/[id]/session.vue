@@ -31,7 +31,7 @@ const rewardInterstitialButton = ref<HTMLButtonElement | null>(null)
 let clearVisualTimer: ReturnType<typeof setTimeout> | null = null
 let rewardInterstitialTimer: ReturnType<typeof setTimeout> | null = null
 
-const { celebrate, reducedMotion } = useFunEffects()
+const { celebrate } = useFunEffects()
 const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
 const appConfig = useAppConfig()
 
@@ -125,7 +125,7 @@ const activeRewardSubtitle = computed(() => {
 const activeRewardButtonLabel = computed(() => rewardQueue.value.length ? 'Next reward' : 'Keep spelling')
 const activeRewardDuration = computed(() => 10000)
 const rewardInterstitialParticles = computed(() => {
-  if (reducedMotion.value || !activeReward.value) {
+  if (!activeReward.value) {
     return []
   }
 
@@ -149,7 +149,7 @@ const rewardInterstitialParticles = computed(() => {
   ]
 })
 const sparkleParticles = computed(() => {
-  if (reducedMotion.value || !isSuccessVisual.value) {
+  if (!isSuccessVisual.value) {
     return []
   }
 
@@ -428,6 +428,7 @@ watch(session, async (value) => {
 })
 
 onMounted(() => {
+  voiceEnabled.value = true
   activateSessionMusic()
 
   if (!session.value || sessionEnded.value) {
@@ -457,8 +458,7 @@ await startSession()
       :key="rewardInterstitialKey"
       :class="[
         'reward-interstitial',
-        `reward-interstitial-${activeRewardStyle}`,
-        { 'reward-interstitial-reduced-motion': reducedMotion }
+        `reward-interstitial-${activeRewardStyle}`
       ]"
       role="dialog"
       aria-modal="true"
@@ -546,16 +546,14 @@ await startSession()
         :class="[
           'session-card',
           'session-card-animated',
-          `session-card-${visualResult}`,
-          { 'session-card-reduced-motion': reducedMotion }
+          `session-card-${visualResult}`
         ]"
       >
         <div class="badge">{{ session.currentPrompt.hint }}</div>
         <h2
           :class="[
             'prompt-word',
-            `prompt-word-${visualResult}`,
-            { 'prompt-word-reduced-motion': reducedMotion }
+            `prompt-word-${visualResult}`
           ]"
           :data-animation-key="animationKey"
           style="margin-top: 1rem;"
@@ -613,8 +611,7 @@ await startSession()
               v-model="answer"
               :class="[
                 'session-input',
-                `session-input-${visualResult}`,
-                { 'session-input-reduced-motion': reducedMotion }
+                `session-input-${visualResult}`
               ]"
               type="text"
               autocomplete="off"

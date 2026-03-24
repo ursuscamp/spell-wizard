@@ -19,7 +19,6 @@ export default defineAppConfig({
     },
     soundEnabledDefault: true,
     musicEnabledDefault: true,
-    motionEnabledDefault: true,
     backgroundMusic: {
       menuAssetPath: '/audio/menu-loop.mp3',
       menuVolume: 0.272,

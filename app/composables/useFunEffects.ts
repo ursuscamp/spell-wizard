@@ -310,30 +310,6 @@ function playRankEffect(ctx: AudioContext) {
 export function useFunEffects() {
   const appConfig = useAppConfig()
   const soundEnabled = useState('sound-enabled', () => appConfig.spellingWizard.soundEnabledDefault ?? true)
-  const reducedMotion = useState('reduced-motion', () => false)
-  let mediaQuery: MediaQueryList | null = null
-
-  function syncReducedMotionPreference() {
-    if (!import.meta.client) {
-      return
-    }
-
-    mediaQuery ??= window.matchMedia('(prefers-reduced-motion: reduce)')
-    reducedMotion.value = mediaQuery.matches
-  }
-
-  if (import.meta.client) {
-    onMounted(() => {
-      syncReducedMotionPreference()
-
-      mediaQuery ??= window.matchMedia('(prefers-reduced-motion: reduce)')
-      mediaQuery.addEventListener('change', syncReducedMotionPreference)
-    })
-
-    onBeforeUnmount(() => {
-      mediaQuery?.removeEventListener('change', syncReducedMotionPreference)
-    })
-  }
 
   watch(soundEnabled, (enabled) => {
     if (!enabled) {
@@ -373,7 +349,6 @@ export function useFunEffects() {
 
   return {
     soundEnabled,
-    reducedMotion,
     celebrate
   }
 }
