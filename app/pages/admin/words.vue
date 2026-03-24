@@ -23,7 +23,6 @@ function filterAdminWords(entries: AdminWordReviewEntry[], query: string, review
   return reviewFilteredEntries.filter((entry) => {
     const searchableText = [
       entry.word,
-      entry.enunciationText,
       entry.exampleSentence,
       entry.tags.join(' '),
       `difficulty ${entry.difficulty}`,
@@ -97,18 +96,18 @@ function updateWordReviewState(wordId: string, reviewStatus: WordReviewStatus) {
 
 function loadTtsTester(entry: AdminWordReviewEntry, mode: PlaybackMode = 'standard') {
   ttsMode.value = mode
-  ttsInput.value = mode === 'enunciate' ? entry.enunciationText : entry.word
+  ttsInput.value = entry.word
 }
 
 async function playAdminWord(entry: AdminWordReviewEntry, mode: PlaybackMode) {
   playbackFeedback.value = ''
 
-    if (!playbackEnabled.value) {
-      setPlaybackFeedback('warning', 'Server TTS is unavailable right now, so playback controls are disabled.')
-      return
-    }
+  if (!playbackEnabled.value) {
+    setPlaybackFeedback('warning', 'Server TTS is unavailable right now, so playback controls are disabled.')
+    return
+  }
 
-  const wordToSpeak = mode === 'enunciate' ? entry.enunciationText : entry.word
+  const wordToSpeak = entry.word
 
   activePlaybackKey.value = `${entry.id}:${mode}`
 
@@ -125,6 +124,35 @@ async function playAdminWord(entry: AdminWordReviewEntry, mode: PlaybackMode) {
   }
   catch {
     setPlaybackFeedback('error', `Could not play ${entry.word}. The rest of the review list is still ready to use.`)
+  }
+  finally {
+    activePlaybackKey.value = ''
+  }
+}
+
+async function playAdminSentence(entry: AdminWordReviewEntry) {
+  playbackFeedback.value = ''
+
+  if (!playbackEnabled.value) {
+    setPlaybackFeedback('warning', 'Server TTS is unavailable right now, so playback controls are disabled.')
+    return
+  }
+
+  activePlaybackKey.value = `${entry.id}:sentence`
+
+  try {
+    const spoken = await speakWord(entry.exampleSentence, {
+      interrupt: true,
+      mode: 'standard',
+      fallbackWord: entry.exampleSentence
+    })
+
+    if (!spoken) {
+      setPlaybackFeedback('warning', 'The example sentence did not start playback. Check the Edge TTS service and try again.')
+    }
+  }
+  catch {
+    setPlaybackFeedback('error', `Could not play the example sentence for ${entry.word}.`)
   }
   finally {
     activePlaybackKey.value = ''
@@ -229,7 +257,7 @@ async function testTts() {
         <NuxtLink class="badge" to="/">← Home</NuxtLink>
         <h1 class="hero-title" style="margin-top: 1rem;">Word pronunciation review</h1>
         <p class="hero-subtitle" style="max-width: 40rem;">
-          Review the full Word Catalog, compare normal pronunciation against enunciation, and track which entries still need cleanup before a child hears them in a session.
+          Review the full Word Catalog, compare normal pronunciation against slower playback, and track which entries still need cleanup before a child hears them in a session.
         </p>
       </div>
 
@@ -297,7 +325,7 @@ async function testTts() {
         <div>
           <h3 style="margin: 0;">TTS tester</h3>
           <p class="helper-text" style="margin: 0.35rem 0 0;">
-            Try raw text on this page before changing the backend word data. Use a card shortcut to load the word or enunciation into the tester.
+            Try raw text on this page before changing the backend word data. Use a card shortcut to load the word into the tester with either playback speed.
           </p>
         </div>
 
@@ -307,7 +335,7 @@ async function testTts() {
             v-model="ttsInput"
             class="admin-tts-input"
             rows="3"
-            placeholder="Type the word, an alternate pronunciation, or a whole sentence"
+            placeholder="Type the word or a whole sentence"
           ></textarea>
         </label>
 
@@ -316,7 +344,7 @@ async function testTts() {
             <span>Playback mode</span>
             <select v-model="ttsMode" class="admin-select">
               <option value="standard">Standard</option>
-              <option value="enunciate">Enunciate</option>
+              <option value="enunciate">Slower</option>
             </select>
           </label>
 
@@ -390,14 +418,6 @@ async function testTts() {
 
             <div class="admin-word-details">
               <div>
-                <span class="tiny muted">Standard</span>
-                <p class="admin-preview-text">{{ entry.word }}</p>
-              </div>
-              <div>
-                <span class="tiny muted">Enunciation</span>
-                <p class="admin-preview-text">{{ entry.enunciationText }}</p>
-              </div>
-              <div>
                 <span class="tiny muted">Example sentence</span>
                 <p class="admin-preview-text">{{ entry.exampleSentence }}</p>
               </div>
@@ -422,10 +442,18 @@ async function testTts() {
                 :disabled="!playbackEnabled || activePlaybackKey === `${entry.id}:enunciate`"
                 @click="playAdminWord(entry, 'enunciate')"
               >
-                Enunciate
+                Slower
+              </button>
+              <button
+                class="button-ghost"
+                type="button"
+                :disabled="!playbackEnabled || activePlaybackKey === `${entry.id}:sentence`"
+                @click="playAdminSentence(entry)"
+              >
+                Read sentence
               </button>
               <button class="button-ghost" type="button" @click="loadTtsTester(entry, 'standard')">Load word into TTS</button>
-              <button class="button-ghost" type="button" @click="loadTtsTester(entry, 'enunciate')">Load enunciation</button>
+              <button class="button-ghost" type="button" @click="loadTtsTester(entry, 'enunciate')">Load slower mode</button>
               <button
                 class="button-ghost"
                 type="button"

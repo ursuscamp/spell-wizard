@@ -1,4 +1,4 @@
-import { hasValidEnunciation, WORD_CATALOG } from '../../shared/word-catalog'
+import { WORD_CATALOG } from '../../shared/word-catalog'
 import type { AdminWordReviewEntry, WordCatalogEntry, WordProgress, WordReviewStatus } from '../../shared/spelling'
 
 export function getAgeFromBirthdate(birthdate: string) {
@@ -27,15 +27,10 @@ export function buildPromptHint(entry: WordCatalogEntry) {
   return `${entry.tags[0] ?? 'word'} word • difficulty ${entry.difficulty}`
 }
 
-export function canEnunciateWord(entry?: WordCatalogEntry | null) {
-  return Boolean(entry && entry.enunciationText && hasValidEnunciation(entry))
-}
-
 export function buildAdminWordReviewEntry(entry: WordCatalogEntry, reviewStatus: WordReviewStatus = 'unreviewed'): AdminWordReviewEntry {
   return {
     id: entry.id,
     word: entry.word,
-    enunciationText: entry.enunciationText,
     exampleSentence: entry.exampleSentence,
     difficulty: entry.difficulty,
     ageBandMin: entry.ageBandMin,

@@ -5,7 +5,6 @@ export interface WordCatalogEntry {
   id: string
   word: string
   normalizedWord: string
-  enunciationText: string
   exampleSentence: string
   ageBandMin: number
   ageBandMax: number
@@ -16,7 +15,6 @@ export interface WordCatalogEntry {
 export interface AdminWordReviewEntry {
   id: string
   word: string
-  enunciationText: string
   exampleSentence: string
   difficulty: number
   ageBandMin: number

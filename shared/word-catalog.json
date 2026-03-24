@@ -1,7 +1,6 @@
 [
   {
     "word": "a",
-    "enunciationText": "a",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -12,7 +11,6 @@
   },
   {
     "word": "acorn",
-    "enunciationText": "a...corn",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -23,7 +21,6 @@
   },
   {
     "word": "all",
-    "enunciationText": "all",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -34,7 +31,6 @@
   },
   {
     "word": "am",
-    "enunciationText": "am",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -45,7 +41,6 @@
   },
   {
     "word": "an",
-    "enunciationText": "an",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -56,7 +51,6 @@
   },
   {
     "word": "and",
-    "enunciationText": "and",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -67,7 +61,6 @@
   },
   {
     "word": "ankle",
-    "enunciationText": "an...kle",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -78,7 +71,6 @@
   },
   {
     "word": "ant",
-    "enunciationText": "ant",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -89,7 +81,6 @@
   },
   {
     "word": "apple",
-    "enunciationText": "ap...ple",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -100,7 +91,6 @@
   },
   {
     "word": "apron",
-    "enunciationText": "a...pron",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -111,7 +101,6 @@
   },
   {
     "word": "are",
-    "enunciationText": "are",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -122,7 +111,6 @@
   },
   {
     "word": "as",
-    "enunciationText": "as",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -133,7 +121,6 @@
   },
   {
     "word": "at",
-    "enunciationText": "at",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -144,7 +131,6 @@
   },
   {
     "word": "back",
-    "enunciationText": "back",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -155,7 +141,6 @@
   },
   {
     "word": "badge",
-    "enunciationText": "badge",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -166,7 +151,6 @@
   },
   {
     "word": "ball",
-    "enunciationText": "ball",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -177,7 +161,6 @@
   },
   {
     "word": "barn",
-    "enunciationText": "barn",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -188,7 +171,6 @@
   },
   {
     "word": "be",
-    "enunciationText": "be",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -199,7 +181,6 @@
   },
   {
     "word": "bear",
-    "enunciationText": "bear",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -210,7 +191,6 @@
   },
   {
     "word": "bed",
-    "enunciationText": "bed",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -221,7 +201,6 @@
   },
   {
     "word": "bee",
-    "enunciationText": "bee",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -232,7 +211,6 @@
   },
   {
     "word": "been",
-    "enunciationText": "been",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -243,7 +221,6 @@
   },
   {
     "word": "bell",
-    "enunciationText": "bell",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -254,7 +231,6 @@
   },
   {
     "word": "berry",
-    "enunciationText": "ber...ry",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -265,7 +241,6 @@
   },
   {
     "word": "big",
-    "enunciationText": "big",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -276,7 +251,6 @@
   },
   {
     "word": "bird",
-    "enunciationText": "bird",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -287,7 +261,6 @@
   },
   {
     "word": "block",
-    "enunciationText": "block",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -298,7 +271,6 @@
   },
   {
     "word": "blue",
-    "enunciationText": "blue",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -309,7 +281,6 @@
   },
   {
     "word": "boat",
-    "enunciationText": "boat",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -320,7 +291,6 @@
   },
   {
     "word": "book",
-    "enunciationText": "book",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -331,7 +301,6 @@
   },
   {
     "word": "boots",
-    "enunciationText": "boots",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -342,7 +311,6 @@
   },
   {
     "word": "both",
-    "enunciationText": "both",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -353,7 +321,6 @@
   },
   {
     "word": "bottle",
-    "enunciationText": "bot...tle",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -364,7 +331,6 @@
   },
   {
     "word": "boy",
-    "enunciationText": "boy",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -375,7 +341,6 @@
   },
   {
     "word": "bread",
-    "enunciationText": "bread",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -386,7 +351,6 @@
   },
   {
     "word": "broom",
-    "enunciationText": "broom",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -397,7 +361,6 @@
   },
   {
     "word": "brush",
-    "enunciationText": "brush",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -408,7 +371,6 @@
   },
   {
     "word": "bug",
-    "enunciationText": "bug",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -419,7 +381,6 @@
   },
   {
     "word": "bunny",
-    "enunciationText": "bun...ny",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -430,7 +391,6 @@
   },
   {
     "word": "bus",
-    "enunciationText": "bus",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -441,7 +401,6 @@
   },
   {
     "word": "but",
-    "enunciationText": "but",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -452,7 +411,6 @@
   },
   {
     "word": "by",
-    "enunciationText": "by",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -463,7 +421,6 @@
   },
   {
     "word": "cabin",
-    "enunciationText": "cab...in",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -474,7 +431,6 @@
   },
   {
     "word": "cactus",
-    "enunciationText": "cac...tus",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -485,7 +441,6 @@
   },
   {
     "word": "cake",
-    "enunciationText": "cake",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -496,7 +451,6 @@
   },
   {
     "word": "call",
-    "enunciationText": "call",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -507,7 +461,6 @@
   },
   {
     "word": "can",
-    "enunciationText": "can",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -518,7 +471,6 @@
   },
   {
     "word": "candy",
-    "enunciationText": "can...dy",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -529,7 +481,6 @@
   },
   {
     "word": "cat",
-    "enunciationText": "cat",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -540,7 +491,6 @@
   },
   {
     "word": "chair",
-    "enunciationText": "chair",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -551,7 +501,6 @@
   },
   {
     "word": "cheese",
-    "enunciationText": "cheese",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -562,7 +511,6 @@
   },
   {
     "word": "chick",
-    "enunciationText": "chick",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -573,7 +521,6 @@
   },
   {
     "word": "chimney",
-    "enunciationText": "chim...ney",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -584,7 +531,6 @@
   },
   {
     "word": "clock",
-    "enunciationText": "clock",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -595,7 +541,6 @@
   },
   {
     "word": "cloud",
-    "enunciationText": "cloud",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -606,7 +551,6 @@
   },
   {
     "word": "clown",
-    "enunciationText": "clown",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -617,7 +561,6 @@
   },
   {
     "word": "coat",
-    "enunciationText": "coat",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -628,7 +571,6 @@
   },
   {
     "word": "come",
-    "enunciationText": "come",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -639,7 +581,6 @@
   },
   {
     "word": "cookie",
-    "enunciationText": "cook...ie",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -650,7 +591,6 @@
   },
   {
     "word": "corn",
-    "enunciationText": "corn",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -661,7 +601,6 @@
   },
   {
     "word": "cottage",
-    "enunciationText": "cot...tage",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -672,7 +611,6 @@
   },
   {
     "word": "cow",
-    "enunciationText": "cow",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -683,7 +621,6 @@
   },
   {
     "word": "crab",
-    "enunciationText": "crab",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -694,7 +631,6 @@
   },
   {
     "word": "crayon",
-    "enunciationText": "cray...on",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -705,7 +641,6 @@
   },
   {
     "word": "crow",
-    "enunciationText": "crow",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -716,7 +651,6 @@
   },
   {
     "word": "crown",
-    "enunciationText": "crown",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -727,7 +661,6 @@
   },
   {
     "word": "cup",
-    "enunciationText": "cup",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -738,7 +671,6 @@
   },
   {
     "word": "dance",
-    "enunciationText": "dance",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -749,7 +681,6 @@
   },
   {
     "word": "day",
-    "enunciationText": "day",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -760,7 +691,6 @@
   },
   {
     "word": "deer",
-    "enunciationText": "deer",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -771,7 +701,6 @@
   },
   {
     "word": "desk",
-    "enunciationText": "desk",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -782,7 +711,6 @@
   },
   {
     "word": "did",
-    "enunciationText": "did",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -793,7 +721,6 @@
   },
   {
     "word": "dish",
-    "enunciationText": "dish",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -804,7 +731,6 @@
   },
   {
     "word": "do",
-    "enunciationText": "do",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -815,7 +741,6 @@
   },
   {
     "word": "does",
-    "enunciationText": "does",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -826,7 +751,6 @@
   },
   {
     "word": "dog",
-    "enunciationText": "dog",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -837,7 +761,6 @@
   },
   {
     "word": "doll",
-    "enunciationText": "doll",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -848,7 +771,6 @@
   },
   {
     "word": "donkey",
-    "enunciationText": "don...key",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -859,7 +781,6 @@
   },
   {
     "word": "door",
-    "enunciationText": "door",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -870,7 +791,6 @@
   },
   {
     "word": "down",
-    "enunciationText": "down",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -881,7 +801,6 @@
   },
   {
     "word": "drum",
-    "enunciationText": "drum",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -892,7 +811,6 @@
   },
   {
     "word": "duck",
-    "enunciationText": "duck",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -903,7 +821,6 @@
   },
   {
     "word": "eagle",
-    "enunciationText": "ea...gle",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -914,7 +831,6 @@
   },
   {
     "word": "earth",
-    "enunciationText": "earth",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -925,7 +841,6 @@
   },
   {
     "word": "eat",
-    "enunciationText": "eat",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -936,7 +851,6 @@
   },
   {
     "word": "egg",
-    "enunciationText": "egg",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -947,7 +861,6 @@
   },
   {
     "word": "elbow",
-    "enunciationText": "el...bow",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -958,7 +871,6 @@
   },
   {
     "word": "engine",
-    "enunciationText": "en...gine",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -969,7 +881,6 @@
   },
   {
     "word": "farm",
-    "enunciationText": "farm",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -980,7 +891,6 @@
   },
   {
     "word": "fence",
-    "enunciationText": "fence",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -991,7 +901,6 @@
   },
   {
     "word": "field",
-    "enunciationText": "field",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1002,7 +911,6 @@
   },
   {
     "word": "find",
-    "enunciationText": "find",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1013,7 +921,6 @@
   },
   {
     "word": "fire",
-    "enunciationText": "fire",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1024,7 +931,6 @@
   },
   {
     "word": "first",
-    "enunciationText": "first",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1035,7 +941,6 @@
   },
   {
     "word": "fish",
-    "enunciationText": "fish",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1046,7 +951,6 @@
   },
   {
     "word": "flag",
-    "enunciationText": "flag",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1057,7 +961,6 @@
   },
   {
     "word": "flashlight",
-    "enunciationText": "flash...light",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1068,7 +971,6 @@
   },
   {
     "word": "for",
-    "enunciationText": "for",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1079,7 +981,6 @@
   },
   {
     "word": "fox",
-    "enunciationText": "fox",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1090,7 +991,6 @@
   },
   {
     "word": "frog",
-    "enunciationText": "frog",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1101,7 +1001,6 @@
   },
   {
     "word": "game",
-    "enunciationText": "game",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1112,7 +1011,6 @@
   },
   {
     "word": "gate",
-    "enunciationText": "gate",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1123,7 +1021,6 @@
   },
   {
     "word": "get",
-    "enunciationText": "get",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1134,7 +1031,6 @@
   },
   {
     "word": "ghost",
-    "enunciationText": "ghost",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1145,7 +1041,6 @@
   },
   {
     "word": "gift",
-    "enunciationText": "gift",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1156,7 +1051,6 @@
   },
   {
     "word": "glad",
-    "enunciationText": "glad",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1167,7 +1061,6 @@
   },
   {
     "word": "glove",
-    "enunciationText": "glove",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1178,7 +1071,6 @@
   },
   {
     "word": "go",
-    "enunciationText": "go",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1189,7 +1081,6 @@
   },
   {
     "word": "goat",
-    "enunciationText": "goat",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1200,7 +1091,6 @@
   },
   {
     "word": "good",
-    "enunciationText": "good",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1211,7 +1101,6 @@
   },
   {
     "word": "grape",
-    "enunciationText": "gra...pe",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1222,7 +1111,6 @@
   },
   {
     "word": "grass",
-    "enunciationText": "grass",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1233,7 +1121,6 @@
   },
   {
     "word": "green",
-    "enunciationText": "green",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1244,7 +1131,6 @@
   },
   {
     "word": "had",
-    "enunciationText": "had",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1255,7 +1141,6 @@
   },
   {
     "word": "hand",
-    "enunciationText": "hand",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1266,7 +1151,6 @@
   },
   {
     "word": "has",
-    "enunciationText": "has",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1277,7 +1161,6 @@
   },
   {
     "word": "hat",
-    "enunciationText": "hat",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1288,7 +1171,6 @@
   },
   {
     "word": "have",
-    "enunciationText": "have",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1299,7 +1181,6 @@
   },
   {
     "word": "he",
-    "enunciationText": "he",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1310,7 +1191,6 @@
   },
   {
     "word": "help",
-    "enunciationText": "help",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1321,7 +1201,6 @@
   },
   {
     "word": "her",
-    "enunciationText": "her",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1332,7 +1211,6 @@
   },
   {
     "word": "here",
-    "enunciationText": "here",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1343,7 +1221,6 @@
   },
   {
     "word": "hill",
-    "enunciationText": "hill",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1354,7 +1231,6 @@
   },
   {
     "word": "him",
-    "enunciationText": "him",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1365,7 +1241,6 @@
   },
   {
     "word": "his",
-    "enunciationText": "his",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1376,7 +1251,6 @@
   },
   {
     "word": "home",
-    "enunciationText": "home",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1387,7 +1261,6 @@
   },
   {
     "word": "honey",
-    "enunciationText": "hon...ey",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1398,7 +1271,6 @@
   },
   {
     "word": "horse",
-    "enunciationText": "horse",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1409,7 +1281,6 @@
   },
   {
     "word": "house",
-    "enunciationText": "house",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1420,7 +1291,6 @@
   },
   {
     "word": "i",
-    "enunciationText": "i",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1431,7 +1301,6 @@
   },
   {
     "word": "if",
-    "enunciationText": "if",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1442,7 +1311,6 @@
   },
   {
     "word": "igloo",
-    "enunciationText": "ig...loo",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1453,7 +1321,6 @@
   },
   {
     "word": "in",
-    "enunciationText": "in",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1464,7 +1331,6 @@
   },
   {
     "word": "insect",
-    "enunciationText": "in...sect",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1475,7 +1341,6 @@
   },
   {
     "word": "into",
-    "enunciationText": "into",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1486,7 +1351,6 @@
   },
   {
     "word": "is",
-    "enunciationText": "is",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1497,7 +1361,6 @@
   },
   {
     "word": "it",
-    "enunciationText": "it",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1508,7 +1371,6 @@
   },
   {
     "word": "its",
-    "enunciationText": "its",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1519,7 +1381,6 @@
   },
   {
     "word": "jam",
-    "enunciationText": "jam",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1530,7 +1391,6 @@
   },
   {
     "word": "jelly",
-    "enunciationText": "jel...ly",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1541,7 +1401,6 @@
   },
   {
     "word": "juice",
-    "enunciationText": "juice",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1552,7 +1411,6 @@
   },
   {
     "word": "jump",
-    "enunciationText": "jump",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1563,7 +1421,6 @@
   },
   {
     "word": "key",
-    "enunciationText": "key",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1574,7 +1431,6 @@
   },
   {
     "word": "kite",
-    "enunciationText": "kite",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1585,7 +1441,6 @@
   },
   {
     "word": "koala",
-    "enunciationText": "ko...a...la",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1596,7 +1451,6 @@
   },
   {
     "word": "lamp",
-    "enunciationText": "lamp",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1607,7 +1461,6 @@
   },
   {
     "word": "leaf",
-    "enunciationText": "leaf",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1618,7 +1471,6 @@
   },
   {
     "word": "light",
-    "enunciationText": "light",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1629,7 +1481,6 @@
   },
   {
     "word": "like",
-    "enunciationText": "like",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1640,7 +1491,6 @@
   },
   {
     "word": "lion",
-    "enunciationText": "li...on",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1651,7 +1501,6 @@
   },
   {
     "word": "lizard",
-    "enunciationText": "liz...ard",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1662,7 +1511,6 @@
   },
   {
     "word": "log",
-    "enunciationText": "log",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1673,7 +1521,6 @@
   },
   {
     "word": "look",
-    "enunciationText": "look",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1684,7 +1531,6 @@
   },
   {
     "word": "lunch",
-    "enunciationText": "lunch",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1695,7 +1541,6 @@
   },
   {
     "word": "make",
-    "enunciationText": "make",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1706,7 +1551,6 @@
   },
   {
     "word": "map",
-    "enunciationText": "map",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1717,7 +1561,6 @@
   },
   {
     "word": "me",
-    "enunciationText": "me",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1728,7 +1571,6 @@
   },
   {
     "word": "milk",
-    "enunciationText": "milk",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1739,7 +1581,6 @@
   },
   {
     "word": "mirror",
-    "enunciationText": "mir...ror",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1750,7 +1591,6 @@
   },
   {
     "word": "moon",
-    "enunciationText": "moon",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1761,7 +1601,6 @@
   },
   {
     "word": "mouse",
-    "enunciationText": "mouse",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1772,7 +1611,6 @@
   },
   {
     "word": "my",
-    "enunciationText": "my",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1783,7 +1621,6 @@
   },
   {
     "word": "nail",
-    "enunciationText": "nail",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1794,7 +1631,6 @@
   },
   {
     "word": "name",
-    "enunciationText": "name",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1805,7 +1641,6 @@
   },
   {
     "word": "nest",
-    "enunciationText": "nest",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1816,7 +1651,6 @@
   },
   {
     "word": "no",
-    "enunciationText": "no",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1827,7 +1661,6 @@
   },
   {
     "word": "not",
-    "enunciationText": "not",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1838,7 +1671,6 @@
   },
   {
     "word": "notebook",
-    "enunciationText": "note...book",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1849,7 +1681,6 @@
   },
   {
     "word": "now",
-    "enunciationText": "now",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1860,7 +1691,6 @@
   },
   {
     "word": "of",
-    "enunciationText": "of",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1871,7 +1701,6 @@
   },
   {
     "word": "on",
-    "enunciationText": "on",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1882,7 +1711,6 @@
   },
   {
     "word": "one",
-    "enunciationText": "one",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1893,7 +1721,6 @@
   },
   {
     "word": "or",
-    "enunciationText": "or",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1904,7 +1731,6 @@
   },
   {
     "word": "our",
-    "enunciationText": "our",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1915,7 +1741,6 @@
   },
   {
     "word": "out",
-    "enunciationText": "out",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1926,7 +1751,6 @@
   },
   {
     "word": "owl",
-    "enunciationText": "owl",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1937,7 +1761,6 @@
   },
   {
     "word": "pancake",
-    "enunciationText": "pan...cake",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1948,7 +1771,6 @@
   },
   {
     "word": "park",
-    "enunciationText": "park",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1959,7 +1781,6 @@
   },
   {
     "word": "parrot",
-    "enunciationText": "par...rot",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1970,7 +1791,6 @@
   },
   {
     "word": "peach",
-    "enunciationText": "peach",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1981,7 +1801,6 @@
   },
   {
     "word": "pear",
-    "enunciationText": "pear",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -1992,7 +1811,6 @@
   },
   {
     "word": "pen",
-    "enunciationText": "pen",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2003,7 +1821,6 @@
   },
   {
     "word": "pink",
-    "enunciationText": "pink",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2014,7 +1831,6 @@
   },
   {
     "word": "plane",
-    "enunciationText": "pla...ne",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2025,7 +1841,6 @@
   },
   {
     "word": "plant",
-    "enunciationText": "plant",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2036,7 +1851,6 @@
   },
   {
     "word": "put",
-    "enunciationText": "put",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2047,7 +1861,6 @@
   },
   {
     "word": "rain",
-    "enunciationText": "rain",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2058,7 +1871,6 @@
   },
   {
     "word": "ring",
-    "enunciationText": "ring",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2069,7 +1881,6 @@
   },
   {
     "word": "road",
-    "enunciationText": "road",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2080,7 +1891,6 @@
   },
   {
     "word": "robot",
-    "enunciationText": "ro...bot",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2091,7 +1901,6 @@
   },
   {
     "word": "rope",
-    "enunciationText": "rope",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2102,7 +1911,6 @@
   },
   {
     "word": "said",
-    "enunciationText": "said",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2113,7 +1921,6 @@
   },
   {
     "word": "same",
-    "enunciationText": "same",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2124,7 +1931,6 @@
   },
   {
     "word": "sand",
-    "enunciationText": "sand",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2135,7 +1941,6 @@
   },
   {
     "word": "say",
-    "enunciationText": "say",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2146,7 +1951,6 @@
   },
   {
     "word": "scarf",
-    "enunciationText": "scarf",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2157,7 +1961,6 @@
   },
   {
     "word": "school",
-    "enunciationText": "school",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2168,7 +1971,6 @@
   },
   {
     "word": "see",
-    "enunciationText": "see",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2179,7 +1981,6 @@
   },
   {
     "word": "seed",
-    "enunciationText": "seed",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2190,7 +1991,6 @@
   },
   {
     "word": "shark",
-    "enunciationText": "shark",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2201,7 +2001,6 @@
   },
   {
     "word": "she",
-    "enunciationText": "she",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2212,7 +2011,6 @@
   },
   {
     "word": "shell",
-    "enunciationText": "shell",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2223,7 +2021,6 @@
   },
   {
     "word": "ship",
-    "enunciationText": "ship",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2234,7 +2031,6 @@
   },
   {
     "word": "shoe",
-    "enunciationText": "shoe",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2245,7 +2041,6 @@
   },
   {
     "word": "shop",
-    "enunciationText": "shop",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2256,7 +2051,6 @@
   },
   {
     "word": "sing",
-    "enunciationText": "sing",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2267,7 +2061,6 @@
   },
   {
     "word": "small",
-    "enunciationText": "small",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2278,7 +2071,6 @@
   },
   {
     "word": "smile",
-    "enunciationText": "smile",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2289,7 +2081,6 @@
   },
   {
     "word": "snack",
-    "enunciationText": "snack",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2300,7 +2091,6 @@
   },
   {
     "word": "snow",
-    "enunciationText": "snow",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2311,7 +2101,6 @@
   },
   {
     "word": "sock",
-    "enunciationText": "sock",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2322,7 +2111,6 @@
   },
   {
     "word": "some",
-    "enunciationText": "some",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2333,7 +2121,6 @@
   },
   {
     "word": "spoon",
-    "enunciationText": "spoon",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2344,7 +2131,6 @@
   },
   {
     "word": "stamp",
-    "enunciationText": "stamp",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2355,7 +2141,6 @@
   },
   {
     "word": "star",
-    "enunciationText": "star",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2366,7 +2151,6 @@
   },
   {
     "word": "stick",
-    "enunciationText": "stick",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2377,7 +2161,6 @@
   },
   {
     "word": "stone",
-    "enunciationText": "sto...ne",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2388,7 +2171,6 @@
   },
   {
     "word": "storm",
-    "enunciationText": "storm",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2399,7 +2181,6 @@
   },
   {
     "word": "sun",
-    "enunciationText": "sun",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2410,7 +2191,6 @@
   },
   {
     "word": "swing",
-    "enunciationText": "swing",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2421,7 +2201,6 @@
   },
   {
     "word": "table",
-    "enunciationText": "tab...le",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2432,7 +2211,6 @@
   },
   {
     "word": "tent",
-    "enunciationText": "tent",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2443,7 +2221,6 @@
   },
   {
     "word": "that",
-    "enunciationText": "that",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2454,7 +2231,6 @@
   },
   {
     "word": "the",
-    "enunciationText": "the",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2465,7 +2241,6 @@
   },
   {
     "word": "them",
-    "enunciationText": "them",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2476,7 +2251,6 @@
   },
   {
     "word": "there",
-    "enunciationText": "the...re",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2487,7 +2261,6 @@
   },
   {
     "word": "this",
-    "enunciationText": "this",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2498,7 +2271,6 @@
   },
   {
     "word": "tiger",
-    "enunciationText": "ti...ger",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2509,7 +2281,6 @@
   },
   {
     "word": "to",
-    "enunciationText": "to",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2520,7 +2291,6 @@
   },
   {
     "word": "toast",
-    "enunciationText": "toast",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2531,7 +2301,6 @@
   },
   {
     "word": "train",
-    "enunciationText": "train",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2542,7 +2311,6 @@
   },
   {
     "word": "tree",
-    "enunciationText": "tree",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2553,7 +2321,6 @@
   },
   {
     "word": "truck",
-    "enunciationText": "truck",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2564,7 +2331,6 @@
   },
   {
     "word": "two",
-    "enunciationText": "two",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2575,7 +2341,6 @@
   },
   {
     "word": "up",
-    "enunciationText": "up",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2586,7 +2351,6 @@
   },
   {
     "word": "use",
-    "enunciationText": "use",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2597,7 +2361,6 @@
   },
   {
     "word": "want",
-    "enunciationText": "want",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2608,7 +2371,6 @@
   },
   {
     "word": "was",
-    "enunciationText": "was",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2619,7 +2381,6 @@
   },
   {
     "word": "water",
-    "enunciationText": "wa...ter",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2630,7 +2391,6 @@
   },
   {
     "word": "we",
-    "enunciationText": "we",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2641,7 +2401,6 @@
   },
   {
     "word": "well",
-    "enunciationText": "well",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2652,7 +2411,6 @@
   },
   {
     "word": "went",
-    "enunciationText": "went",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2663,7 +2421,6 @@
   },
   {
     "word": "whale",
-    "enunciationText": "whale",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2674,7 +2431,6 @@
   },
   {
     "word": "what",
-    "enunciationText": "what",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2685,7 +2441,6 @@
   },
   {
     "word": "when",
-    "enunciationText": "when",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2696,7 +2451,6 @@
   },
   {
     "word": "where",
-    "enunciationText": "whe...re",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2707,7 +2461,6 @@
   },
   {
     "word": "who",
-    "enunciationText": "who",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2718,7 +2471,6 @@
   },
   {
     "word": "will",
-    "enunciationText": "will",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2729,7 +2481,6 @@
   },
   {
     "word": "window",
-    "enunciationText": "win...dow",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2740,7 +2491,6 @@
   },
   {
     "word": "worm",
-    "enunciationText": "worm",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2751,7 +2501,6 @@
   },
   {
     "word": "write",
-    "enunciationText": "wri...te",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2762,7 +2511,6 @@
   },
   {
     "word": "yellow",
-    "enunciationText": "yel...low",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2773,7 +2521,6 @@
   },
   {
     "word": "you",
-    "enunciationText": "you",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2784,7 +2531,6 @@
   },
   {
     "word": "your",
-    "enunciationText": "your",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2795,7 +2541,6 @@
   },
   {
     "word": "zebra",
-    "enunciationText": "zeb...ra",
     "ageBandMin": 5,
     "ageBandMax": 7,
     "difficulty": 1,
@@ -2806,7 +2551,6 @@
   },
   {
     "word": "above",
-    "enunciationText": "ab...o...ve",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2817,7 +2561,6 @@
   },
   {
     "word": "across",
-    "enunciationText": "a...cross",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2828,7 +2571,6 @@
   },
   {
     "word": "afraid",
-    "enunciationText": "a...fraid",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2839,7 +2581,6 @@
   },
   {
     "word": "after",
-    "enunciationText": "af...ter",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2850,7 +2591,6 @@
   },
   {
     "word": "again",
-    "enunciationText": "a...gain",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2861,7 +2601,6 @@
   },
   {
     "word": "airplane",
-    "enunciationText": "air...plane",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2872,7 +2611,6 @@
   },
   {
     "word": "airport",
-    "enunciationText": "air...port",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2883,7 +2621,6 @@
   },
   {
     "word": "almost",
-    "enunciationText": "al...most",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2894,7 +2631,6 @@
   },
   {
     "word": "animal",
-    "enunciationText": "an...i...mal",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2905,7 +2641,6 @@
   },
   {
     "word": "any",
-    "enunciationText": "any",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2916,7 +2651,6 @@
   },
   {
     "word": "around",
-    "enunciationText": "a...round",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2927,7 +2661,6 @@
   },
   {
     "word": "artist",
-    "enunciationText": "ar...tist",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2938,7 +2671,6 @@
   },
   {
     "word": "ask",
-    "enunciationText": "ask",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2949,7 +2681,6 @@
   },
   {
     "word": "away",
-    "enunciationText": "away",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2960,7 +2691,6 @@
   },
   {
     "word": "baboon",
-    "enunciationText": "ba...boon",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2971,7 +2701,6 @@
   },
   {
     "word": "backpack",
-    "enunciationText": "back...pack",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2982,7 +2711,6 @@
   },
   {
     "word": "balance",
-    "enunciationText": "bal...ance",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -2993,7 +2721,6 @@
   },
   {
     "word": "banana",
-    "enunciationText": "ba...na...na",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3004,7 +2731,6 @@
   },
   {
     "word": "basket",
-    "enunciationText": "bas...ket",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3015,7 +2741,6 @@
   },
   {
     "word": "beach",
-    "enunciationText": "beach",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3026,7 +2751,6 @@
   },
   {
     "word": "bedroom",
-    "enunciationText": "bed...room",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3037,7 +2761,6 @@
   },
   {
     "word": "beetle",
-    "enunciationText": "bee...tle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3048,7 +2771,6 @@
   },
   {
     "word": "before",
-    "enunciationText": "bef...o...re",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3059,7 +2781,6 @@
   },
   {
     "word": "begin",
-    "enunciationText": "be...gin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3070,7 +2791,6 @@
   },
   {
     "word": "between",
-    "enunciationText": "be...tween",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3081,7 +2801,6 @@
   },
   {
     "word": "bicycle",
-    "enunciationText": "bi...cy...cle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3092,7 +2811,6 @@
   },
   {
     "word": "birthday",
-    "enunciationText": "birth...day",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3103,7 +2821,6 @@
   },
   {
     "word": "blanket",
-    "enunciationText": "blan...ket",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3114,7 +2831,6 @@
   },
   {
     "word": "blossom",
-    "enunciationText": "blos...som",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3125,7 +2841,6 @@
   },
   {
     "word": "branch",
-    "enunciationText": "branch",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3136,7 +2851,6 @@
   },
   {
     "word": "bright",
-    "enunciationText": "bright",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3147,7 +2861,6 @@
   },
   {
     "word": "bubble",
-    "enunciationText": "bub...ble",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3158,7 +2871,6 @@
   },
   {
     "word": "button",
-    "enunciationText": "but...ton",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3169,7 +2881,6 @@
   },
   {
     "word": "candle",
-    "enunciationText": "can...dle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3180,7 +2891,6 @@
   },
   {
     "word": "captain",
-    "enunciationText": "cap...tain",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3191,7 +2901,6 @@
   },
   {
     "word": "carrot",
-    "enunciationText": "car...rot",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3202,7 +2911,6 @@
   },
   {
     "word": "cartoon",
-    "enunciationText": "car...toon",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3213,7 +2921,6 @@
   },
   {
     "word": "castle",
-    "enunciationText": "cas...tle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3224,7 +2931,6 @@
   },
   {
     "word": "cereal",
-    "enunciationText": "ce...real",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3235,7 +2941,6 @@
   },
   {
     "word": "cheetah",
-    "enunciationText": "chee...tah",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3246,7 +2951,6 @@
   },
   {
     "word": "chicken",
-    "enunciationText": "chick...en",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3257,7 +2961,6 @@
   },
   {
     "word": "children",
-    "enunciationText": "chil...dren",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3268,7 +2971,6 @@
   },
   {
     "word": "circle",
-    "enunciationText": "cir...cle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3279,7 +2981,6 @@
   },
   {
     "word": "climber",
-    "enunciationText": "clim...ber",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3290,7 +2991,6 @@
   },
   {
     "word": "closet",
-    "enunciationText": "clo...set",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3301,7 +3001,6 @@
   },
   {
     "word": "cobweb",
-    "enunciationText": "cob...web",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3312,7 +3011,6 @@
   },
   {
     "word": "corner",
-    "enunciationText": "cor...ner",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3323,7 +3021,6 @@
   },
   {
     "word": "could",
-    "enunciationText": "could",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3334,7 +3031,6 @@
   },
   {
     "word": "cousin",
-    "enunciationText": "cou...sin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3345,7 +3041,6 @@
   },
   {
     "word": "cupcake",
-    "enunciationText": "cup...cake",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3356,7 +3051,6 @@
   },
   {
     "word": "curtain",
-    "enunciationText": "cur...tain",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3367,7 +3061,6 @@
   },
   {
     "word": "daisy",
-    "enunciationText": "dai...sy",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3378,7 +3071,6 @@
   },
   {
     "word": "dentist",
-    "enunciationText": "den...tist",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3389,7 +3081,6 @@
   },
   {
     "word": "desert",
-    "enunciationText": "des...ert",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3400,7 +3091,6 @@
   },
   {
     "word": "dinner",
-    "enunciationText": "din...ner",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3411,7 +3101,6 @@
   },
   {
     "word": "doctor",
-    "enunciationText": "doc...tor",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3422,7 +3111,6 @@
   },
   {
     "word": "dolphin",
-    "enunciationText": "dol...phin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3433,7 +3121,6 @@
   },
   {
     "word": "dragon",
-    "enunciationText": "dra...gon",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3444,7 +3131,6 @@
   },
   {
     "word": "drawer",
-    "enunciationText": "draw...er",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3455,7 +3141,6 @@
   },
   {
     "word": "dream",
-    "enunciationText": "dream",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3466,7 +3151,6 @@
   },
   {
     "word": "drizzle",
-    "enunciationText": "driz...zle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3477,7 +3161,6 @@
   },
   {
     "word": "every",
-    "enunciationText": "ev...e...ry",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3488,7 +3171,6 @@
   },
   {
     "word": "fairy",
-    "enunciationText": "fair...y",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3499,7 +3181,6 @@
   },
   {
     "word": "family",
-    "enunciationText": "fam...i...ly",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3510,7 +3191,6 @@
   },
   {
     "word": "farmer",
-    "enunciationText": "farm...er",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3521,7 +3201,6 @@
   },
   {
     "word": "feather",
-    "enunciationText": "feat...her",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3532,7 +3211,6 @@
   },
   {
     "word": "fever",
-    "enunciationText": "fe...ver",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3543,7 +3221,6 @@
   },
   {
     "word": "flamingo",
-    "enunciationText": "fla...min...go",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3554,7 +3231,6 @@
   },
   {
     "word": "flower",
-    "enunciationText": "flo...wer",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3565,7 +3241,6 @@
   },
   {
     "word": "forest",
-    "enunciationText": "for...est",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3576,7 +3251,6 @@
   },
   {
     "word": "found",
-    "enunciationText": "found",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3587,7 +3261,6 @@
   },
   {
     "word": "friend",
-    "enunciationText": "friend",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3598,7 +3271,6 @@
   },
   {
     "word": "from",
-    "enunciationText": "from",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3609,7 +3281,6 @@
   },
   {
     "word": "garden",
-    "enunciationText": "gar...den",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3620,7 +3291,6 @@
   },
   {
     "word": "giant",
-    "enunciationText": "giant",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3631,7 +3301,6 @@
   },
   {
     "word": "ginger",
-    "enunciationText": "gin...ger",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3642,7 +3311,6 @@
   },
   {
     "word": "giraffe",
-    "enunciationText": "gi...raffe",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3653,7 +3321,6 @@
   },
   {
     "word": "give",
-    "enunciationText": "give",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3664,7 +3331,6 @@
   },
   {
     "word": "glitter",
-    "enunciationText": "glit...ter",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3675,7 +3341,6 @@
   },
   {
     "word": "goblin",
-    "enunciationText": "gob...lin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3686,7 +3351,6 @@
   },
   {
     "word": "great",
-    "enunciationText": "great",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3697,7 +3361,6 @@
   },
   {
     "word": "guitar",
-    "enunciationText": "gui...tar",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3708,7 +3371,6 @@
   },
   {
     "word": "hammer",
-    "enunciationText": "ham...mer",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3719,7 +3381,6 @@
   },
   {
     "word": "happen",
-    "enunciationText": "hap...pen",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3730,7 +3391,6 @@
   },
   {
     "word": "happy",
-    "enunciationText": "hap...py",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3741,7 +3401,6 @@
   },
   {
     "word": "harbor",
-    "enunciationText": "har...bor",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3752,7 +3411,6 @@
   },
   {
     "word": "helmet",
-    "enunciationText": "hel...met",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3763,7 +3421,6 @@
   },
   {
     "word": "hidden",
-    "enunciationText": "hid...den",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3774,7 +3431,6 @@
   },
   {
     "word": "holiday",
-    "enunciationText": "hol...i...day",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3785,7 +3441,6 @@
   },
   {
     "word": "island",
-    "enunciationText": "is...land",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3796,7 +3451,6 @@
   },
   {
     "word": "jacket",
-    "enunciationText": "jac...ket",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3807,7 +3461,6 @@
   },
   {
     "word": "jigsaw",
-    "enunciationText": "jig...saw",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3818,7 +3471,6 @@
   },
   {
     "word": "jumper",
-    "enunciationText": "jump...er",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3829,7 +3481,6 @@
   },
   {
     "word": "jungle",
-    "enunciationText": "jun...gle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3840,7 +3491,6 @@
   },
   {
     "word": "just",
-    "enunciationText": "just",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3851,7 +3501,6 @@
   },
   {
     "word": "kangaroo",
-    "enunciationText": "kan...ga...roo",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3862,7 +3511,6 @@
   },
   {
     "word": "ketchup",
-    "enunciationText": "ketch...up",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3873,7 +3521,6 @@
   },
   {
     "word": "kitten",
-    "enunciationText": "kit...ten",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3884,7 +3531,6 @@
   },
   {
     "word": "know",
-    "enunciationText": "know",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3895,7 +3541,6 @@
   },
   {
     "word": "ladder",
-    "enunciationText": "lad...der",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3906,7 +3551,6 @@
   },
   {
     "word": "ladybug",
-    "enunciationText": "la...dy...bug",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3917,7 +3561,6 @@
   },
   {
     "word": "lantern",
-    "enunciationText": "lan...tern",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3928,7 +3571,6 @@
   },
   {
     "word": "laundry",
-    "enunciationText": "laun...dry",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3939,7 +3581,6 @@
   },
   {
     "word": "lemon",
-    "enunciationText": "lem...on",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3950,7 +3591,6 @@
   },
   {
     "word": "letter",
-    "enunciationText": "let...ter",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3961,7 +3601,6 @@
   },
   {
     "word": "little",
-    "enunciationText": "lit...tle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3972,7 +3611,6 @@
   },
   {
     "word": "long",
-    "enunciationText": "long",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3983,7 +3621,6 @@
   },
   {
     "word": "made",
-    "enunciationText": "made",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -3994,7 +3631,6 @@
   },
   {
     "word": "magic",
-    "enunciationText": "ma...gic",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4005,7 +3641,6 @@
   },
   {
     "word": "mailbox",
-    "enunciationText": "mail...box",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4016,7 +3651,6 @@
   },
   {
     "word": "man",
-    "enunciationText": "man",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4027,7 +3661,6 @@
   },
   {
     "word": "many",
-    "enunciationText": "many",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4038,7 +3671,6 @@
   },
   {
     "word": "marble",
-    "enunciationText": "mar...ble",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4049,7 +3681,6 @@
   },
   {
     "word": "market",
-    "enunciationText": "mar...ket",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4060,7 +3691,6 @@
   },
   {
     "word": "mascot",
-    "enunciationText": "mas...cot",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4071,7 +3701,6 @@
   },
   {
     "word": "meadow",
-    "enunciationText": "mead...ow",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4082,7 +3711,6 @@
   },
   {
     "word": "middle",
-    "enunciationText": "mid...dle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4093,7 +3721,6 @@
   },
   {
     "word": "minute",
-    "enunciationText": "min...u...te",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4104,7 +3731,6 @@
   },
   {
     "word": "misty",
-    "enunciationText": "mis...ty",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4115,7 +3741,6 @@
   },
   {
     "word": "monkey",
-    "enunciationText": "mon...key",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4126,7 +3751,6 @@
   },
   {
     "word": "more",
-    "enunciationText": "more",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4137,7 +3761,6 @@
   },
   {
     "word": "morning",
-    "enunciationText": "morn...ing",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4148,7 +3771,6 @@
   },
   {
     "word": "mother",
-    "enunciationText": "mot...her",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4159,7 +3781,6 @@
   },
   {
     "word": "much",
-    "enunciationText": "much",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4170,7 +3791,6 @@
   },
   {
     "word": "muffin",
-    "enunciationText": "muf...fin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4181,7 +3801,6 @@
   },
   {
     "word": "music",
-    "enunciationText": "mu...sic",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4192,7 +3811,6 @@
   },
   {
     "word": "must",
-    "enunciationText": "must",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4203,7 +3821,6 @@
   },
   {
     "word": "napkin",
-    "enunciationText": "nap...kin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4214,7 +3831,6 @@
   },
   {
     "word": "need",
-    "enunciationText": "need",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4225,7 +3841,6 @@
   },
   {
     "word": "ocean",
-    "enunciationText": "o...cean",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4236,7 +3851,6 @@
   },
   {
     "word": "old",
-    "enunciationText": "old",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4247,7 +3861,6 @@
   },
   {
     "word": "only",
-    "enunciationText": "only",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4258,7 +3871,6 @@
   },
   {
     "word": "orange",
-    "enunciationText": "or...an...ge",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4269,7 +3881,6 @@
   },
   {
     "word": "other",
-    "enunciationText": "ot...her",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4280,7 +3891,6 @@
   },
   {
     "word": "otter",
-    "enunciationText": "ot...ter",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4291,7 +3901,6 @@
   },
   {
     "word": "outside",
-    "enunciationText": "out...side",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4302,7 +3911,6 @@
   },
   {
     "word": "over",
-    "enunciationText": "over",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4313,7 +3921,6 @@
   },
   {
     "word": "paint",
-    "enunciationText": "paint",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4324,7 +3931,6 @@
   },
   {
     "word": "panda",
-    "enunciationText": "pan...da",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4335,7 +3941,6 @@
   },
   {
     "word": "people",
-    "enunciationText": "peop...le",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4346,7 +3951,6 @@
   },
   {
     "word": "pepper",
-    "enunciationText": "pep...per",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4357,7 +3961,6 @@
   },
   {
     "word": "picnic",
-    "enunciationText": "pic...nic",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4368,7 +3971,6 @@
   },
   {
     "word": "pillow",
-    "enunciationText": "pil...low",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4379,7 +3981,6 @@
   },
   {
     "word": "pirate",
-    "enunciationText": "pi...rate",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4390,7 +3991,6 @@
   },
   {
     "word": "planet",
-    "enunciationText": "pla...net",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4401,7 +4001,6 @@
   },
   {
     "word": "pocket",
-    "enunciationText": "poc...ket",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4412,7 +4011,6 @@
   },
   {
     "word": "polar",
-    "enunciationText": "po...lar",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4423,7 +4021,6 @@
   },
   {
     "word": "pretty",
-    "enunciationText": "pret...ty",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4434,7 +4031,6 @@
   },
   {
     "word": "pumpkin",
-    "enunciationText": "pump...kin",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4445,7 +4041,6 @@
   },
   {
     "word": "puppy",
-    "enunciationText": "pup...py",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4456,7 +4051,6 @@
   },
   {
     "word": "purple",
-    "enunciationText": "pur...ple",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4467,7 +4061,6 @@
   },
   {
     "word": "rabbit",
-    "enunciationText": "rab...bit",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4478,7 +4071,6 @@
   },
   {
     "word": "rainbow",
-    "enunciationText": "rain...bow",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4489,7 +4081,6 @@
   },
   {
     "word": "raincoat",
-    "enunciationText": "rain...coat",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4500,7 +4091,6 @@
   },
   {
     "word": "read",
-    "enunciationText": "read",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4511,7 +4101,6 @@
   },
   {
     "word": "right",
-    "enunciationText": "right",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4522,7 +4111,6 @@
   },
   {
     "word": "river",
-    "enunciationText": "riv...er",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4533,7 +4121,6 @@
   },
   {
     "word": "rocket",
-    "enunciationText": "roc...ket",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4544,7 +4131,6 @@
   },
   {
     "word": "rowboat",
-    "enunciationText": "row...boat",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4555,7 +4141,6 @@
   },
   {
     "word": "saddle",
-    "enunciationText": "sad...dle",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4566,7 +4151,6 @@
   },
   {
     "word": "sailor",
-    "enunciationText": "sai...lor",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4577,7 +4161,6 @@
   },
   {
     "word": "salad",
-    "enunciationText": "sal...ad",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4588,7 +4171,6 @@
   },
   {
     "word": "sandbox",
-    "enunciationText": "sand...box",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4599,7 +4181,6 @@
   },
   {
     "word": "seesaw",
-    "enunciationText": "see...saw",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4610,7 +4191,6 @@
   },
   {
     "word": "shiny",
-    "enunciationText": "shi...ny",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4621,7 +4201,6 @@
   },
   {
     "word": "silver",
-    "enunciationText": "sil...ver",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4632,7 +4211,6 @@
   },
   {
     "word": "snowman",
-    "enunciationText": "snow...man",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4643,7 +4221,6 @@
   },
   {
     "word": "spring",
-    "enunciationText": "spring",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4654,7 +4231,6 @@
   },
   {
     "word": "story",
-    "enunciationText": "sto...ry",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4665,7 +4241,6 @@
   },
   {
     "word": "street",
-    "enunciationText": "street",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4676,7 +4251,6 @@
   },
   {
     "word": "summer",
-    "enunciationText": "sum...mer",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4687,7 +4261,6 @@
   },
   {
     "word": "sunlight",
-    "enunciationText": "sun...light",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4698,7 +4271,6 @@
   },
   {
     "word": "tadpole",
-    "enunciationText": "tad...pole",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4709,7 +4281,6 @@
   },
   {
     "word": "take",
-    "enunciationText": "take",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4720,7 +4291,6 @@
   },
   {
     "word": "teacher",
-    "enunciationText": "teac...her",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4731,7 +4301,6 @@
   },
   {
     "word": "teapot",
-    "enunciationText": "tea...pot",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4742,7 +4311,6 @@
   },
   {
     "word": "teaspoon",
-    "enunciationText": "tea...spoon",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4753,7 +4321,6 @@
   },
   {
     "word": "tell",
-    "enunciationText": "tell",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4764,7 +4331,6 @@
   },
   {
     "word": "than",
-    "enunciationText": "than",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4775,7 +4341,6 @@
   },
   {
     "word": "their",
-    "enunciationText": "their",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4786,7 +4351,6 @@
   },
   {
     "word": "then",
-    "enunciationText": "then",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4797,7 +4361,6 @@
   },
   {
     "word": "these",
-    "enunciationText": "the...se",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4808,7 +4371,6 @@
   },
   {
     "word": "they",
-    "enunciationText": "they",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4819,7 +4381,6 @@
   },
   {
     "word": "think",
-    "enunciationText": "think",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4830,7 +4391,6 @@
   },
   {
     "word": "those",
-    "enunciationText": "tho...se",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4841,7 +4401,6 @@
   },
   {
     "word": "three",
-    "enunciationText": "three",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4852,7 +4411,6 @@
   },
   {
     "word": "through",
-    "enunciationText": "through",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4863,7 +4421,6 @@
   },
   {
     "word": "thunder",
-    "enunciationText": "thun...der",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4874,7 +4431,6 @@
   },
   {
     "word": "ticket",
-    "enunciationText": "tick...et",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4885,7 +4441,6 @@
   },
   {
     "word": "tomato",
-    "enunciationText": "to...ma...to",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4896,7 +4451,6 @@
   },
   {
     "word": "tractor",
-    "enunciationText": "trac...tor",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4907,7 +4461,6 @@
   },
   {
     "word": "traffic",
-    "enunciationText": "traf...fic",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4918,7 +4471,6 @@
   },
   {
     "word": "trombone",
-    "enunciationText": "trom...bone",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4929,7 +4481,6 @@
   },
   {
     "word": "tunnel",
-    "enunciationText": "tun...nel",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4940,7 +4491,6 @@
   },
   {
     "word": "turkey",
-    "enunciationText": "tur...key",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4951,7 +4501,6 @@
   },
   {
     "word": "under",
-    "enunciationText": "un...der",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4962,7 +4511,6 @@
   },
   {
     "word": "very",
-    "enunciationText": "very",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4973,7 +4521,6 @@
   },
   {
     "word": "volcano",
-    "enunciationText": "vol...ca...no",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4984,7 +4531,6 @@
   },
   {
     "word": "wallet",
-    "enunciationText": "wal...let",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -4995,7 +4541,6 @@
   },
   {
     "word": "walrus",
-    "enunciationText": "wal...rus",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5006,7 +4551,6 @@
   },
   {
     "word": "were",
-    "enunciationText": "were",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5017,7 +4561,6 @@
   },
   {
     "word": "which",
-    "enunciationText": "which",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5028,7 +4571,6 @@
   },
   {
     "word": "why",
-    "enunciationText": "why",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5039,7 +4581,6 @@
   },
   {
     "word": "willow",
-    "enunciationText": "wil...low",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5050,7 +4591,6 @@
   },
   {
     "word": "winter",
-    "enunciationText": "win...ter",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5061,7 +4601,6 @@
   },
   {
     "word": "with",
-    "enunciationText": "with",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5072,7 +4611,6 @@
   },
   {
     "word": "wonder",
-    "enunciationText": "won...der",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5083,7 +4621,6 @@
   },
   {
     "word": "work",
-    "enunciationText": "work",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5094,7 +4631,6 @@
   },
   {
     "word": "world",
-    "enunciationText": "world",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5105,7 +4641,6 @@
   },
   {
     "word": "would",
-    "enunciationText": "would",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5116,7 +4651,6 @@
   },
   {
     "word": "yogurt",
-    "enunciationText": "yo...gurt",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5127,7 +4661,6 @@
   },
   {
     "word": "zipper",
-    "enunciationText": "zip...per",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5138,7 +4671,6 @@
   },
   {
     "word": "zookeeper",
-    "enunciationText": "zoo...keep...er",
     "ageBandMin": 7,
     "ageBandMax": 9,
     "difficulty": 2,
@@ -5149,7 +4681,6 @@
   },
   {
     "word": "adventure",
-    "enunciationText": "ad...ven...tu...re",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5160,7 +4691,6 @@
   },
   {
     "word": "answer",
-    "enunciationText": "an...swer",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5171,7 +4701,6 @@
   },
   {
     "word": "astronaut",
-    "enunciationText": "as...tro...naut",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5182,7 +4711,6 @@
   },
   {
     "word": "avalanche",
-    "enunciationText": "av...a...lanche",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5193,7 +4721,6 @@
   },
   {
     "word": "beautiful",
-    "enunciationText": "beaut...i...ful",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5204,7 +4731,6 @@
   },
   {
     "word": "because",
-    "enunciationText": "bec...au...se",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5215,7 +4741,6 @@
   },
   {
     "word": "binoculars",
-    "enunciationText": "bi...noc...u...lars",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5226,7 +4751,6 @@
   },
   {
     "word": "calendar",
-    "enunciationText": "cal...en...dar",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5237,7 +4761,6 @@
   },
   {
     "word": "careful",
-    "enunciationText": "care...ful",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5248,7 +4771,6 @@
   },
   {
     "word": "celebrate",
-    "enunciationText": "cel...eb...ra...te",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5259,7 +4781,6 @@
   },
   {
     "word": "century",
-    "enunciationText": "cen...tu...ry",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5270,7 +4791,6 @@
   },
   {
     "word": "chocolate",
-    "enunciationText": "choc...o...la...te",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5281,7 +4801,6 @@
   },
   {
     "word": "collect",
-    "enunciationText": "col...lect",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5292,7 +4811,6 @@
   },
   {
     "word": "compass",
-    "enunciationText": "com...pass",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5303,7 +4821,6 @@
   },
   {
     "word": "crystal",
-    "enunciationText": "crys...tal",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5314,7 +4831,6 @@
   },
   {
     "word": "curious",
-    "enunciationText": "cu...rious",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5325,7 +4841,6 @@
   },
   {
     "word": "daughter",
-    "enunciationText": "daug...hter",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5336,7 +4851,6 @@
   },
   {
     "word": "dinosaur",
-    "enunciationText": "di...no...saur",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5347,7 +4861,6 @@
   },
   {
     "word": "discover",
-    "enunciationText": "dis...co...ver",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5358,7 +4871,6 @@
   },
   {
     "word": "distant",
-    "enunciationText": "dis...tant",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5369,7 +4881,6 @@
   },
   {
     "word": "dragonfly",
-    "enunciationText": "drag...on...fly",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5380,7 +4891,6 @@
   },
   {
     "word": "electric",
-    "enunciationText": "el...ec...tric",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5391,7 +4901,6 @@
   },
   {
     "word": "enough",
-    "enunciationText": "e...nough",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5402,7 +4911,6 @@
   },
   {
     "word": "equation",
-    "enunciationText": "e...qua...tion",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5413,7 +4921,6 @@
   },
   {
     "word": "feast",
-    "enunciationText": "feast",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5424,7 +4931,6 @@
   },
   {
     "word": "festival",
-    "enunciationText": "fes...ti...val",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5435,7 +4941,6 @@
   },
   {
     "word": "fraction",
-    "enunciationText": "frac...tion",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5446,7 +4951,6 @@
   },
   {
     "word": "galaxy",
-    "enunciationText": "gal...a...xy",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5457,7 +4961,6 @@
   },
   {
     "word": "geography",
-    "enunciationText": "ge...og...ra...phy",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5468,7 +4971,6 @@
   },
   {
     "word": "giggle",
-    "enunciationText": "gig...gle",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5479,7 +4981,6 @@
   },
   {
     "word": "guardian",
-    "enunciationText": "guar...dian",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5490,7 +4991,6 @@
   },
   {
     "word": "history",
-    "enunciationText": "his...to...ry",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5501,7 +5001,6 @@
   },
   {
     "word": "horizon",
-    "enunciationText": "ho...ri...zon",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5512,7 +5011,6 @@
   },
   {
     "word": "imagine",
-    "enunciationText": "im...a...gi...ne",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5523,7 +5021,6 @@
   },
   {
     "word": "journey",
-    "enunciationText": "jour...ney",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5534,7 +5031,6 @@
   },
   {
     "word": "library",
-    "enunciationText": "lib...ra...ry",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5545,7 +5041,6 @@
   },
   {
     "word": "measure",
-    "enunciationText": "meas...u...re",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5556,7 +5051,6 @@
   },
   {
     "word": "message",
-    "enunciationText": "mes...sa...ge",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5567,7 +5061,6 @@
   },
   {
     "word": "microscope",
-    "enunciationText": "mi...cro...scope",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5578,7 +5071,6 @@
   },
   {
     "word": "mountain",
-    "enunciationText": "moun...tain",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5589,7 +5081,6 @@
   },
   {
     "word": "musician",
-    "enunciationText": "mus...i...cian",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5600,7 +5091,6 @@
   },
   {
     "word": "mystery",
-    "enunciationText": "mys...te...ry",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5611,7 +5101,6 @@
   },
   {
     "word": "neighbor",
-    "enunciationText": "neig...hbor",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5622,7 +5111,6 @@
   },
   {
     "word": "orchard",
-    "enunciationText": "or...chard",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5633,7 +5121,6 @@
   },
   {
     "word": "outline",
-    "enunciationText": "out...line",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5644,7 +5131,6 @@
   },
   {
     "word": "pattern",
-    "enunciationText": "pat...tern",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5655,7 +5141,6 @@
   },
   {
     "word": "penguin",
-    "enunciationText": "pen...guin",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5666,7 +5151,6 @@
   },
   {
     "word": "picture",
-    "enunciationText": "pic...tu...re",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5677,7 +5161,6 @@
   },
   {
     "word": "pioneer",
-    "enunciationText": "pio...neer",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5688,7 +5171,6 @@
   },
   {
     "word": "practice",
-    "enunciationText": "prac...ti...ce",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5699,7 +5181,6 @@
   },
   {
     "word": "president",
-    "enunciationText": "pres...i...dent",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5710,7 +5191,6 @@
   },
   {
     "word": "protect",
-    "enunciationText": "pro...tect",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5721,7 +5201,6 @@
   },
   {
     "word": "recess",
-    "enunciationText": "re...cess",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5732,7 +5211,6 @@
   },
   {
     "word": "remember",
-    "enunciationText": "rem...em...ber",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5743,7 +5221,6 @@
   },
   {
     "word": "science",
-    "enunciationText": "scien...ce",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5754,7 +5231,6 @@
   },
   {
     "word": "shadow",
-    "enunciationText": "sha...dow",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5765,7 +5241,6 @@
   },
   {
     "word": "special",
-    "enunciationText": "spe...cial",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5776,7 +5251,6 @@
   },
   {
     "word": "squirrel",
-    "enunciationText": "squir...rel",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5787,7 +5261,6 @@
   },
   {
     "word": "stretch",
-    "enunciationText": "stretch",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5798,7 +5271,6 @@
   },
   {
     "word": "student",
-    "enunciationText": "stu...dent",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5809,7 +5281,6 @@
   },
   {
     "word": "surprise",
-    "enunciationText": "sur...pri...se",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5820,7 +5291,6 @@
   },
   {
     "word": "treasure",
-    "enunciationText": "treas...u...re",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5831,7 +5301,6 @@
   },
   {
     "word": "triangle",
-    "enunciationText": "trian...gle",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5842,7 +5311,6 @@
   },
   {
     "word": "umbrella",
-    "enunciationText": "um...brel...la",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5853,7 +5321,6 @@
   },
   {
     "word": "unicorn",
-    "enunciationText": "un...i...corn",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5864,7 +5331,6 @@
   },
   {
     "word": "vacation",
-    "enunciationText": "vac...a...tion",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5875,7 +5341,6 @@
   },
   {
     "word": "volunteer",
-    "enunciationText": "vol...un...teer",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5886,7 +5351,6 @@
   },
   {
     "word": "whisper",
-    "enunciationText": "whis...per",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,
@@ -5897,7 +5361,6 @@
   },
   {
     "word": "wizard",
-    "enunciationText": "wi...zard",
     "ageBandMin": 9,
     "ageBandMax": 12,
     "difficulty": 3,

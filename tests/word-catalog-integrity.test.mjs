@@ -9,10 +9,6 @@ function parseEntries(source) {
   return JSON.parse(source)
 }
 
-function normalizeLetters(value) {
-  return value.toLowerCase().replace(/[^a-z]/g, '')
-}
-
 function tokenizeWords(value) {
   return value.toLowerCase().split(/[^a-z]+/).filter(Boolean)
 }
@@ -35,13 +31,12 @@ test('word catalog keeps unique ids and expected band counts', async () => {
   assert.equal(bandCounts.get('9-12-3'), 69)
 })
 
-test('word catalog stays alphabetized within each age band and uses valid enunciation text', async () => {
+test('word catalog stays alphabetized within each age band and uses clear example sentences', async () => {
   const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const groups = new Map()
 
   for (const entry of entries) {
-    assert.equal(normalizeLetters(entry.enunciationText), entry.word)
     assert.equal(typeof entry.exampleSentence, 'string')
     assert.notEqual(entry.exampleSentence.trim(), '')
     assert.ok(tokenizeWords(entry.exampleSentence).includes(entry.word), `${entry.word} should appear in its example sentence`)
@@ -57,7 +52,7 @@ test('word catalog stays alphabetized within each age band and uses valid enunci
   }
 })
 
-test('new lower-band words use unique entries with valid normalized enunciation text', async () => {
+test('new lower-band words use unique entries with valid metadata', async () => {
   const source = await readFile(join(root, 'shared/word-catalog.json'), 'utf8')
   const entries = parseEntries(source)
   const addedWords = [
@@ -79,7 +74,6 @@ test('new lower-band words use unique entries with valid normalized enunciation 
     const entry = entries.find(candidate => candidate.word === word)
 
     assert.ok(entry, `expected catalog entry for ${word}`)
-    assert.equal(normalizeLetters(entry.enunciationText), word)
     assert.ok(entry.ageBandMax <= 9, `${word} should stay in the lower two bands`)
     assert.ok(entry.tags.length > 0, `${word} should include at least one tag`)
   }
@@ -109,7 +103,6 @@ test('latest batch adds 100 unique words with only 10 in the upper band', async 
     const entry = entries.find(candidate => candidate.word === word)
 
     assert.ok(entry, `expected catalog entry for ${word}`)
-    assert.equal(normalizeLetters(entry.enunciationText), word)
     assert.ok(entry.tags.length > 0, `${word} should include at least one tag`)
 
     if (entry.ageBandMax === 12) {
@@ -145,7 +138,6 @@ test('everyday sentence-building words are present in the catalog', async () => 
     const entry = entries.find(candidate => candidate.word === word)
 
     assert.ok(entry, `expected catalog entry for ${word}`)
-    assert.equal(normalizeLetters(entry.enunciationText), word)
     assert.ok(entry.ageBandMax <= 9, `${word} should stay in the lower two bands`)
     assert.ok(entry.tags.length > 0, `${word} should include at least one tag`)
   }

@@ -212,15 +212,14 @@ test('admin words endpoint is read-only and exposes review metadata', async () =
     assert.equal(words.body[0].id, words.body[0].word)
     assert.equal(typeof words.body[0].difficulty, 'number')
     assert.equal(Array.isArray(words.body[0].tags), true)
-    assert.equal(typeof words.body[0].enunciationText, 'string')
     assert.equal(words.body[0].reviewStatus, 'unreviewed')
     assert.equal('canEnunciate' in words.body[0], false)
 
     const oneSyllableWord = words.body.find(entry => entry.word === 'blue')
     const multiSyllableWord = words.body.find(entry => entry.word === 'robot')
 
-    assert.equal(oneSyllableWord.enunciationText, 'blue')
-    assert.equal(multiSyllableWord.enunciationText, 'ro...bot')
+    assert.ok(oneSyllableWord)
+    assert.ok(multiSyllableWord)
 
     const flagged = await requestJson(context.baseUrl, `/api/admin/words/${multiSyllableWord.id}/review`, {
       method: 'PATCH',

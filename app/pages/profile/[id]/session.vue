@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AttemptResponse, Profile, RewardEvent, SessionView } from '~~/shared/spelling'
 import { getRankArtPath } from '~~/app/utils/rank-art'
-import { hasValidEnunciation, WORD_CATALOG } from '~~/shared/word-catalog'
+import { WORD_CATALOG } from '~~/shared/word-catalog'
 
 const route = useRoute()
 const router = useRouter()
@@ -33,13 +33,10 @@ let rewardInterstitialTimer: ReturnType<typeof setTimeout> | null = null
 
 const { celebrate } = useFunEffects()
 const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
-const appConfig = useAppConfig()
 
 const currentEntry = computed(() => WORD_CATALOG.find(word => word.id === session.value?.currentPrompt.wordId))
 const currentWord = computed(() => currentEntry.value?.word)
-const currentEnunciation = computed(() => currentEntry.value?.enunciationText)
 const currentExampleSentence = computed(() => currentEntry.value?.exampleSentence)
-const canEnunciate = computed(() => Boolean(currentEntry.value && hasValidEnunciation(currentEntry.value)))
 
 function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
@@ -302,17 +299,9 @@ async function enunciateWord() {
     return
   }
 
-  const canFallbackToStandard = appConfig.spellingWizard.speech.enunciate.fallbackToStandard
-  const wordToSpeak = canEnunciate.value
-    ? currentEnunciation.value
-    : canFallbackToStandard
-      ? currentWord.value
-      : undefined
-
-  await speakWord(wordToSpeak, {
+  await speakWord(currentWord.value, {
     interrupt: true,
-    mode: 'enunciate',
-    fallbackWord: canFallbackToStandard ? currentWord.value : undefined
+    mode: 'enunciate'
   })
 
   await focusAnswerInput()
@@ -586,7 +575,7 @@ await startSession()
             {{ visiblePrompt || '_ _ _' }}
           </template>
         </h2>
-        <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : canEnunciate ? 'Each guess reveals any matching letters in the word, even if they are not in the right place yet. You can also tap enunciate for extra-clear speech.' : 'Each guess reveals any matching letters in the word, even if they are not in the right place yet.' }}</p>
+        <p class="helper-text">{{ session.correctionRequired ? 'Type the correct spelling before moving on.' : 'Each guess reveals any matching letters in the word, even if they are not in the right place yet. You can also tap Slower for extra-clear speech.' }}</p>
 
         <div class="stats-grid" style="margin: 1rem 0;">
           <div class="stat-card">
@@ -624,7 +613,7 @@ await startSession()
           <div class="button-row">
             <button class="button-secondary" :disabled="loading" type="submit">{{ session.correctionRequired ? 'Lock in correction' : 'Submit spelling' }}</button>
             <button class="button-ghost" :disabled="loading" type="button" @click="replayWord({ interrupt: true }).then(() => focusAnswerInput())">Hear it again</button>
-            <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported" type="button" @click="enunciateWord">Enunciate</button>
+            <button class="button-ghost" :disabled="loading || !voiceEnabled || !speechSupported" type="button" @click="enunciateWord">Slower</button>
             <div
               v-if="maskedExampleSentence"
               :class="['sentence-tooltip-anchor', { 'sentence-tooltip-visible': sentenceTooltipVisible }]"

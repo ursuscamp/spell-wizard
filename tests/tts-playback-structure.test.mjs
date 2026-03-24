@@ -59,14 +59,14 @@ test('prompt voice composable exposes separate standard and enunciate voice sett
   assert.match(source, /voiceId \?\? selectedVoiceUri\.value/)
 })
 
-test('session page offers a separate enunciate action', async () => {
+test('session page offers a separate slower playback action', async () => {
   const source = await readFile(join(root, 'app/pages/profile/[id]/session.vue'), 'utf8')
 
-  assert.match(source, /const canEnunciate = computed\(\(\) => Boolean\(currentEntry\.value && hasValidEnunciation\(currentEntry\.value\)\)\)/)
   assert.match(source, /async function enunciateWord\(\)/)
+  assert.match(source, /await speakWord\(currentWord\.value, \{[\s\S]*mode: 'enunciate'/)
   assert.match(source, /mode: 'enunciate'/)
   assert.match(source, /@click="enunciateWord"/)
-  assert.match(source, />Enunciate</)
+  assert.match(source, />Slower</)
 })
 
 test('session page exposes masked example sentence hints during sentence playback', async () => {
