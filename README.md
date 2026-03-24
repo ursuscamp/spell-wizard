@@ -32,6 +32,28 @@ Preview the production build locally:
 npm run preview
 ```
 
+## Container Publishing
+
+Pushes to `main` trigger the GitHub Actions workflow in `.github/workflows/build-and-push.yml`, which builds the app into a Docker image and publishes it to Docker Hub at `<dockerhub-user>/spell-wizard`.
+
+Set these GitHub repository secrets before using the workflow:
+
+- `DOCKERHUB_USERNAME`
+- `DOCKERHUB_TOKEN`
+
+The workflow publishes two tags:
+
+- `latest` for the current `main` branch head
+- `sha-<commit>` for each pushed commit
+
+Run the published image with a persistent data mount so SQLite and TTS cache survive container restarts:
+
+```bash
+docker run -p 3000:3000 \
+  -v $(pwd)/.data:/app/.data \
+  <dockerhub-user>/spell-wizard:latest
+```
+
 ## SQLite Storage
 
 - Default database path: `.data/spelling-wizard.sqlite`
