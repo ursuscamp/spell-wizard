@@ -6,6 +6,7 @@ import { hasValidEnunciation, WORD_CATALOG } from '~~/shared/word-catalog'
 const route = useRoute()
 const router = useRouter()
 const profileId = computed(() => route.params.id as string)
+const { activateSessionMusic } = useBackgroundMusic()
 
 const { data: profile } = await useFetch<Profile>(() => `/api/profiles/${profileId.value}`)
 
@@ -427,6 +428,8 @@ watch(session, async (value) => {
 })
 
 onMounted(() => {
+  activateSessionMusic()
+
   if (!session.value || sessionEnded.value) {
     return
   }

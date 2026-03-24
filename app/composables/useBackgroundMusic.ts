@@ -1,6 +1,7 @@
 type MusicVariant = 'menu' | 'session'
 
 const MUSIC_ENABLED_STORAGE_KEY = 'spell-wizard:music-enabled'
+const VOLUME_FADE_DURATION_MS = 420
 
 let backgroundAudio: HTMLAudioElement | null = null
 let activeVariant: MusicVariant | null = null
@@ -8,10 +9,16 @@ let unlockListenersAttached = false
 let localStorageLoaded = false
 let menuAssetPath = '/audio/menu-loop.mp3'
 let menuVolume = 0.34
+let sessionVolume = 0.14
+let fadeFrame: number | null = null
 
 const activeOwners = new Map<symbol, MusicVariant>()
 
 function getResolvedVariant() {
+  if ([...activeOwners.values()].includes('session')) {
+    return 'session' satisfies MusicVariant
+  }
+
   if (activeOwners.size) {
     return 'menu' satisfies MusicVariant
   }
@@ -45,6 +52,52 @@ async function handleUnlockInteraction() {
   await syncMusicPlayback()
 }
 
+function cancelFade() {
+  if (!import.meta.client || fadeFrame === null) {
+    return
+  }
+
+  window.cancelAnimationFrame(fadeFrame)
+  fadeFrame = null
+}
+
+function fadeToVolume(targetVolume: number) {
+  if (!import.meta.client || !backgroundAudio) {
+    return
+  }
+
+  cancelFade()
+
+  const startVolume = backgroundAudio.volume
+  const clampedTarget = Math.min(Math.max(targetVolume, 0), 1)
+  const startedAt = window.performance.now()
+
+  const step = (now: number) => {
+    if (!backgroundAudio) {
+      fadeFrame = null
+      return
+    }
+
+    const progress = Math.min((now - startedAt) / VOLUME_FADE_DURATION_MS, 1)
+    const eased = 1 - ((1 - progress) ** 3)
+    backgroundAudio.volume = startVolume + ((clampedTarget - startVolume) * eased)
+
+    if (progress < 1) {
+      fadeFrame = window.requestAnimationFrame(step)
+      return
+    }
+
+    backgroundAudio.volume = clampedTarget
+    fadeFrame = null
+  }
+
+  fadeFrame = window.requestAnimationFrame(step)
+}
+
+function getTargetVolume(variant: MusicVariant) {
+  return variant === 'session' ? sessionVolume : menuVolume
+}
+
 function ensureBackgroundAudio() {
   if (!import.meta.client) {
     return null
@@ -59,11 +112,12 @@ function ensureBackgroundAudio() {
     backgroundAudio.preload = 'auto'
   }
 
-  backgroundAudio.volume = Math.min(Math.max(menuVolume, 0), 1)
   return backgroundAudio
 }
 
 function stopBackgroundAudio() {
+  cancelFade()
+
   if (!backgroundAudio) {
     activeVariant = null
     return
@@ -74,20 +128,25 @@ function stopBackgroundAudio() {
   activeVariant = null
 }
 
-async function playBackgroundTrack() {
+async function playBackgroundTrack(targetVariant: MusicVariant) {
   const audio = ensureBackgroundAudio()
   if (!audio) {
     return false
   }
 
+  const targetVolume = getTargetVolume(targetVariant)
+
   if (!audio.paused) {
-    activeVariant = 'menu'
+    activeVariant = targetVariant
+    fadeToVolume(targetVolume)
     return true
   }
 
+  audio.volume = targetVolume
+
   try {
     await audio.play()
-    activeVariant = 'menu'
+    activeVariant = targetVariant
     return true
   }
   catch {
@@ -105,7 +164,7 @@ async function syncMusicPlayback() {
     return
   }
 
-  const played = await playBackgroundTrack()
+  const played = await playBackgroundTrack(variant)
   if (!played) {
     attachUnlockListeners()
     return
@@ -122,6 +181,7 @@ export function useBackgroundMusic() {
 
   menuAssetPath = backgroundMusicConfig.menuAssetPath ?? menuAssetPath
   menuVolume = backgroundMusicConfig.menuVolume ?? menuVolume
+  sessionVolume = backgroundMusicConfig.sessionVolume ?? sessionVolume
 
   if (import.meta.client && !localStorageLoaded) {
     localStorageLoaded = true

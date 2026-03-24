@@ -22,7 +22,8 @@ export default defineAppConfig({
     motionEnabledDefault: true,
     backgroundMusic: {
       menuAssetPath: '/audio/menu-loop.mp3',
-      menuVolume: 0.34,
+      menuVolume: 0.272,
+      sessionVolume: 0.112,
     },
     rankLadder: [
       "Spark",
