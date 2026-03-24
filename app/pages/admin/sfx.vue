@@ -1,8 +1,15 @@
 <script setup lang="ts">
 type SfxKind = 'correct' | 'retry' | 'level' | 'rank'
+type MusicKind = 'menu'
 
 type SfxEntry = {
   kind: SfxKind,
+  title: string,
+  description: string
+}
+
+type MusicEntry = {
+  kind: MusicKind,
   title: string,
   description: string
 }
@@ -30,11 +37,21 @@ const sfxEntries: SfxEntry[] = [
   }
 ]
 
+const musicEntries: MusicEntry[] = [
+  {
+    kind: 'menu',
+    title: 'Background song',
+    description: 'The one cozy magical loop that now plays across the whole app.'
+  }
+]
+
 const activeKind = ref<SfxKind | ''>('')
+const activeMusicKind = ref<MusicKind | ''>('')
 const testerFeedback = ref('Tap any button to hear the current sound mix.')
 const testerTone = ref<'info' | 'warning'>('info')
 
 const { celebrate, soundEnabled } = useFunEffects()
+const { activateMenuMusic, musicEnabled } = useBackgroundMusic()
 const { voiceEnabled, speakWord, speechSupported } = usePromptVoice()
 
 function playSfx(kind: SfxKind) {
@@ -78,6 +95,25 @@ async function playVoiceReference() {
     fallbackWord: 'Spell Wizard sound check.'
   })
 }
+
+function playMusic(kind: MusicKind) {
+  if (!musicEnabled.value) {
+    testerTone.value = 'warning'
+    testerFeedback.value = 'Background music is muted. Turn it back on to preview the loop.'
+    return
+  }
+
+  activeMusicKind.value = kind
+  testerTone.value = 'info'
+  testerFeedback.value = 'Playing the global background song.'
+  activateMenuMusic()
+}
+
+watch(musicEnabled, (enabled) => {
+  if (!enabled) {
+    activeMusicKind.value = ''
+  }
+})
 </script>
 
 <template>
@@ -101,6 +137,10 @@ async function playVoiceReference() {
           <strong>{{ voiceEnabled ? 'On' : 'Muted' }}</strong>
         </div>
         <div class="stat-card">
+          <span class="tiny muted">Background music</span>
+          <strong>{{ musicEnabled ? 'On' : 'Muted' }}</strong>
+        </div>
+        <div class="stat-card">
           <span class="tiny muted">Speech service</span>
           <strong>{{ speechSupported ? 'Ready' : 'Unavailable' }}</strong>
         </div>
@@ -119,6 +159,9 @@ async function playVoiceReference() {
           <button class="button-ghost" type="button" @click="soundEnabled = !soundEnabled">
             {{ soundEnabled ? 'Mute sparkle sounds' : 'Enable sparkle sounds' }}
           </button>
+          <button class="button-ghost" type="button" @click="musicEnabled = !musicEnabled">
+            {{ musicEnabled ? 'Mute background music' : 'Enable background music' }}
+          </button>
           <button class="button-ghost" type="button" @click="voiceEnabled = !voiceEnabled">
             {{ voiceEnabled ? 'Mute spoken words' : 'Enable spoken words' }}
           </button>
@@ -131,23 +174,64 @@ async function playVoiceReference() {
         <button class="button-secondary" type="button" @click="playVoiceReference">Play voice reference</button>
       </div>
 
-      <section class="admin-sfx-grid">
-        <article
-          v-for="entry in sfxEntries"
-          :key="entry.kind"
-          class="admin-sfx-card"
-          :class="{ 'admin-sfx-card-active': activeKind === entry.kind }"
-        >
+      <section class="admin-sfx-section">
+        <div class="admin-sfx-section-header">
           <div>
-            <div class="badge">{{ entry.title }}</div>
-            <h3 class="admin-sfx-title">{{ entry.title }}</h3>
-            <p class="helper-text" style="margin: 0;">{{ entry.description }}</p>
+            <h3 style="margin: 0;">Background music</h3>
+            <p class="helper-text" style="margin: 0.35rem 0 0;">
+              Preview the one background song that now follows the app instead of restarting per page.
+            </p>
           </div>
+        </div>
 
-          <div class="button-row">
-            <button class="button-secondary" type="button" @click="playSfx(entry.kind)">Play effect</button>
+        <section class="admin-sfx-grid">
+          <article
+            v-for="entry in musicEntries"
+            :key="entry.kind"
+            class="admin-sfx-card"
+            :class="{ 'admin-sfx-card-active': activeMusicKind === entry.kind }"
+          >
+            <div>
+              <div class="badge">{{ entry.title }}</div>
+              <h3 class="admin-sfx-title">{{ entry.title }}</h3>
+              <p class="helper-text" style="margin: 0;">{{ entry.description }}</p>
+            </div>
+
+            <div class="button-row">
+              <button class="button-secondary" type="button" @click="playMusic(entry.kind)">Play loop</button>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="admin-sfx-section">
+        <div class="admin-sfx-section-header">
+          <div>
+            <h3 style="margin: 0;">Sound effects</h3>
+            <p class="helper-text" style="margin: 0.35rem 0 0;">
+              Trigger the gameplay celebration sounds and compare them against voice playback and music.
+            </p>
           </div>
-        </article>
+        </div>
+
+        <section class="admin-sfx-grid">
+          <article
+            v-for="entry in sfxEntries"
+            :key="entry.kind"
+            class="admin-sfx-card"
+            :class="{ 'admin-sfx-card-active': activeKind === entry.kind }"
+          >
+            <div>
+              <div class="badge">{{ entry.title }}</div>
+              <h3 class="admin-sfx-title">{{ entry.title }}</h3>
+              <p class="helper-text" style="margin: 0;">{{ entry.description }}</p>
+            </div>
+
+            <div class="button-row">
+              <button class="button-secondary" type="button" @click="playSfx(entry.kind)">Play effect</button>
+            </div>
+          </article>
+        </section>
       </section>
     </section>
   </main>

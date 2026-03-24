@@ -7,6 +7,7 @@ const profileId = computed(() => route.params.id as string)
 const { data, refresh, error } = await useFetch<DashboardView>(() => `/api/profiles/${profileId.value}/dashboard`)
 
 const { soundEnabled, reducedMotion } = useFunEffects()
+const { musicEnabled } = useBackgroundMusic()
 const {
   availableVoices,
   loadVoices,
@@ -96,6 +97,7 @@ onMounted(() => {
       <article class="panel">
         <h2 style="margin-top: 0;">Sound and comfort</h2>
         <div class="button-row" style="margin-top: 1rem;">
+          <button class="button-ghost" type="button" @click="musicEnabled = !musicEnabled">{{ musicEnabled ? 'Mute background music' : 'Enable background music' }}</button>
           <button class="button-ghost" type="button" @click="soundEnabled = !soundEnabled">{{ soundEnabled ? 'Mute sparkle sounds' : 'Enable sparkle sounds' }}</button>
           <button class="button-ghost" type="button" @click="voiceEnabled = !voiceEnabled">{{ voiceEnabled ? 'Mute spoken words' : 'Enable spoken words' }}</button>
           <button class="button-ghost" type="button" @click="reducedMotion = !reducedMotion">{{ reducedMotion ? 'Enable motion' : 'Reduce motion' }}</button>

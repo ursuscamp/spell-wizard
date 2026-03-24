@@ -9,6 +9,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "render:menu-music": "node scripts/render-menu-music.mjs",
     "seed:rank-edge-profiles": "node scripts/seed-rank-edge-profiles.mjs",
     "test": "npm run build && node --test tests/**/*.test.mjs"
   },

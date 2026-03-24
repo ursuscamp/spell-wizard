@@ -1258,6 +1258,18 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.admin-sfx-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-sfx-section-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .admin-sfx-card {
   display: grid;
   gap: 1rem;
