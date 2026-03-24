@@ -184,6 +184,7 @@ export function usePromptVoice() {
       releaseActiveAudio()
       activeAudioUrl = URL.createObjectURL(audioBlob)
       activeAudio = new Audio(activeAudioUrl)
+      activeAudio.volume = Math.min(Math.max(buildVoiceConfig(mode).volume ?? 1, 0), 1)
 
       const finished = new Promise<boolean>((resolve) => {
         if (!activeAudio) {

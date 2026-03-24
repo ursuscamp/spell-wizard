@@ -1119,6 +1119,10 @@ button {
   padding-bottom: 4rem;
 }
 
+.admin-sfx-page {
+  padding-bottom: 4rem;
+}
+
 .admin-hero {
   display: grid;
   gap: 1rem;
@@ -1246,6 +1250,33 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
+}
+
+.admin-sfx-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.admin-sfx-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(33, 64, 88, 0.08);
+  box-shadow: 0 14px 28px rgba(69, 120, 157, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.admin-sfx-card-active {
+  transform: translateY(-2px);
+  border-color: rgba(255, 212, 91, 0.42);
+  box-shadow: 0 18px 34px rgba(255, 212, 91, 0.2);
+}
+
+.admin-sfx-title {
+  margin: 0.8rem 0 0.35rem;
 }
 
 .list {

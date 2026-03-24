@@ -8,12 +8,12 @@ export default defineAppConfig({
       standard: {
         rate: 1,
         pitch: 1.05,
-        volume: 1,
+        volume: 0.82,
       },
       enunciate: {
         rate: 0.25,
         pitch: 1,
-        volume: 1,
+        volume: 0.88,
         fallbackToStandard: true,
       },
     },
