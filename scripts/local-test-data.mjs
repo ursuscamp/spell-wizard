@@ -1,9 +1,9 @@
 import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
+import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath as resolveConfiguredDatabasePath } from '../shared/runtime-paths.js'
 
 const DB_VERSION = 4
-const DEFAULT_DATABASE_PATH = '.data/spelling-wizard.sqlite'
 const LEVEL_POINT_THRESHOLD = 100
 const LEVEL_REWARD_ROBUX = 100
 const RANK_REWARD_ROBUX = 300
@@ -44,7 +44,11 @@ const PROFILE_BLUEPRINTS = [
 ]
 
 export function resolveDatabasePath() {
-  return resolve(process.cwd(), process.env.NUXT_STORAGE_DATABASE_PATH ?? DEFAULT_DATABASE_PATH)
+  return resolveDatabasePathFromDataDirectory()
+}
+
+function resolveDatabasePathFromDataDirectory() {
+  return resolveConfiguredDatabasePath(process.cwd(), process.env.NUXT_STORAGE_DATA_DIRECTORY ?? DEFAULT_DATA_DIRECTORY)
 }
 
 export async function resetDatabase(databasePath = resolveDatabasePath()) {

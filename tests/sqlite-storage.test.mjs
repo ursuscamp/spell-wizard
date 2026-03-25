@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { mkdtemp, rm } from 'node:fs/promises'
+import { mkdtemp, readdir, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
@@ -8,14 +8,17 @@ import { spawn } from 'node:child_process'
 
 async function createTestContext() {
   const directory = await mkdtemp(join(tmpdir(), 'spell-wizard-'))
-  const databasePath = join(directory, 'spell-wizard.sqlite')
+  const dataDirectory = join(directory, 'data')
+  const databasePath = join(dataDirectory, 'spelling-wizard.sqlite')
   const port = 3200 + Math.floor(Math.random() * 1000)
-  const server = spawn('node', ['.output/server/index.mjs'], {
+  const serverEntry = join(process.cwd(), '.output/server/index.mjs')
+  const server = spawn('node', [serverEntry], {
     cwd: process.cwd(),
     env: {
       ...process.env,
+      NITRO_HOST: '127.0.0.1',
       PORT: String(port),
-      NUXT_STORAGE_DATABASE_PATH: databasePath
+      NUXT_STORAGE_DATA_DIRECTORY: dataDirectory
     },
     stdio: 'ignore'
   })
@@ -26,6 +29,7 @@ async function createTestContext() {
   return {
     baseUrl,
     databasePath,
+    dataDirectory,
     async cleanup() {
       server.kill('SIGTERM')
       await new Promise((resolve) => {
@@ -98,6 +102,61 @@ test('bootstraps sqlite schema on first server access', async () => {
   }
   finally {
     await context.cleanup()
+  }
+})
+
+test('uses default .data and .cache roots when env vars are not set', async () => {
+  const directory = await mkdtemp(join(tmpdir(), 'spell-wizard-defaults-'))
+  const port = 5200 + Math.floor(Math.random() * 1000)
+  const serverEntry = join(process.cwd(), '.output/server/index.mjs')
+  const server = spawn('node', [serverEntry], {
+    cwd: directory,
+    env: {
+      ...process.env,
+      NITRO_HOST: '127.0.0.1',
+      PORT: String(port),
+      NUXT_TTS_MOCK_ENABLED: 'true'
+    },
+    stdio: 'ignore'
+  })
+
+  const baseUrl = `http://127.0.0.1:${port}`
+  await waitForServer(baseUrl)
+
+  try {
+    const response = await requestJson(baseUrl, '/api/profiles')
+    assert.equal(response.response.status, 200)
+    assert.deepEqual(response.body, [])
+
+    const databasePath = join(directory, '.data', 'spelling-wizard.sqlite')
+    const db = new DatabaseSync(databasePath)
+    assert.equal(db.prepare('SELECT COUNT(*) AS count FROM profiles').get().count, 0)
+    db.close()
+
+    const ttsResponse = await fetch(`${baseUrl}/api/tts`, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        text: 'robot',
+        mode: 'standard'
+      })
+    })
+
+    assert.equal(ttsResponse.status, 200)
+    assert.equal(ttsResponse.headers.get('x-spell-wizard-tts-cache'), 'miss')
+
+    const cacheDirectory = join(directory, '.cache')
+    const cachedFiles = await readdir(cacheDirectory)
+    assert.equal(cachedFiles.length, 2)
+  }
+  finally {
+    server.kill('SIGTERM')
+    await new Promise((resolve) => {
+      server.once('exit', () => resolve())
+    })
+    await rm(directory, { recursive: true, force: true })
   }
 })
 

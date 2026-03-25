@@ -7,15 +7,18 @@ import { spawn } from 'node:child_process'
 
 async function createTestContext() {
   const directory = await mkdtemp(join(tmpdir(), 'spell-wizard-tts-'))
-  const databasePath = join(directory, 'spell-wizard.sqlite')
-  const cacheDirectory = join(directory, 'tts-cache')
+  const dataDirectory = join(directory, 'data')
+  const databasePath = join(dataDirectory, 'spelling-wizard.sqlite')
+  const cacheDirectory = join(directory, 'cache')
   const port = 4200 + Math.floor(Math.random() * 1000)
-  const server = spawn('node', ['.output/server/index.mjs'], {
+  const serverEntry = join(process.cwd(), '.output/server/index.mjs')
+  const server = spawn('node', [serverEntry], {
     cwd: process.cwd(),
     env: {
       ...process.env,
+      NITRO_HOST: '127.0.0.1',
       PORT: String(port),
-      NUXT_STORAGE_DATABASE_PATH: databasePath,
+      NUXT_STORAGE_DATA_DIRECTORY: dataDirectory,
       NUXT_TTS_CACHE_DIRECTORY: cacheDirectory,
       NUXT_TTS_MOCK_ENABLED: 'true'
     },
@@ -28,6 +31,8 @@ async function createTestContext() {
   return {
     baseUrl,
     cacheDirectory,
+    dataDirectory,
+    databasePath,
     async cleanup() {
       server.kill('SIGTERM')
       await new Promise((resolve) => {

@@ -3,6 +3,7 @@ import { createHash } from 'crypto'
 import { mkdir, readFile, stat, writeFile } from 'fs/promises'
 import { resolve } from 'path'
 import { Constants, EdgeTTS, type Voice } from '@andresaya/edge-tts'
+import { DEFAULT_CACHE_DIRECTORY, resolveCacheDirectory } from '../../shared/runtime-paths.js'
 
 type TtsMode = 'standard' | 'enunciate'
 
@@ -112,9 +113,10 @@ function formatVoiceOption(voice: Voice, defaultVoiceId: string): VoiceOption {
 
 function getTtsRuntimeConfig() {
   const runtimeConfig = useRuntimeConfig()
+  const cacheDirectory = runtimeConfig.tts?.cacheDirectory ?? DEFAULT_CACHE_DIRECTORY
 
   return {
-    cacheDirectory: resolve(process.cwd(), runtimeConfig.tts?.cacheDirectory ?? '.data/tts-cache'),
+    cacheDirectory: resolveCacheDirectory(process.cwd(), cacheDirectory),
     defaultVoice: runtimeConfig.tts?.defaultVoice ?? 'en-US-AriaNeural',
     outputFormat: runtimeConfig.tts?.outputFormat ?? DEFAULT_OUTPUT_FORMAT,
     mockEnabled: Boolean(runtimeConfig.tts?.mockEnabled)

@@ -51,13 +51,20 @@ Run the published image with a persistent data mount so SQLite and TTS cache sur
 ```bash
 docker run -p 3000:3000 \
   -v $(pwd)/.data:/app/.data \
+  -v $(pwd)/.cache:/app/.cache \
   <dockerhub-user>/spell-wizard:latest
 ```
 
 ## SQLite Storage
 
+- Default data directory: `.data`
 - Default database path: `.data/spelling-wizard.sqlite`
 - The app creates the SQLite file and schema automatically on first server access.
 - Back up `.data/spelling-wizard.sqlite` to preserve household profiles, rewards, sessions, and word progress.
-- Override the default path with `NUXT_STORAGE_DATABASE_PATH`.
+- Override the data directory with `NUXT_STORAGE_DATA_DIRECTORY`.
 - Enable extra storage logging with `NUXT_STORAGE_DEBUG_LOGGING=true`.
+
+## TTS Cache
+
+- Default cache directory: `.cache`
+- Override the cache directory with `NUXT_TTS_CACHE_DIRECTORY`.

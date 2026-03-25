@@ -21,12 +21,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     storage: {
-      databasePath: '.data/spelling-wizard.sqlite',
+      dataDirectory: '.data',
       debugLogging: false
     },
     tts: {
-      cacheDirectory: '.data/tts-cache',
-      defaultVoice: 'en-US-AvaNeural',
+      cacheDirectory: '.cache',
+      defaultVoice: 'en-US-AriaNeural',
       outputFormat: 'audio-24khz-96kbitrate-mono-mp3',
       mockEnabled: false
     }

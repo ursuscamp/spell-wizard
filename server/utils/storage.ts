@@ -2,6 +2,7 @@ import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 import type { DatabaseShape, Profile, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress, WordReviewFlag } from '../../shared/spelling'
+import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath } from '../../shared/runtime-paths.js'
 
 const DB_VERSION = 4
 
@@ -10,6 +11,7 @@ let connectionPath: string | undefined
 let writeLock: Promise<void> = Promise.resolve()
 
 interface StorageConfig {
+  dataDirectory: string
   databasePath: string
   debugLogging: boolean
 }
@@ -120,9 +122,11 @@ async function ensureConnection() {
 function getStorageConfig(): StorageConfig {
   const runtimeConfig = useRuntimeConfig()
   const storageConfig = runtimeConfig.storage ?? {}
+  const dataDirectory = storageConfig.dataDirectory ?? DEFAULT_DATA_DIRECTORY
 
   return {
-    databasePath: resolve(process.cwd(), storageConfig.databasePath ?? '.data/spelling-wizard.sqlite'),
+    dataDirectory: resolve(process.cwd(), dataDirectory),
+    databasePath: resolveDatabasePath(process.cwd(), dataDirectory),
     debugLogging: Boolean(storageConfig.debugLogging)
   }
 }
