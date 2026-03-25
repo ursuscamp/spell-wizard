@@ -3,7 +3,7 @@ import { createHash } from 'crypto'
 import { mkdir, readFile, stat, writeFile } from 'fs/promises'
 import { resolve } from 'path'
 import { Constants, EdgeTTS, type Voice } from '@andresaya/edge-tts'
-import { DEFAULT_CACHE_DIRECTORY, resolveCacheDirectory } from '../../shared/runtime-paths.js'
+import { DEFAULT_CACHE_DIRECTORY, resolveCacheDirectory } from './runtime-paths.mjs'
 
 type TtsMode = 'standard' | 'enunciate'
 

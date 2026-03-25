@@ -1,8 +1,10 @@
 import type { AttemptResponse, Profile, RewardEvent, SessionRecord, SessionView, WordCatalogEntry, WordProgress } from '../../shared/spelling'
 import { WORD_CATALOG } from '../../shared/word-catalog'
+import { getForcedReboundWordId } from './rebound.mjs'
+import { calculateAdaptiveWeight, getFullyMissedWordIds, pickWeightedWord } from './word-selection.mjs'
 import { appRules, getLevelFromPoints, getRankForLevel } from './rules'
 import { generateId, getWordProgress, upsertWordProgress } from './storage'
-import { buildPromptHint, calculateAdaptiveWeight, getAgeFromBirthdate, getEligibleWords, normalizeWord, pickWeightedWord } from './words'
+import { buildPromptHint, getAgeFromBirthdate, getEligibleWords, normalizeWord } from './words'
 
 export function createSession(profile: Profile, sessions: SessionRecord[], wordProgress: WordProgress[]) {
   const session: SessionRecord = {
@@ -271,17 +273,31 @@ function applyWordProgress(profile: Profile, entry: WordCatalogEntry, attempts: 
 function makeNextPrompt(profile: Profile, session: SessionRecord, wordProgress: WordProgress[]) {
   const age = getAgeFromBirthdate(profile.birthdate)
   const candidates = getEligibleWords(age)
+  const forcedReboundWordId = getForcedReboundWordId(session.promptHistory)
+  if (forcedReboundWordId) {
+    const forcedWord = WORD_CATALOG.find(word => word.id === forcedReboundWordId)
+    if (forcedWord) {
+      return {
+        wordId: forcedWord.id,
+        attempts: [],
+        correctionRequired: false
+      }
+    }
+  }
+
   const recentlyUsedIds = session.promptHistory.slice(-4).map(item => item.wordId)
+  const fullyMissedWordIds = getFullyMissedWordIds(session.promptHistory)
   const weightedCandidates = candidates.map(word => ({
     word,
     weight: calculateAdaptiveWeight(
       word,
       age,
       getWordProgress(profile.id, word.id, wordProgress),
-      recentlyUsedIds
+      recentlyUsedIds,
+      fullyMissedWordIds
     )
   }))
-  const nextWord = pickWeightedWord(weightedCandidates)
+  const nextWord = pickWeightedWord(weightedCandidates) ?? WORD_CATALOG[0]
 
   return {
     wordId: nextWord.id,

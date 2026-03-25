@@ -1,1 +1,2 @@
 - when modifying shema, evaluate if any seed data needs to be added or modified
+- avoid adding tests that require spawning the built server or binding local ports in this workspace; prefer pure unit or source-level tests instead

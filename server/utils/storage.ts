@@ -2,7 +2,7 @@ import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 import type { DatabaseShape, Profile, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress, WordReviewFlag } from '../../shared/spelling'
-import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath } from '../../shared/runtime-paths.js'
+import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath } from './runtime-paths.mjs'
 
 const DB_VERSION = 4
 

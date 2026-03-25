@@ -1,5 +1,5 @@
 import { WORD_CATALOG } from '../../shared/word-catalog'
-import type { AdminWordReviewEntry, WordCatalogEntry, WordProgress, WordReviewStatus } from '../../shared/spelling'
+import type { AdminWordReviewEntry, WordCatalogEntry, WordReviewStatus } from '../../shared/spelling'
 
 export function getAgeFromBirthdate(birthdate: string) {
   const now = new Date()
@@ -38,30 +38,4 @@ export function buildAdminWordReviewEntry(entry: WordCatalogEntry, reviewStatus:
     tags: [...entry.tags],
     reviewStatus
   }
-}
-
-export function calculateAdaptiveWeight(entry: WordCatalogEntry, age: number, progress?: WordProgress, recentlyUsedIds: string[] = []) {
-  const ageMidpoint = (entry.ageBandMin + entry.ageBandMax) / 2
-  const ageDistance = Math.abs(age - ageMidpoint)
-  const agePenalty = ageDistance * 1.1
-  const masteryPenalty = (progress?.masteryScore ?? 0) * 1.8
-  const struggleBoost = (progress?.recentMisses ?? 0) * 2.4 + Math.max((progress?.averageAttemptIndex ?? 1) - 1, 0) * 1.25
-  const recencyPenalty = recentlyUsedIds.includes(entry.id) ? 4 : 0
-  const baseWeight = 8 - entry.difficulty * 0.4
-
-  return Math.max(0.35, Number((baseWeight - agePenalty - masteryPenalty + struggleBoost - recencyPenalty).toFixed(2)))
-}
-
-export function pickWeightedWord(candidates: Array<{ word: WordCatalogEntry; weight: number }>) {
-  const total = candidates.reduce((sum, entry) => sum + entry.weight, 0)
-  let cursor = Math.random() * total
-
-  for (const candidate of candidates) {
-    cursor -= candidate.weight
-    if (cursor <= 0) {
-      return candidate.word
-    }
-  }
-
-  return candidates[candidates.length - 1]?.word ?? WORD_CATALOG[0]
 }

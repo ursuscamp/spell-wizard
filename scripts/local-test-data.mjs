@@ -1,7 +1,7 @@
 import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
-import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath as resolveConfiguredDatabasePath } from '../shared/runtime-paths.js'
+import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath as resolveConfiguredDatabasePath } from '../server/utils/runtime-paths.mjs'
 
 const DB_VERSION = 4
 const LEVEL_POINT_THRESHOLD = 100
