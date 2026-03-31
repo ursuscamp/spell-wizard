@@ -24,6 +24,17 @@ test('session page reveals matching letters inside a masked prompt', async () =>
   assert.match(source, /\{\{ visiblePrompt \|\| '_ _ _' \}\}/)
 })
 
+test('session page shows a live points-to-next-level indicator', async () => {
+  const source = await readFile(join(root, 'app/pages/profile/[id]/session.vue'), 'utf8')
+
+  assert.match(source, /const appConfig = useAppConfig\(\)/)
+  assert.match(source, /const levelPointThreshold = computed\(\(\) => appConfig\.spellingWizard\.levelPointThreshold \?\? 100\)/)
+  assert.match(source, /const currentPointsTotal = computed\(\(\) => \(profile\.value\?\.pointsTotal \?\? 0\) \+ \(session\.value\?\.pointsEarned \?\? 0\)\)/)
+  assert.match(source, /const pointsToNextLevel = computed\(\(\) => \{[\s\S]*return threshold - \(currentPointsTotal\.value % threshold\)/)
+  assert.match(source, /<span class="tiny muted">To next level<\/span>/)
+  assert.match(source, /\{\{ pointsToNextLevel \}\} point\{\{ pointsToNextLevel === 1 \? '' : 's' \}\}/)
+})
+
 test('prompt voice composable only cancels speech for explicit replays', async () => {
   const source = await readFile(join(root, 'app/composables/usePromptVoice.ts'), 'utf8')
 

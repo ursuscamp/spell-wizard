@@ -6,6 +6,7 @@ import { WORD_CATALOG } from '~~/shared/word-catalog'
 const route = useRoute()
 const router = useRouter()
 const profileId = computed(() => route.params.id as string)
+const appConfig = useAppConfig()
 const { activateSessionMusic } = useBackgroundMusic()
 
 const { data: profile } = await useFetch<Profile>(() => `/api/profiles/${profileId.value}`)
@@ -37,6 +38,17 @@ const { speakWord, voiceEnabled, speechSupported } = usePromptVoice()
 const currentEntry = computed(() => WORD_CATALOG.find(word => word.id === session.value?.currentPrompt.wordId))
 const currentWord = computed(() => currentEntry.value?.word)
 const currentExampleSentence = computed(() => currentEntry.value?.exampleSentence)
+const levelPointThreshold = computed(() => appConfig.spellingWizard.levelPointThreshold ?? 100)
+const currentPointsTotal = computed(() => (profile.value?.pointsTotal ?? 0) + (session.value?.pointsEarned ?? 0))
+const pointsToNextLevel = computed(() => {
+  const threshold = levelPointThreshold.value
+
+  if (threshold <= 0) {
+    return 0
+  }
+
+  return threshold - (currentPointsTotal.value % threshold)
+})
 
 function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
@@ -585,6 +597,10 @@ await startSession()
           <div class="stat-card">
             <span class="tiny muted">Session points</span>
             <strong>{{ session.pointsEarned }}</strong>
+          </div>
+          <div class="stat-card">
+            <span class="tiny muted">To next level</span>
+            <strong>{{ pointsToNextLevel }} point{{ pointsToNextLevel === 1 ? '' : 's' }}</strong>
           </div>
           <div class="stat-card">
             <span class="tiny muted">Words completed</span>
