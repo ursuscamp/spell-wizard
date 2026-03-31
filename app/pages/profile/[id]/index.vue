@@ -51,6 +51,7 @@ onMounted(() => {
         <div class="button-row" style="margin-top: 1rem;">
           <NuxtLink class="button-secondary" :to="`/profile/${data.profile.id}/session`">Start spelling session</NuxtLink>
           <NuxtLink class="button-ghost" :to="`/profile/${data.profile.id}/history`">Open history</NuxtLink>
+          <NuxtLink class="button-ghost" to="/admin/rewards">Record Robux</NuxtLink>
         </div>
       </div>
 
@@ -74,6 +75,18 @@ onMounted(() => {
           <img class="rank-stat-badge" :src="getRankArtPath(data.profile.rankKey, 'badge')" :alt="`${data.profile.rankKey} badge art`" />
         </div>
         <strong>{{ data.profile.rankKey }}</strong>
+      </div>
+      <div class="stat-card">
+        <span class="tiny muted">Rewarded</span>
+        <strong>{{ data.rewardSummary.totalRewarded }} Robux</strong>
+      </div>
+      <div class="stat-card">
+        <span class="tiny muted">Given</span>
+        <strong>{{ data.rewardSummary.totalDisbursed }} Robux</strong>
+      </div>
+      <div class="stat-card">
+        <span class="tiny muted">Remaining</span>
+        <strong>{{ data.rewardSummary.remainingUndispatched }} Robux</strong>
       </div>
       <div class="stat-card">
         <span class="tiny muted">Recent sessions</span>
@@ -134,6 +147,7 @@ onMounted(() => {
           <div class="list-item">
             <strong>Reward tracking</strong>
             <p class="tiny muted" style="margin: 0.35rem 0 0;">Latest reward: {{ data.recentRewards[0] ? formatRewardLabel(data.recentRewards[0].robuxAwarded) : 'No reward yet' }}</p>
+            <p class="tiny muted" style="margin: 0.2rem 0 0;">Remaining undispatched: {{ data.rewardSummary.remainingUndispatched }} Robux</p>
           </div>
           <div class="list-item">
             <strong>Tricky word shelf</strong>

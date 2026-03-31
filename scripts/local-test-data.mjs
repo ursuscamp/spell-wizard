@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
 import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath as resolveConfiguredDatabasePath } from '../server/utils/runtime-paths.mjs'
 
-const DB_VERSION = 4
+const DB_VERSION = 5
 const LEVEL_POINT_THRESHOLD = 100
 const LEVEL_REWARD_ROBUX = 100
 const RANK_REWARD_ROBUX = 300
@@ -87,6 +87,10 @@ export async function seedRankEdgeProfiles(databasePath = resolveDatabasePath())
         INSERT INTO rewards (id, profile_id, type, level_reached, rank_key, robux_awarded, created_at)
         VALUES (?, ?, ?, ?, ?, ?, ?)
       `)
+      const disbursementInsert = db.prepare(`
+        INSERT INTO reward_disbursements (id, profile_id, amount, created_at)
+        VALUES (?, ?, ?, ?)
+      `)
       const wordProgressInsert = db.prepare(`
         INSERT INTO word_progress (profile_id, word_id, mastery_score, adaptive_weight, last_seen_at, times_prompted, times_correct, average_attempt_index, recent_misses, recent_successes)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -123,6 +127,15 @@ export async function seedRankEdgeProfiles(databasePath = resolveDatabasePath())
             reward.rankKey ?? null,
             reward.robuxAwarded,
             reward.createdAt
+          )
+        }
+
+        for (const disbursement of profile.rewardDisbursements ?? []) {
+          disbursementInsert.run(
+            disbursement.id,
+            disbursement.profileId,
+            disbursement.amount,
+            disbursement.createdAt
           )
         }
 
@@ -217,6 +230,14 @@ function applySchema(db) {
       FOREIGN KEY (profile_id) REFERENCES profiles(id) ON DELETE CASCADE
     );
 
+    CREATE TABLE IF NOT EXISTS reward_disbursements (
+      id TEXT PRIMARY KEY,
+      profile_id TEXT NOT NULL,
+      amount INTEGER NOT NULL,
+      created_at TEXT NOT NULL,
+      FOREIGN KEY (profile_id) REFERENCES profiles(id) ON DELETE CASCADE
+    );
+
     CREATE TABLE IF NOT EXISTS word_progress (
       profile_id TEXT NOT NULL,
       word_id TEXT NOT NULL,
@@ -268,6 +289,7 @@ function applySchema(db) {
 
     CREATE INDEX IF NOT EXISTS idx_profiles_created_at ON profiles(created_at);
     CREATE INDEX IF NOT EXISTS idx_rewards_profile_created_at ON rewards(profile_id, created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_reward_disbursements_profile_created_at ON reward_disbursements(profile_id, created_at DESC);
     CREATE INDEX IF NOT EXISTS idx_sessions_profile_started_at ON sessions(profile_id, started_at DESC);
     CREATE INDEX IF NOT EXISTS idx_word_progress_profile_misses ON word_progress(profile_id, recent_misses DESC, mastery_score ASC);
   `)
@@ -292,6 +314,7 @@ function clearAllData(db) {
       DELETE FROM sessions;
       DELETE FROM word_review_flags;
       DELETE FROM rewards;
+      DELETE FROM reward_disbursements;
       DELETE FROM word_progress;
       DELETE FROM profiles;
     `)

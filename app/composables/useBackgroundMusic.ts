@@ -183,18 +183,20 @@ export function useBackgroundMusic() {
   menuVolume = backgroundMusicConfig.menuVolume ?? menuVolume
   sessionVolume = backgroundMusicConfig.sessionVolume ?? sessionVolume
 
-  if (import.meta.client && !localStorageLoaded) {
-    localStorageLoaded = true
-    const storedValue = window.localStorage.getItem(MUSIC_ENABLED_STORAGE_KEY)
-    if (storedValue === 'true' || storedValue === 'false') {
-      musicEnabled.value = storedValue === 'true'
-    }
-  }
-
   if (import.meta.client) {
-    watch(musicEnabled, (enabled) => {
-      window.localStorage.setItem(MUSIC_ENABLED_STORAGE_KEY, String(enabled))
-      void syncMusicPlayback()
+    onMounted(() => {
+      if (!localStorageLoaded) {
+        localStorageLoaded = true
+        const storedValue = window.localStorage.getItem(MUSIC_ENABLED_STORAGE_KEY)
+        if (storedValue === 'true' || storedValue === 'false') {
+          musicEnabled.value = storedValue === 'true'
+        }
+      }
+
+      watch(musicEnabled, (enabled) => {
+        window.localStorage.setItem(MUSIC_ENABLED_STORAGE_KEY, String(enabled))
+        void syncMusicPlayback()
+      }, { immediate: true })
     })
   }
 

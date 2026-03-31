@@ -10,5 +10,5 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 404, statusMessage: 'Profile not found.' })
   }
 
-  return buildDashboardView(profile, db.rewards, db.sessions, db.wordProgress)
+  return buildDashboardView(profile, db.rewards, db.rewardDisbursements, db.sessions, db.wordProgress)
 })

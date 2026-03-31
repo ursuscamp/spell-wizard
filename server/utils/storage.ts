@@ -1,10 +1,10 @@
 import { mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { DatabaseSync } from 'node:sqlite'
-import type { DatabaseShape, Profile, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress, WordReviewFlag } from '../../shared/spelling'
+import type { DatabaseShape, Profile, RewardDisbursement, RewardEvent, SessionPromptRecord, SessionRecord, WordProgress, WordReviewFlag } from '../../shared/spelling'
 import { DEFAULT_DATA_DIRECTORY, resolveDatabasePath } from './runtime-paths.mjs'
 
-const DB_VERSION = 4
+const DB_VERSION = 5
 
 let connection: DatabaseSync | undefined
 let connectionPath: string | undefined
@@ -29,6 +29,13 @@ interface SessionRow {
   current_prompt_correction_required: number
 }
 
+interface RewardDisbursementRow {
+  id: string
+  profile_id: string
+  amount: number
+  created_at: string
+}
+
 interface SessionPromptHistoryRow {
   session_id: string
   sequence: number
@@ -45,6 +52,7 @@ const defaultDatabase = (): DatabaseShape => ({
   version: DB_VERSION,
   profiles: [],
   rewards: [],
+  rewardDisbursements: [],
   wordProgress: [],
   wordReviewFlags: [],
   sessions: []
@@ -169,6 +177,14 @@ function applyMigrations(db: DatabaseSync, config: StorageConfig) {
         FOREIGN KEY (profile_id) REFERENCES profiles(id) ON DELETE CASCADE
       );
 
+      CREATE TABLE IF NOT EXISTS reward_disbursements (
+        id TEXT PRIMARY KEY,
+        profile_id TEXT NOT NULL,
+        amount INTEGER NOT NULL,
+        created_at TEXT NOT NULL,
+        FOREIGN KEY (profile_id) REFERENCES profiles(id) ON DELETE CASCADE
+      );
+
       CREATE TABLE IF NOT EXISTS word_progress (
         profile_id TEXT NOT NULL,
         word_id TEXT NOT NULL,
@@ -214,6 +230,7 @@ function applyMigrations(db: DatabaseSync, config: StorageConfig) {
 
       CREATE INDEX IF NOT EXISTS idx_profiles_created_at ON profiles(created_at);
       CREATE INDEX IF NOT EXISTS idx_rewards_profile_created_at ON rewards(profile_id, created_at DESC);
+      CREATE INDEX IF NOT EXISTS idx_reward_disbursements_profile_created_at ON reward_disbursements(profile_id, created_at DESC);
       CREATE INDEX IF NOT EXISTS idx_sessions_profile_started_at ON sessions(profile_id, started_at DESC);
       CREATE INDEX IF NOT EXISTS idx_word_progress_profile_misses ON word_progress(profile_id, recent_misses DESC, mastery_score ASC);
     `)
@@ -321,6 +338,30 @@ function applyMigrations(db: DatabaseSync, config: StorageConfig) {
       console.info(`[storage] migrated sqlite schema v${DB_VERSION} at ${config.databasePath}`)
     }
   }
+
+  if (version < 5) {
+    db.exec(`
+      CREATE TABLE IF NOT EXISTS reward_disbursements (
+        id TEXT PRIMARY KEY,
+        profile_id TEXT NOT NULL,
+        amount INTEGER NOT NULL,
+        created_at TEXT NOT NULL,
+        FOREIGN KEY (profile_id) REFERENCES profiles(id) ON DELETE CASCADE
+      );
+
+      CREATE INDEX IF NOT EXISTS idx_reward_disbursements_profile_created_at ON reward_disbursements(profile_id, created_at DESC);
+    `)
+
+    db.prepare(`
+      INSERT INTO storage_meta (key, value)
+      VALUES (?, ?)
+      ON CONFLICT(key) DO UPDATE SET value = excluded.value
+    `).run('schema_version', String(DB_VERSION))
+
+    if (config.debugLogging) {
+      console.info(`[storage] migrated sqlite schema v${DB_VERSION} at ${config.databasePath}`)
+    }
+  }
 }
 
 function loadDatabase(db: DatabaseSync): DatabaseShape {
@@ -337,6 +378,12 @@ function loadDatabase(db: DatabaseSync): DatabaseShape {
     FROM rewards
     ORDER BY created_at ASC
   `).all().map((row: unknown) => mapRewardRow(row as Record<string, unknown>))
+
+  state.rewardDisbursements = db.prepare(`
+    SELECT id, profile_id, amount, created_at
+    FROM reward_disbursements
+    ORDER BY created_at ASC
+  `).all().map((row: unknown) => mapRewardDisbursementRow(row as Record<string, unknown>))
 
   state.wordProgress = db.prepare(`
     SELECT profile_id, word_id, mastery_score, adaptive_weight, last_seen_at, times_prompted, times_correct, average_attempt_index, recent_misses, recent_successes
@@ -405,6 +452,7 @@ function persistDatabase(db: DatabaseSync, state: DatabaseShape) {
     DELETE FROM session_prompt_history;
     DELETE FROM sessions;
     DELETE FROM rewards;
+    DELETE FROM reward_disbursements;
     DELETE FROM word_progress;
     DELETE FROM profiles;
   `)
@@ -439,6 +487,19 @@ function persistDatabase(db: DatabaseSync, state: DatabaseShape) {
       reward.rankKey ?? null,
       reward.robuxAwarded,
       reward.createdAt
+    )
+  }
+
+  const insertRewardDisbursement = db.prepare(`
+    INSERT INTO reward_disbursements (id, profile_id, amount, created_at)
+    VALUES (?, ?, ?, ?)
+  `)
+  for (const entry of state.rewardDisbursements) {
+    insertRewardDisbursement.run(
+      entry.id,
+      entry.profileId,
+      entry.amount,
+      entry.createdAt
     )
   }
 
@@ -581,6 +642,15 @@ function mapRewardRow(row: Record<string, unknown>): RewardEvent {
     levelReached: Number(row.level_reached),
     rankKey: row.rank_key ? String(row.rank_key) : undefined,
     robuxAwarded: Number(row.robux_awarded),
+    createdAt: String(row.created_at)
+  }
+}
+
+function mapRewardDisbursementRow(row: Record<string, unknown>): RewardDisbursement {
+  return {
+    id: String(row.id),
+    profileId: String(row.profile_id),
+    amount: Number(row.amount),
     createdAt: String(row.created_at)
   }
 }

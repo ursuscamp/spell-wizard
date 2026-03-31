@@ -74,11 +74,31 @@
 
 **Definition:** A tracked prize earned when a child levels up or reaches a rank milestone.
 
-**Context:** Rewards are used to reinforce progress, including the Robux-based reward system defined for this app.
+**Context:** Rewards are used to reinforce progress, including the Robux-based reward system defined for this app and the reward balance that caregivers track separately.
 
 **Example:** Reaching 100 total points grants a level-up reward of 100 Robux; every third level grants the rank-up reward instead.
 
-**Related Terms:** Child Profile, Rank
+**Related Terms:** Child Profile, Rank, Reward Balance, Reward Disbursement
+
+## Reward Balance
+
+**Definition:** The remaining Robux that have been earned for a child but have not yet been handed out by a caregiver.
+
+**Context:** Calculated from total rewarded Robux minus total disbursed Robux and shown on the profile dashboard and admin reward page.
+
+**Example:** If a child earned `100` Robux and a caregiver recorded `80` as actually given, the reward balance is `20`.
+
+**Related Terms:** Reward, Reward Disbursement, Child Profile
+
+## Reward Disbursement
+
+**Definition:** A caregiver-recorded amount of Robux that has actually been given to a child after a reward was earned.
+
+**Context:** Stored as an append-only ledger entry so the household can track partial payouts against earned rewards.
+
+**Example:** A caregiver records `80` Robux for Luna after she earned `100`, leaving a `20` Robux reward balance.
+
+**Related Terms:** Reward, Reward Balance, Child Profile
 
 ## Spelling Attempt
 

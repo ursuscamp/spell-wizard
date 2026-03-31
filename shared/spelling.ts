@@ -50,6 +50,19 @@ export interface RewardEvent {
   createdAt: string
 }
 
+export interface RewardDisbursement {
+  id: string
+  profileId: string
+  amount: number
+  createdAt: string
+}
+
+export interface RewardSummary {
+  totalRewarded: number
+  totalDisbursed: number
+  remainingUndispatched: number
+}
+
 export interface WordProgress {
   profileId: string
   wordId: string
@@ -134,6 +147,7 @@ export interface AttemptResponse {
 
 export interface DashboardView {
   profile: Profile
+  rewardSummary: RewardSummary
   recentRewards: RewardEvent[]
   recentSessions: SessionRecord[]
   difficultWords: Array<{ word: string; misses: number; masteryScore: number }>
@@ -141,9 +155,26 @@ export interface DashboardView {
 
 export interface HistoryView {
   profile: Profile
+  rewardSummary: RewardSummary
   rewards: RewardEvent[]
   sessions: SessionRecord[]
   difficultWords: Array<{ word: string; misses: number; masteryScore: number }>
+}
+
+export interface AdminRewardProfileView {
+  profile: Profile
+  rewardSummary: RewardSummary
+  recentDisbursements: RewardDisbursement[]
+}
+
+export interface AdminRewardsView {
+  profiles: AdminRewardProfileView[]
+}
+
+export interface AdminRewardDisbursementResponse {
+  profileId: string
+  rewardSummary: RewardSummary
+  disbursement: RewardDisbursement
 }
 
 export interface ProfileInput {
